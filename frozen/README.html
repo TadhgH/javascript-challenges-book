@@ -38,7 +38,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="21" data-basepath=".." data-revision="1397218873497">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="21" data-basepath=".." data-revision="1397219363015">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -327,7 +327,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_10">
+                    <section class="normal" id="section-gitbook_1">
                     
                         <h1 id="frozen">Frozen</h1>
 <p>This challenge will need a bit of knowledge of one of the new features in Javascript 1.8.5, this feature is Object.freeze to get the correct result.</p>
@@ -335,7 +335,7 @@
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_11">
+                    <section class="exercise" id="section-gitbook_2">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -365,8 +365,8 @@ Object.freeze(dog);
 
 /* Put your code here */
 
-//This method should launch an alert with the text &#39;Bark&#39;
-dog.talk();</div>
+//This method should return &#39;Bark!&#39;
+var result = dog.talk();</div>
 
 <pre class="hidden code-solution">var dog = {
     sound: &#39;Bark!&#39;
@@ -375,25 +375,12 @@ dog.talk();</div>
 Object.freeze(dog);
 
 Object.prototype.talk = function () {
-    alert(this.sound);
+    return this.sound;
 };
 
-//This method should launch an alert with the text &#39;Bark!&#39;
-dog.talk();</pre>
-<pre class="hidden code-validation">assert( counter === 1 &amp;&amp; items[0] === &#39;Bark!&#39;);</pre>
-
-<pre class="hidden code-context">var backAlert = alert;
-var counter = 0;
-var items = [];
-var alert = function (str) {
-    counter++;
-    items.push(str);
-    if(counter === 1)
-    {
-        alert = backAlert;
-    }
-    backAlert(str);
-};</pre>
+//This method should return &#39;Bark!&#39;
+var result = dog.talk();</pre>
+<pre class="hidden code-validation">assert( result === &#39;Bark!&#39;);</pre>
 
 
 <div class="btn-group btn-group-justified">
