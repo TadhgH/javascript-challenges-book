@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="8" data-basepath=".." data-revision="1397205111198">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="8" data-basepath=".." data-revision="1397207891134">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -230,11 +230,28 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_33">
+                    <section class="normal" id="section-gitbook_34">
                     
                         <h1 id="detect-internet-explorer">Detect Internet Explorer</h1>
-<hr>
-<p>To accomplish a task you need to detect Internet Explorer browsers without using browser sniffing.</p>
+
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_35">
+                    
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
+
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <p>To accomplish a task you need to detect Internet Explorer browsers without using browser sniffing.</p>
 <p>The function to detect the browser can be executed in...</p>
 <ul>
 <li>Opera</li>
@@ -246,25 +263,32 @@
 <p>... and it should return <em>true</em> only if the browser is Internet Explorer.</p>
 <p>The function should detect only that browser is Internet Explorer, versions are not relevant but you must perform the action with a single code.</p>
 <p>Write the code:</p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isIE</span><span class="hljs-params">()</span> {</span>
 
+</div>
+<div class="editor" style="height: 80px">function isIE() {
+
+}</div>
+
+<pre class="hidden code-solution">function isIE() {
+    window.external = &#39;&#39;;
+    return typeof window.external === &#39;object&#39;;
+}</pre>
+<pre class="hidden code-validation">assert(trim(isIE.toString()).replace(&#39;isIE&#39;, &#39;&#39;) == trim(isIE_good.toString()).replace(&#39;isIE_good&#39;, &#39;&#39;));</pre>
+
+<pre class="hidden code-context">function isIE_good() {
+    window.external = &#39;&#39;;
+    return typeof window.external === &#39;object&#39;;
 }
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isIE</span><span class="hljs-params">()</span> {</span>
-    window.external = <span class="hljs-string">''</span>;
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">typeof</span> window.external === <span class="hljs-string">'object'</span>;
-}
-</code></pre>
-<pre><code class="lang-js">assert(trim(isIE.toString()).replace(<span class="hljs-string">'isIE'</span>, <span class="hljs-string">''</span>) == trim(isIE_good.toString()).replace(<span class="hljs-string">'isIE_good'</span>, <span class="hljs-string">''</span>));
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isIE_good</span><span class="hljs-params">()</span> {</span>
-    window.external = <span class="hljs-string">''</span>;
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">typeof</span> window.external === <span class="hljs-string">'object'</span>;
-}
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">trim</span><span class="hljs-params">(str)</span> {</span>
-    <span class="hljs-keyword">return</span> str.replace(<span class="hljs-regexp">/^\s+|\r\n*|\n*|\s+$/g</span>, <span class="hljs-string">''</span>);
-}
-</code></pre>
+function trim(str) {
+    return str.replace(/^\s+|\r\n*|\n*|\s+$/g, &#39;&#39;);
+}</pre>
+
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+</div>
 
                     
                     </section>

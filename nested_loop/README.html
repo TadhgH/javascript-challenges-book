@@ -38,7 +38,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="12" data-basepath=".." data-revision="1397205111198">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="12" data-basepath=".." data-revision="1397207891134">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -228,60 +228,85 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_47">
+                    <section class="normal" id="section-gitbook_55">
                     
                         <h1 id="exit-nested-loop">Exit nested loop</h1>
-<hr>
-<p>Make the modifications to the following code so that  when it&#39;s executed it should exit the first time indexInnderLoop has a value of 10 and indexOuterLoop has a value of 0.</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> indexOuterLoop, iterationsOuterLoop = <span class="hljs-number">1000</span>, indexInnerLoop, iterationsInnerLoop = <span class="hljs-number">100</span>;
+<p>How to exit of a nested loop.</p>
 
-<span class="hljs-keyword">for</span> (indexOuterLoop = <span class="hljs-number">0</span>; indexOuterLoop &lt; <span class="hljs-number">1000</span>; indexOuterLoop++)
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_56">
+                    
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
+
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <p>Make the modifications to the following code so that  when it&#39;s executed it should exit the first time indexInnerLoop has a value of 10 and indexOuterLoop has a value of 0.</p>
+
+</div>
+<div class="editor" style="height: 340px">var indexOuterLoop, iterationsOuterLoop = 1000, indexInnerLoop, iterationsInnerLoop = 100;
+
+for (indexOuterLoop = 0; indexOuterLoop &lt; 1000; indexOuterLoop++)
 {
-     <span class="hljs-keyword">for</span> (indexInnerLoop = <span class="hljs-number">0</span>; indexInnerLoop &lt; iterationsInnerLoop; indexInnerLoop++)
+     for (indexInnerLoop = 0; indexInnerLoop &lt; iterationsInnerLoop; indexInnerLoop++)
      {
-        <span class="hljs-keyword">if</span> (indexInnerLoop === <span class="hljs-number">10</span>)
+        if (indexInnerLoop === 10)
         {
-            console.log( <span class="hljs-string">'indexInnerLoop is equals to 10'</span> );
-            <span class="hljs-keyword">break</span>;
+            console.log( &#39;indexInnerLoop is equals to 10&#39; );
+            break;
         }
      }
 }
 
-console.log( indexOuterLoop );  <span class="hljs-comment">// Should log 0.</span>
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> indexOuterLoop, iterationsOuterLoop = <span class="hljs-number">1000</span>, indexInnerLoop, iterationsInnerLoop = <span class="hljs-number">100</span>;
+console.log( indexOuterLoop );  // Should log 0.</div>
+
+<pre class="hidden code-solution">var indexOuterLoop, iterationsOuterLoop = 1000, indexInnerLoop, iterationsInnerLoop = 100;
 
 outer:
-<span class="hljs-keyword">for</span> (indexOuterLoop = <span class="hljs-number">0</span>; indexOuterLoop &lt; <span class="hljs-number">1000</span>; indexOuterLoop++)
+for (indexOuterLoop = 0; indexOuterLoop &lt; 1000; indexOuterLoop++)
 {
      inner:
-     <span class="hljs-keyword">for</span> (indexInnerLoop = <span class="hljs-number">0</span>; indexInnerLoop &lt; iterationsInnerLoop; indexInnerLoop++)
+     for (indexInnerLoop = 0; indexInnerLoop &lt; iterationsInnerLoop; indexInnerLoop++)
      {
-        <span class="hljs-keyword">if</span> (indexInnerLoop === <span class="hljs-number">10</span>)
+        if (indexInnerLoop === 10)
         {
-            console.log( <span class="hljs-string">'indexInnerLoop is equals to 10'</span> );
-            <span class="hljs-keyword">break</span> outer;
+            console.log( &#39;indexInnerLoop is equals to 10&#39; );
+            break outer;
         }
      }
 }
 
-console.log( indexOuterLoop );  <span class="hljs-comment">// Should log 0.</span>
-</code></pre>
-<pre><code class="lang-js">assert(items[<span class="hljs-number">0</span>] === <span class="hljs-string">'indexInnerLoop is equals to 10'</span> &amp;&amp; items[<span class="hljs-number">1</span>] === <span class="hljs-number">0</span>);
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> items = [];
-<span class="hljs-keyword">var</span> backConsole = console;
-<span class="hljs-keyword">var</span> counter
-<span class="hljs-keyword">var</span> console = {
-    log: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(str)</span> {</span>
+console.log( indexOuterLoop );  // Should log 0.</pre>
+<pre class="hidden code-validation">assert(items[0] === &#39;indexInnerLoop is equals to 10&#39; &amp;&amp; items[1] === 0);</pre>
+
+<pre class="hidden code-context">var items = [];
+var backConsole = console;
+var counter
+var console = {
+    log: function (str) {
         items.push(str);
         counter++;
-        <span class="hljs-keyword">if</span>(counter === <span class="hljs-number">2</span>){
+        if(counter === 2){
             console = backConsole;
         }
     }
-};
-</code></pre>
+};</pre>
+
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+</div>
 
                     
                     </section>

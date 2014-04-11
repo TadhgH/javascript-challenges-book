@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="5" data-basepath=".." data-revision="1397205111198">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="5" data-basepath=".." data-revision="1397207891134">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -230,7 +230,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_53">
+                    <section class="normal" id="section-gitbook_50">
                     
                         <h1 id="closures-and-objects">Closures and Objects</h1>
 <p>As you know Javascript has two different ways to treat the data it receives as arguments of a function:</p>
@@ -266,7 +266,7 @@ oPerson = { <span class="hljs-attribute">name</span>: <span class="hljs-string">
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_54">
+                    <section class="exercise" id="section-gitbook_51">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -290,6 +290,7 @@ oPerson = { <span class="hljs-attribute">name</span>: <span class="hljs-string">
 </pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
+
 <div class="btn-group btn-group-justified">
     <a href="#" class="btn btn-default action-submit">Submit</a>
     <a href="#" class="btn btn-default action-solution">Solution</a>
@@ -299,59 +300,78 @@ oPerson = { <span class="hljs-attribute">name</span>: <span class="hljs-string">
                     
                     </section>
                 
-                    <section class="normal" id="section-gitbook_56">
+                    <section class="exercise" id="section-gitbook_53">
                     
-                        <p>Fix the code to :</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> oPerson = { name: <span class="hljs-string">'john'</span>};
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
 
-(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(oTeacher)</span> {</span>
-   window.getTeacher= <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <p>Fix the code to :</p>
+
+</div>
+<div class="editor" style="height: 300px">var oPerson = { name: &#39;john&#39;};
+
+(function(oTeacher) {
+   window.getTeacher= function() {
       console.log(oTeacher);
    };
 }(oPerson));
 
 window.getTeacher();
 
-oPerson.surname = <span class="hljs-string">'doe'</span>;
+oPerson.surname = &#39;doe&#39;;
 
 window.getTeacher();
 
-oPerson = { name: <span class="hljs-string">'mary'</span>, surname: <span class="hljs-string">'sullivan'</span> };
+oPerson = { name: &#39;mary&#39;, surname: &#39;sullivan&#39; };
 
-window.getTeacher();
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> oPerson = { name: <span class="hljs-string">'john'</span>};
+window.getTeacher();</div>
 
-window.getTeacher= <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+<pre class="hidden code-solution">var oPerson = { name: &#39;john&#39;};
+
+window.getTeacher= function() {
   console.log(oPerson);
 };
 
 window.getTeacher();
 
-oPerson.surname = <span class="hljs-string">'doe'</span>;
+oPerson.surname = &#39;doe&#39;;
 
 window.getTeacher();
 
-oPerson = { name: <span class="hljs-string">'mary'</span>, surname: <span class="hljs-string">'sullivan'</span> };
+oPerson = { name: &#39;mary&#39;, surname: &#39;sullivan&#39; };
 
-window.getTeacher();
-</code></pre>
-<pre><code class="lang-js">assert(items.length == <span class="hljs-number">3</span> &amp;&amp; items[<span class="hljs-number">2</span>].name == <span class="hljs-string">'mary'</span> &amp;&amp; items[<span class="hljs-number">2</span>].surname == <span class="hljs-string">'sullivan'</span>);
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> items = [];
-<span class="hljs-keyword">var</span> backConsole = console;
-<span class="hljs-keyword">var</span> console = {
-    log: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(str)</span> {</span>
+window.getTeacher();</pre>
+<pre class="hidden code-validation">assert(items.length == 3 &amp;&amp; items[2].name == &#39;mary&#39; &amp;&amp; items[2].surname == &#39;sullivan&#39;);</pre>
+
+<pre class="hidden code-context">var items = [];
+var backConsole = console;
+var console = {
+    log: function (str) {
         items.push(str);
-        <span class="hljs-keyword">if</span>(items.length === <span class="hljs-number">3</span>)
+        if(items.length === 3)
         {
             console = backConsole;
-        }<span class="hljs-keyword">else</span>{
+        }else{
             backConsole.log(str);
         }
     }
-};
-</code></pre>
+};</pre>
+
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+</div>
 
                     
                     </section>

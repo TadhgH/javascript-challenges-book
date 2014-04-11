@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="4" data-basepath=".." data-revision="1397205111198">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="4" data-basepath=".." data-revision="1397207891134">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -230,26 +230,27 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_50">
+                    <section class="normal" id="section-gitbook_47">
                     
                         <h1 id="check-properties">Check properties</h1>
 <p>We have the following code...</p>
-<pre><code><span class="hljs-reserved">var</span> key,
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> key,
     obj = {
-        <span class="hljs-attribute">name</span>: <span class="hljs-string">'john'</span>,
-        <span class="hljs-attribute">surname</span>: <span class="hljs-string">'doe'</span>
+        name: <span class="hljs-string">'john'</span>,
+        surname: <span class="hljs-string">'doe'</span>
     };
 
 
 <span class="hljs-keyword">for</span> ( key <span class="hljs-keyword">in</span> obj ) {
     <span class="hljs-keyword">if</span> ( obj.hasOwnProperty( key ) ) {
-       <span class="hljs-built_in">console</span>.log( key + <span class="hljs-string">' exist in obj'</span> );
-       <span class="hljs-built_in">console</span>.log( key + <span class="hljs-string">': '</span> + obj[key] );
+       console.log( key + <span class="hljs-string">' exist in obj'</span> );
+       console.log( key + <span class="hljs-string">': '</span> + obj[key] );
        <span class="hljs-keyword">continue</span>;
     }
-    <span class="hljs-built_in">console</span>.log( key + <span class="hljs-string">" doesn't exist in obj"</span> );
+    console.log( key + <span class="hljs-string">" doesn't exist in obj"</span> );
 }
-</code></pre><p>... and the result of executing it is...</p>
+</code></pre>
+<p>... and the result of executing it is...</p>
 <pre><code>name exist <span class="hljs-keyword">in</span> obj
 <span class="hljs-label">name:</span> john
 surname exist <span class="hljs-keyword">in</span> obj
@@ -258,62 +259,86 @@ surname exist <span class="hljs-keyword">in</span> obj
 <pre><code>name doesn't <span class="hljs-flow">exist</span> <span class="hljs-flow">in</span> obj
 surname <span class="hljs-flow">exist</span> <span class="hljs-flow">in</span> obj
 surname: doe
-</code></pre><hr>
-<p>Write the code to get the expected result.</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> key,
-    obj = {
-        name: <span class="hljs-string">'john'</span>,
-        surname: <span class="hljs-string">'doe'</span>
-    };
-
-
-<span class="hljs-keyword">for</span> ( key <span class="hljs-keyword">in</span> obj ) {
-    <span class="hljs-keyword">if</span> ( obj.hasOwnProperty( key ) ) {
-       console.log( key + <span class="hljs-string">' exist in obj'</span> );
-       console.log( key + <span class="hljs-string">': '</span> + obj[key] );
-       <span class="hljs-keyword">continue</span>;
-    }
-    console.log( key + <span class="hljs-string">" doesn't exist in obj"</span> );
-}
 </code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> key,
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_48">
+                    
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
+
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <p>Write the code to get the expected result.</p>
+
+</div>
+<div class="editor" style="height: 420px">var key,
     obj = {
-        name: <span class="hljs-string">'john'</span>,
-        surname: <span class="hljs-string">'doe'</span>
+        name: &#39;john&#39;,
+        surname: &#39;doe&#39;
     };
 
-<span class="hljs-built_in">Object</span>.prototype.hasOwnProperty = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(key)</span> {</span>
-    <span class="hljs-keyword">if</span>(key == <span class="hljs-string">'name'</span>){
-        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+
+for ( key in obj ) {
+    if ( obj.hasOwnProperty( key ) ) {
+       console.log( key + &#39; exist in obj&#39; );
+       console.log( key + &#39;: &#39; + obj[key] );
+       continue;
     }
-    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    console.log( key + &quot; doesn&#39;t exist in obj&quot; );
+}</div>
+
+<pre class="hidden code-solution">var key,
+    obj = {
+        name: &#39;john&#39;,
+        surname: &#39;doe&#39;
+    };
+
+Object.prototype.hasOwnProperty = function (key) {
+    if(key == &#39;name&#39;){
+        return false;
+    }
+    return true;
 };
 
-<span class="hljs-keyword">for</span> ( key <span class="hljs-keyword">in</span> obj ) {
-    <span class="hljs-keyword">if</span> ( obj.hasOwnProperty( key ) ) {
-       console.log( key + <span class="hljs-string">' exist in obj'</span> );
-       console.log( key + <span class="hljs-string">': '</span> + obj[key] );
-       <span class="hljs-keyword">continue</span>;
+for ( key in obj ) {
+    if ( obj.hasOwnProperty( key ) ) {
+       console.log( key + &#39; exist in obj&#39; );
+       console.log( key + &#39;: &#39; + obj[key] );
+       continue;
     }
-    console.log( key + <span class="hljs-string">" doesn't exist in obj"</span> );
-}
-</code></pre>
-<pre><code class="lang-js">assert(items.length == <span class="hljs-number">3</span> &amp;&amp; items[<span class="hljs-number">0</span>] == <span class="hljs-string">'name doesn\'t exist in obj'</span> &amp;&amp; items[<span class="hljs-number">1</span>] == <span class="hljs-string">'surname exist in obj'</span> &amp;&amp; items[<span class="hljs-number">2</span>] == <span class="hljs-string">'surname: doe'</span>);
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> items = [];
-<span class="hljs-keyword">var</span> backConsole = console;
-<span class="hljs-keyword">var</span> console = {
-    log: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(str)</span> {</span>
+    console.log( key + &quot; doesn&#39;t exist in obj&quot; );
+}</pre>
+<pre class="hidden code-validation">assert(items.length == 3 &amp;&amp; items[0] == &#39;name doesn\&#39;t exist in obj&#39; &amp;&amp; items[1] == &#39;surname exist in obj&#39; &amp;&amp; items[2] == &#39;surname: doe&#39;);</pre>
+
+<pre class="hidden code-context">var items = [];
+var backConsole = console;
+var console = {
+    log: function (str) {
         items.push(str);
-        <span class="hljs-keyword">if</span>(items.length === <span class="hljs-number">3</span>)
+        if(items.length === 3)
         {
             console = backConsole;
-        }<span class="hljs-keyword">else</span>{
+        }else{
             backConsole.log(str);
         }
     }
-};
-</code></pre>
+};</pre>
+
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+</div>
 
                     
                     </section>

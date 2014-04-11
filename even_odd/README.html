@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="11" data-basepath=".." data-revision="1397205111198">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="11" data-basepath=".." data-revision="1397207891134">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -297,6 +297,7 @@
 </pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
+
 <div class="btn-group btn-group-justified">
     <a href="#" class="btn btn-default action-submit">Submit</a>
     <a href="#" class="btn btn-default action-solution">Solution</a>
@@ -306,59 +307,78 @@
                     
                     </section>
                 
-                    <section class="normal" id="section-gitbook_40">
+                    <section class="exercise" id="section-gitbook_40">
                     
-                        <p>Write the code to avoid Infinity to be added.</p>
-<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
-    <span class="hljs-keyword">var</span> values = [<span class="hljs-number">3</span>, <span class="hljs-number">8</span>, <span class="hljs-string">'15'</span>, <span class="hljs-built_in">Number</span>.MAX_VALUE, <span class="hljs-literal">Infinity</span>, -<span class="hljs-number">23</span>],
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
+
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <p>Write the code to avoid Infinity to be added.</p>
+
+</div>
+<div class="editor" style="height: 320px">(function() {
+    var values = [3, 8, &#39;15&#39;, Number.MAX_VALUE, Infinity, -23],
         oddValues = [],
         index,
         lenValues = values.length,
-        isOdd = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( value )</span> {</span>
-            <span class="hljs-keyword">return</span> (value % <span class="hljs-number">2</span>) !== <span class="hljs-number">0</span>;
+        isOdd = function ( value ) {
+            return (value % 2) !== 0;
         };
 
-    <span class="hljs-keyword">while</span>(lenValues--) {
-        <span class="hljs-keyword">if</span> ( isOdd( values[lenValues] ) ) {
+    while(lenValues--) {
+        if ( isOdd( values[lenValues] ) ) {
             oddValues.push( values[lenValues] );
         }
     }
     console.log( oddValues );
-}());
-</code></pre>
-<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
-    <span class="hljs-keyword">var</span> values = [<span class="hljs-number">3</span>, <span class="hljs-number">8</span>, <span class="hljs-string">'15'</span>, <span class="hljs-built_in">Number</span>.MAX_VALUE, <span class="hljs-literal">Infinity</span>, -<span class="hljs-number">23</span>],
+}());</div>
+
+<pre class="hidden code-solution">(function() {
+    var values = [3, 8, &#39;15&#39;, Number.MAX_VALUE, Infinity, -23],
         oddValues = [],
         index,
         lenValues = values.length,
-        isOdd = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( value )</span> {</span>
-            <span class="hljs-keyword">return</span> (value % <span class="hljs-number">2</span>);
+        isOdd = function ( value ) {
+            return (value % 2);
         };
 
-    <span class="hljs-keyword">while</span>(lenValues--) {
-        <span class="hljs-keyword">if</span> ( isOdd( values[lenValues] ) ) {
+    while(lenValues--) {
+        if ( isOdd( values[lenValues] ) ) {
             oddValues.push( values[lenValues] );
         }
     }
     console.log( oddValues );
-}());
-</code></pre>
-<pre><code class="lang-js">assert(items[<span class="hljs-number">0</span>] === -<span class="hljs-number">23</span> &amp;&amp; items[<span class="hljs-number">1</span>] === <span class="hljs-string">"15"</span> &amp;&amp; items[<span class="hljs-number">2</span>] === <span class="hljs-number">3</span>);
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> items;
-<span class="hljs-keyword">var</span> backConsole = console;
-<span class="hljs-keyword">var</span> counter = <span class="hljs-number">0</span>;
-<span class="hljs-keyword">var</span> console = {
-    log: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(str)</span> {</span>
+}());</pre>
+<pre class="hidden code-validation">assert(items[0] === -23 &amp;&amp; items[1] === &quot;15&quot; &amp;&amp; items[2] === 3);</pre>
+
+<pre class="hidden code-context">var items;
+var backConsole = console;
+var counter = 0;
+var console = {
+    log: function (str) {
         items = str;
         counter++;
         backConsole.log(str);
-        <span class="hljs-keyword">if</span>(counter === <span class="hljs-number">1</span>) {
+        if(counter === 1) {
             console = backConsole;
         }
     }
-};
-</code></pre>
+};</pre>
+
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+</div>
 
                     
                     </section>
