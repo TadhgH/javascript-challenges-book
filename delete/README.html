@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="7" data-basepath=".." data-revision="1397229905260">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="7" data-basepath=".." data-revision="1397231384549">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -428,7 +428,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_32">
+                    <section class="normal" id="section-gitbook_144">
                     
                         <h1 id="delete">Delete</h1>
 <p>Execute this code:</p>
@@ -443,6 +443,7 @@ Animal = <span class="hljs-reserved">function</span>(){};
 Animal.prototype.name = <span class="hljs-string">'animal'</span>;
 
 mammal = <span class="hljs-keyword">new</span> Animal();
+mammal.name = <span class="hljs-string">'mammal'</span>;
 
 <span class="hljs-keyword">delete</span> name;
 
@@ -468,7 +469,7 @@ mammal = <span class="hljs-keyword">new</span> Animal();
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_33">
+                    <section class="exercise" id="section-gitbook_145">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -485,11 +486,10 @@ mammal = <span class="hljs-keyword">new</span> Animal();
     <p>Why <strong>#1: John</strong> is logged?</p>
 
 </div>
-<div class="editor" style="height: 40px">
+<div class="editor" style="height: 20px">
 </div>
 
-<pre class="hidden code-solution">
-</pre>
+<pre class="hidden code-solution">John is logged because name is a global variable and global variables can&#39;t be deleted.</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 
@@ -502,7 +502,7 @@ mammal = <span class="hljs-keyword">new</span> Animal();
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_35">
+                    <section class="exercise" id="section-gitbook_147">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -519,11 +519,10 @@ mammal = <span class="hljs-keyword">new</span> Animal();
     <p>Why <strong>#2: undefined</strong> is logged?</p>
 
 </div>
-<div class="editor" style="height: 40px">
+<div class="editor" style="height: 20px">
 </div>
 
-<pre class="hidden code-solution">
-</pre>
+<pre class="hidden code-solution">undefined is logged because we have deleted the name property of obj, properties or members of objects can be deleted excluding the properties or members of the global object.</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 
@@ -536,7 +535,7 @@ mammal = <span class="hljs-keyword">new</span> Animal();
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_37">
+                    <section class="exercise" id="section-gitbook_149">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -553,11 +552,10 @@ mammal = <span class="hljs-keyword">new</span> Animal();
     <p>Why <strong>#3: function toString() { [native code] }</strong> is logged?</p>
 
 </div>
-<div class="editor" style="height: 40px">
+<div class="editor" style="height: 20px">
 </div>
 
-<pre class="hidden code-solution">
-</pre>
+<pre class="hidden code-solution">function toString() { [native code] } is logged because toString is an inherited method from Object and inherited methods or members can&#39;t be deleted.</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 
@@ -570,7 +568,7 @@ mammal = <span class="hljs-keyword">new</span> Animal();
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_39">
+                    <section class="exercise" id="section-gitbook_151">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -587,11 +585,10 @@ mammal = <span class="hljs-keyword">new</span> Animal();
     <p>Why <strong>#4: animal</strong> is logged?</p>
 
 </div>
-<div class="editor" style="height: 40px">
+<div class="editor" style="height: 20px">
 </div>
 
-<pre class="hidden code-solution">
-</pre>
+<pre class="hidden code-solution">animal is logged because we have deleted the own mammal.name property but the inherited property is shown.</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 

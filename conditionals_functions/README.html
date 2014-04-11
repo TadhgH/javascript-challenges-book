@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="6" data-basepath=".." data-revision="1397229905260">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="6" data-basepath=".." data-revision="1397231384549">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -428,7 +428,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_29">
+                    <section class="normal" id="section-gitbook_4">
                     
                         <h1 id="conditionals-and-functions">Conditionals and functions</h1>
 <p>Read and execute the following snippets of code:</p>
@@ -476,7 +476,7 @@ test(); <span class="hljs-comment">// Shows "That's true"</span>
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_30">
+                    <section class="exercise" id="section-gitbook_5">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -493,11 +493,12 @@ test(); <span class="hljs-comment">// Shows "That's true"</span>
     <p>What&#39;s the reason of this behaviour?</p>
 
 </div>
-<div class="editor" style="height: 40px">
+<div class="editor" style="height: 60px">
 </div>
 
-<pre class="hidden code-solution">
-</pre>
+<pre class="hidden code-solution">The execution of Snippet 1 shows &quot;That&#39;s true&quot; because function expressions are evaluated in execution time.
+The execution of Snippet 2 shows &quot;That&#39;s false&quot; because function declarations are evaluated in evaluation time, and the second one overwrittes the first one.
+The execution of Snippet 3 shows &quot;That&#39;s true&quot; because when the code has been evaluated it has changed to the function that could return &quot;That&#39;s false&quot; but when the code has been executed it has been overwritten again with the function expression.</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 
