@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>Self Invoking Functions | Javascript Challenges</title>
+        <title>Ghost Array | Javascript Challenges</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../banking/README.html" />
+        <link rel="next" href="../input_search/README.html" />
         
         
-        <link rel="prev" href="../index.html" />
+        <link rel="prev" href="../fooling_around_boolean_2/README.html" />
         
 
-        <meta property="og:title" content="Self Invoking Functions | Javascript Challenges">
+        <meta property="og:title" content="Ghost Array | Javascript Challenges">
         <meta property="og:site_name" content="Javascript Challenges">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="1" data-basepath=".." data-revision="1397218308541">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="15" data-basepath=".." data-revision="1397218308541">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -72,7 +72,7 @@
             <a href="https://github.com/tcorral/javascript-challenges-book/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/autoexecute/README.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/ghost_array/README.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         <li data-level="0" data-path="index.html">
@@ -267,7 +267,7 @@
             <div class="page-wrapper">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 5%;min-width: 0%;"></div>
+        <div class="inner" style="width: 35%;min-width: 30%;"></div>
     </div>
     <div class="chapters">
     
@@ -275,17 +275,17 @@
     
         <a href="../autoexecute/README.html" title="Self Invoking Functions" class="chapter done new-chapter" data-progress="1" style="left: 5%;"></a>
     
-        <a href="../encapsulate_collection/README.html" title="Encapsulate collection" class="chapter  " data-progress="10" style="left: 10%;"></a>
+        <a href="../encapsulate_collection/README.html" title="Encapsulate collection" class="chapter done " data-progress="10" style="left: 10%;"></a>
     
-        <a href="../even_odd/README.html" title="Even or Odd" class="chapter  " data-progress="11" style="left: 15%;"></a>
+        <a href="../even_odd/README.html" title="Even or Odd" class="chapter done " data-progress="11" style="left: 15%;"></a>
     
-        <a href="../nested_loop/README.html" title="Exit nested loop" class="chapter  " data-progress="12" style="left: 20%;"></a>
+        <a href="../nested_loop/README.html" title="Exit nested loop" class="chapter done " data-progress="12" style="left: 20%;"></a>
     
-        <a href="../fooling_around_boolean/README.html" title="#1 Fooling around boolean" class="chapter  " data-progress="13" style="left: 25%;"></a>
+        <a href="../fooling_around_boolean/README.html" title="#1 Fooling around boolean" class="chapter done " data-progress="13" style="left: 25%;"></a>
     
-        <a href="../fooling_around_boolean_2/README.html" title="#2 Fooling around boolean" class="chapter  " data-progress="14" style="left: 30%;"></a>
+        <a href="../fooling_around_boolean_2/README.html" title="#2 Fooling around boolean" class="chapter done " data-progress="14" style="left: 30%;"></a>
     
-        <a href="../ghost_array/README.html" title="Ghost Array" class="chapter  " data-progress="15" style="left: 35%;"></a>
+        <a href="../ghost_array/README.html" title="Ghost Array" class="chapter done " data-progress="15" style="left: 35%;"></a>
     
         <a href="../input_search/README.html" title="Input Search" class="chapter  " data-progress="16" style="left: 40%;"></a>
     
@@ -318,17 +318,19 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_4">
+                    <section class="normal" id="section-gitbook_50">
                     
-                        <h1 id="self-invoking-functions">Self Invoking Functions</h1>
-<p>I want to set variable &#39;a&#39; to 3 using a Self Invoking Function, can you help me?</p>
-<pre><code><span class="hljs-keyword">var</span> a;
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> <span class="hljs-comment">{ a = 3; }</span><span class="hljs-params">()</span>;</span>
+                        <h1 id="ghost-array">Ghost Array</h1>
+<p>Take a look at this code:</p>
+<h2 id="snippet-1">Snippet 1</h2>
+<pre><code>var arr = [];
+arr[<span class="hljs-number">999</span>] = <span class="hljs-string">'john'</span>;
+console.<span class="hljs-built_in">log</span>(arr.<span class="hljs-built_in">length</span>);
 </code></pre>
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_5">
+                    <section class="exercise" id="section-gitbook_51">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -342,14 +344,13 @@
 </div>
 
 <div class="message">
-    <p>What is the result of executing the previous code?</p>
+    <p>What is the result of execute &quot;Snippet 1&quot; code?</p>
 
 </div>
-<div class="editor" style="height: 20px">
-</div>
+<div class="editor" style="height: 20px">var result = ;</div>
 
-<pre class="hidden code-solution">SyntaxError: Unexpected token )</pre>
-<pre class="hidden code-validation">assert(true);</pre>
+<pre class="hidden code-solution">var result = 1000;</pre>
+<pre class="hidden code-validation">assert(result === 1000);</pre>
 
 
 <div class="btn-group btn-group-justified">
@@ -361,7 +362,17 @@
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_7">
+                    <section class="normal" id="section-gitbook_52">
+                    
+                        <h2 id="snippet-2">Snippet 2</h2>
+<pre><code>var arr = [];
+arr[<span class="hljs-number">4294967295</span>] = <span class="hljs-string">'james'</span>;
+console.<span class="hljs-built_in">log</span>(arr.<span class="hljs-built_in">length</span>);
+</code></pre>
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_53">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -375,14 +386,13 @@
 </div>
 
 <div class="message">
-    <p>What is the value of variable &#39;a&#39;?</p>
+    <p>What is the result of execute &quot;Snippet 2&quot; code?</p>
 
 </div>
-<div class="editor" style="height: 20px">
-</div>
+<div class="editor" style="height: 20px">var result = ;</div>
 
-<pre class="hidden code-solution">undefined</pre>
-<pre class="hidden code-validation">assert(true);</pre>
+<pre class="hidden code-solution">var result = 0;</pre>
+<pre class="hidden code-validation">assert(result === 0);</pre>
 
 
 <div class="btn-group btn-group-justified">
@@ -394,7 +404,7 @@
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_9">
+                    <section class="exercise" id="section-gitbook_55">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -428,7 +438,17 @@
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_11">
+                    <section class="normal" id="section-gitbook_56">
+                    
+                        <h2 id="snippet-3">Snippet 3</h2>
+<pre><code><span class="hljs-reserved">var</span> arr = [];
+arr[<span class="hljs-number">4294967295</span>] = <span class="hljs-string">'james'</span>;
+<span class="hljs-built_in">console</span>.log(arr[<span class="hljs-number">4294967295</span>]);
+</code></pre>
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_57">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -442,15 +462,199 @@
 </div>
 
 <div class="message">
-    <p>Write the code to execute this function adding only one more character to the sentence.</p>
+    <p>What is the result of execute &quot;Snippet 3&quot; code?</p>
 
 </div>
-<div class="editor" style="height: 40px">var a;
-function test() { a = 3; }();</div>
+<div class="editor" style="height: 20px">var result = ;</div>
 
-<pre class="hidden code-solution">var a;
-!function test() { a = 3; }();</pre>
-<pre class="hidden code-validation">assert(a == 3);</pre>
+<pre class="hidden code-solution">var result = &quot;james&quot;;</pre>
+<pre class="hidden code-validation">assert(result === &quot;james&quot;);</pre>
+
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+</div>
+
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_59">
+                    
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
+
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <p>Why?</p>
+
+</div>
+<div class="editor" style="height: 40px">
+</div>
+
+<pre class="hidden code-solution">
+</pre>
+<pre class="hidden code-validation">assert(true);</pre>
+
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+</div>
+
+                    
+                    </section>
+                
+                    <section class="normal" id="section-gitbook_60">
+                    
+                        <h2 id="snippet-4">Snippet 4</h2>
+<pre><code><span class="hljs-keyword">var</span> arr = [];
+arr[<span class="hljs-built_in">Number</span>.MIN_VALUE] =  <span class="hljs-string">'mary'</span>;
+console.log(arr.length);
+</code></pre>
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_61">
+                    
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
+
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <p>What is the result of execute &quot;Snippet 4&quot; code?</p>
+
+</div>
+<div class="editor" style="height: 20px">var result = ;</div>
+
+<pre class="hidden code-solution">var result = 0;</pre>
+<pre class="hidden code-validation">assert(result === 0);</pre>
+
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+</div>
+
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_63">
+                    
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
+
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <p>Why?</p>
+
+</div>
+<div class="editor" style="height: 40px">
+</div>
+
+<pre class="hidden code-solution">
+</pre>
+<pre class="hidden code-validation">assert(true);</pre>
+
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+</div>
+
+                    
+                    </section>
+                
+                    <section class="normal" id="section-gitbook_64">
+                    
+                        <h2 id="snippet-5">Snippet 5</h2>
+<pre><code><span class="hljs-keyword">var</span> arr = [];
+arr[<span class="hljs-built_in">Number</span>.MIN_VALUE] =  <span class="hljs-string">'mary'</span>;
+console.log(arr[<span class="hljs-built_in">Number</span>.MIN_VALUE]);
+</code></pre>
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_65">
+                    
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
+
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <p>What is the result of execute &quot;Snippet 5&quot; code?</p>
+
+</div>
+<div class="editor" style="height: 20px">var result = ;</div>
+
+<pre class="hidden code-solution">var result = &quot;mary&quot;;</pre>
+<pre class="hidden code-validation">assert(result === &quot;mary&quot;);</pre>
+
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+</div>
+
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_67">
+                    
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
+
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <p>Why?</p>
+
+</div>
+<div class="editor" style="height: 40px">
+</div>
+
+<pre class="hidden code-solution">
+</pre>
+<pre class="hidden code-validation">assert(true);</pre>
 
 
 <div class="btn-group btn-group-justified">
@@ -467,10 +671,10 @@ function test() { a = 3; }();</div>
         </div>
 
         
-        <a href="../index.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../fooling_around_boolean_2/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../banking/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../input_search/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

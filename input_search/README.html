@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>Self Invoking Functions | Javascript Challenges</title>
+        <title>Input Search | Javascript Challenges</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../banking/README.html" />
+        <link rel="next" href="../invaluable/README.html" />
         
         
-        <link rel="prev" href="../index.html" />
+        <link rel="prev" href="../ghost_array/README.html" />
         
 
-        <meta property="og:title" content="Self Invoking Functions | Javascript Challenges">
+        <meta property="og:title" content="Input Search | Javascript Challenges">
         <meta property="og:site_name" content="Javascript Challenges">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="1" data-basepath=".." data-revision="1397218308541">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="16" data-basepath=".." data-revision="1397218308541">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -72,7 +72,7 @@
             <a href="https://github.com/tcorral/javascript-challenges-book/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/autoexecute/README.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/input_search/README.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         <li data-level="0" data-path="index.html">
@@ -267,7 +267,7 @@
             <div class="page-wrapper">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 5%;min-width: 0%;"></div>
+        <div class="inner" style="width: 40%;min-width: 35%;"></div>
     </div>
     <div class="chapters">
     
@@ -275,19 +275,19 @@
     
         <a href="../autoexecute/README.html" title="Self Invoking Functions" class="chapter done new-chapter" data-progress="1" style="left: 5%;"></a>
     
-        <a href="../encapsulate_collection/README.html" title="Encapsulate collection" class="chapter  " data-progress="10" style="left: 10%;"></a>
+        <a href="../encapsulate_collection/README.html" title="Encapsulate collection" class="chapter done " data-progress="10" style="left: 10%;"></a>
     
-        <a href="../even_odd/README.html" title="Even or Odd" class="chapter  " data-progress="11" style="left: 15%;"></a>
+        <a href="../even_odd/README.html" title="Even or Odd" class="chapter done " data-progress="11" style="left: 15%;"></a>
     
-        <a href="../nested_loop/README.html" title="Exit nested loop" class="chapter  " data-progress="12" style="left: 20%;"></a>
+        <a href="../nested_loop/README.html" title="Exit nested loop" class="chapter done " data-progress="12" style="left: 20%;"></a>
     
-        <a href="../fooling_around_boolean/README.html" title="#1 Fooling around boolean" class="chapter  " data-progress="13" style="left: 25%;"></a>
+        <a href="../fooling_around_boolean/README.html" title="#1 Fooling around boolean" class="chapter done " data-progress="13" style="left: 25%;"></a>
     
-        <a href="../fooling_around_boolean_2/README.html" title="#2 Fooling around boolean" class="chapter  " data-progress="14" style="left: 30%;"></a>
+        <a href="../fooling_around_boolean_2/README.html" title="#2 Fooling around boolean" class="chapter done " data-progress="14" style="left: 30%;"></a>
     
-        <a href="../ghost_array/README.html" title="Ghost Array" class="chapter  " data-progress="15" style="left: 35%;"></a>
+        <a href="../ghost_array/README.html" title="Ghost Array" class="chapter done " data-progress="15" style="left: 35%;"></a>
     
-        <a href="../input_search/README.html" title="Input Search" class="chapter  " data-progress="16" style="left: 40%;"></a>
+        <a href="../input_search/README.html" title="Input Search" class="chapter done " data-progress="16" style="left: 40%;"></a>
     
         <a href="../invaluable/README.html" title="Invaluable" class="chapter  " data-progress="17" style="left: 45%;"></a>
     
@@ -318,17 +318,36 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_4">
+                    <section class="normal" id="section-gitbook_74">
                     
-                        <h1 id="self-invoking-functions">Self Invoking Functions</h1>
-<p>I want to set variable &#39;a&#39; to 3 using a Self Invoking Function, can you help me?</p>
-<pre><code><span class="hljs-keyword">var</span> a;
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> <span class="hljs-comment">{ a = 3; }</span><span class="hljs-params">()</span>;</span>
-</code></pre>
+                        <h1 id="input-search">Input Search</h1>
+<p>Reviewing the code of your colleague you have found this snipped of code:</p>
+<pre><code>$( document ).ready( <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+  $( <span class="hljs-string">'#inputSearch'</span> ).keypress( <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+      $.ajax( {
+        url: <span class="hljs-string">'http://www.domain.com/search'</span>,
+        data: <span class="hljs-keyword">this</span>.value,
+        success: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( data )</span>
+        {</span>
+            <span class="hljs-keyword">var</span> results = data.results;
+            $( <span class="hljs-string">'#list'</span> ).empty();
+            $.each( data, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( item )</span> {</span>
+                $( <span class="hljs-string">'#list'</span> ).append( <span class="hljs-string">'&lt;li&gt;'</span> + item + <span class="hljs-string">'&lt;/li&gt;'</span> );
+            } );
+
+        },
+        error: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( xhr, status, error )</span> {</span>
+            console.log( <span class="hljs-string">'Something goes wrong!'</span>, status, error.message );
+        }
+      } );
+  } );
+} );
+</code></pre><p>In this code there is a performance issue that should be fixed, could you help us?</p>
+
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_5">
+                    <section class="exercise" id="section-gitbook_75">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -342,115 +361,73 @@
 </div>
 
 <div class="message">
-    <p>What is the result of executing the previous code?</p>
+    <p>Fix the performance issue:</p>
 
 </div>
-<div class="editor" style="height: 20px">
-</div>
+<div class="editor" style="height: 400px">$( document ).ready( function() {
+  $( &#39;#inputSearch&#39; ).keypress( function() {
+      $.ajax( {
+        url: &#39;http://www.domain.com/search&#39;,
+        data: this.value,
+        success: function ( data )
+        {
+            var results = data.results;
+            $( &#39;#list&#39; ).empty();
+            $.each( data, function ( item ) {
+                $( &#39;#list&#39; ).append( &#39;&lt;li&gt;&#39; + item + &#39;&lt;/li&gt;&#39; );
+            } );
 
-<pre class="hidden code-solution">SyntaxError: Unexpected token )</pre>
-<pre class="hidden code-validation">assert(true);</pre>
+        },
+        error: function ( xhr, status, error ) {
+            console.log( &#39;Something goes wrong!&#39;, status, error.message );
+        }
+      } );
+  } );
+} );</div>
 
+<pre class="hidden code-solution">$( document ).ready( function() {
+  $( &#39;#inputSearch&#39; ).keyup( function() {
+      $.ajax( {
+        url: &#39;http://www.domain.com/search&#39;,
+        data: this.value,
+        success: function ( data )
+        {
+            var results = data.results;
+            $( &#39;#list&#39; ).empty();
+            $.each( data, function ( item ) {
+                $( &#39;#list&#39; ).append( &#39;&lt;li&gt;&#39; + item + &#39;&lt;/li&gt;&#39; );
+            } );
 
-<div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-default action-submit">Submit</a>
-    <a href="#" class="btn btn-default action-solution">Solution</a>
-    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
-</div>
+        },
+        error: function ( xhr, status, error ) {
+            console.log( &#39;Something goes wrong!&#39;, status, error.message );
+        }
+      } );
+  } );
+} );</pre>
+<pre class="hidden code-validation">assert(counter === 1);</pre>
 
-                    
-                    </section>
-                
-                    <section class="exercise" id="section-gitbook_7">
-                    
-                        <div class="header">
-    <h2>Exercise</h2>
-</div>
-<div class="alert alert-success">
-    <b>Correct!</b>
-</div>
-
-<div class="alert alert-danger error-message">
-    <b>False!</b>
-</div>
-
-<div class="message">
-    <p>What is the value of variable &#39;a&#39;?</p>
-
-</div>
-<div class="editor" style="height: 20px">
-</div>
-
-<pre class="hidden code-solution">undefined</pre>
-<pre class="hidden code-validation">assert(true);</pre>
-
-
-<div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-default action-submit">Submit</a>
-    <a href="#" class="btn btn-default action-solution">Solution</a>
-    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
-</div>
-
-                    
-                    </section>
-                
-                    <section class="exercise" id="section-gitbook_9">
-                    
-                        <div class="header">
-    <h2>Exercise</h2>
-</div>
-<div class="alert alert-success">
-    <b>Correct!</b>
-</div>
-
-<div class="alert alert-danger error-message">
-    <b>False!</b>
-</div>
-
-<div class="message">
-    <p>Why?</p>
-
-</div>
-<div class="editor" style="height: 40px">
-</div>
-
-<pre class="hidden code-solution">
-</pre>
-<pre class="hidden code-validation">assert(true);</pre>
-
-
-<div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-default action-submit">Submit</a>
-    <a href="#" class="btn btn-default action-solution">Solution</a>
-    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
-</div>
-
-                    
-                    </section>
-                
-                    <section class="exercise" id="section-gitbook_11">
-                    
-                        <div class="header">
-    <h2>Exercise</h2>
-</div>
-<div class="alert alert-success">
-    <b>Correct!</b>
-</div>
-
-<div class="alert alert-danger error-message">
-    <b>False!</b>
-</div>
-
-<div class="message">
-    <p>Write the code to execute this function adding only one more character to the sentence.</p>
-
-</div>
-<div class="editor" style="height: 40px">var a;
-function test() { a = 3; }();</div>
-
-<pre class="hidden code-solution">var a;
-!function test() { a = 3; }();</pre>
-<pre class="hidden code-validation">assert(a == 3);</pre>
+<pre class="hidden code-context">var document = &#39;&#39;;
+var counter = 0;
+var $ = function ( element ) {
+    var jQuery = {
+        ready: function ( callback ) {
+            callback();
+            return jQuery;
+        },
+        keypress: function ( callback ) {
+            callback();
+            return jQuery;
+        },
+        keyup: function ( callback ) {
+            counter++;
+            callback();
+            return jQuery;
+        }
+    };
+    return jQuery;
+};
+$.ajax = function () {};</pre>
 
 
 <div class="btn-group btn-group-justified">
@@ -467,10 +444,10 @@ function test() { a = 3; }();</div>
         </div>
 
         
-        <a href="../index.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../ghost_array/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../banking/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../invaluable/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
