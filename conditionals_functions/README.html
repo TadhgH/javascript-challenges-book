@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Conditionals and Functions | Javascript Challenges</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="tcorral">
+        <meta name="description" content="Challenge your self to learn and understand the most obscure and tricky parts of Javascript.">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../delete/README.html" />
+        
+        
+        <link rel="prev" href="../objects2/README.html" />
+        
+
+        <meta property="og:title" content="Conditionals and Functions | Javascript Challenges">
+        <meta property="og:site_name" content="Javascript Challenges">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/tcorral">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="..\gitbook/images/favicon.ico" type="image/x-icon">
+
+        
+        <link rel="stylesheet" href="..\gitbook/style.css">
+        
+        
+    </head>
+    <body>
+        
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="6" data-basepath=".." data-revision="1397204974624">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://github.com/tcorral/javascript-challenges-book/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+
+
+    <!-- Title -->
+    <h1><a href="../" >Javascript Challenges</a></h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        <li>
+            <a href="https://github.com/tcorral" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/tcorral/javascript-challenges-book/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/conditionals_functions/README.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="autoexecute/README.html">
+                
+                <a href="../autoexecute/README.html">
+                    <i class="fa fa-check"></i> <b>1)</b> Self Invoking Functions
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="banking/README.html">
+                
+                <a href="../banking/README.html">
+                    <i class="fa fa-check"></i> <b>2)</b> Floats Operations Imprecision
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="hoisting1/README.html">
+                
+                <a href="../hoisting1/README.html">
+                    <i class="fa fa-check"></i> <b>3)</b> Hoisting and Conditionals
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="objects1/README.html">
+                
+                <a href="../objects1/README.html">
+                    <i class="fa fa-check"></i> <b>4)</b> Checking Properties
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="objects2/README.html">
+                
+                <a href="../objects2/README.html">
+                    <i class="fa fa-check"></i> <b>5)</b> Closure and Objects
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="conditionals_functions/README.html">
+                
+                <a href="../conditionals_functions/README.html">
+                    <i class="fa fa-check"></i> <b>6)</b> Conditionals and Functions
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="7" data-path="delete/README.html">
+                
+                <a href="../delete/README.html">
+                    <i class="fa fa-check"></i> <b>7)</b> Delete
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="8" data-path="detectIE/README.html">
+                
+                <a href="../detectIE/README.html">
+                    <i class="fa fa-check"></i> <b>8)</b> Detect Internet Explorer
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="9" data-path="utf8/README.html">
+                
+                <a href="../utf8/README.html">
+                    <i class="fa fa-check"></i> <b>9)</b> Don&#39;t judge a book by its cover
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="10" data-path="encapsulate_collection/README.html">
+                
+                <a href="../encapsulate_collection/README.html">
+                    <i class="fa fa-check"></i> <b>10)</b> Encapsulate collection
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="11" data-path="even_odd/README.html">
+                
+                <a href="../even_odd/README.html">
+                    <i class="fa fa-check"></i> <b>11)</b> Even or Odd
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="12" data-path="nested_loop/README.html">
+                
+                <a href="../nested_loop/README.html">
+                    <i class="fa fa-check"></i> <b>12)</b> Exit nested loop
+                </a>
+                
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body" tabindex="-1">
+        <div class="body-inner">
+            <div class="page-wrapper">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 75%;min-width: 66.66666666666667%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../autoexecute/README.html" title="Self Invoking Functions" class="chapter done new-chapter" data-progress="1" style="left: 8.333333333333334%;"></a>
+    
+        <a href="../encapsulate_collection/README.html" title="Encapsulate collection" class="chapter done " data-progress="10" style="left: 16.666666666666668%;"></a>
+    
+        <a href="../even_odd/README.html" title="Even or Odd" class="chapter done " data-progress="11" style="left: 25%;"></a>
+    
+        <a href="../nested_loop/README.html" title="Exit nested loop" class="chapter done " data-progress="12" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../banking/README.html" title="Floats Operations Imprecision" class="chapter done new-chapter" data-progress="2" style="left: 41.666666666666664%;"></a>
+    
+        <a href="../hoisting1/README.html" title="Hoisting and Conditionals" class="chapter done new-chapter" data-progress="3" style="left: 50%;"></a>
+    
+        <a href="../objects1/README.html" title="Checking Properties" class="chapter done new-chapter" data-progress="4" style="left: 58.333333333333336%;"></a>
+    
+        <a href="../objects2/README.html" title="Closure and Objects" class="chapter done new-chapter" data-progress="5" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../conditionals_functions/README.html" title="Conditionals and Functions" class="chapter done new-chapter" data-progress="6" style="left: 75%;"></a>
+    
+        <a href="../delete/README.html" title="Delete" class="chapter  new-chapter" data-progress="7" style="left: 83.33333333333333%;"></a>
+    
+        <a href="../detectIE/README.html" title="Detect Internet Explorer" class="chapter  new-chapter" data-progress="8" style="left: 91.66666666666667%;"></a>
+    
+        <a href="../utf8/README.html" title="Don&#39;t judge a book by its cover" class="chapter  new-chapter" data-progress="9" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_21">
+                    
+                        <h1 id="conditionals-and-functions">Conditionals and functions</h1>
+<p>Read and execute the following snippets of code:</p>
+<h2 id="snippet-1-">Snippet 1:</h2>
+<pre><code><span class="hljs-keyword">var</span> test;
+
+<span class="hljs-keyword">if</span> ( <span class="hljs-literal">true</span> ) {
+    test = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+        console.log( <span class="hljs-string">"That's true"</span> );
+    };
+} <span class="hljs-keyword">else</span> {
+    test = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+        console.log( <span class="hljs-string">"That's false"</span> );
+    };
+}
+
+test(); <span class="hljs-comment">// Shows "That's true"</span>
+</code></pre><h2 id="snippet-2-">Snippet 2:</h2>
+<pre><code><span class="hljs-keyword">if</span> ( <span class="hljs-literal">true</span> ) {
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> {</span>
+        console.log( <span class="hljs-string">"That's true"</span> );
+    }
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> {</span>
+        console.log( <span class="hljs-string">"That's false"</span> );
+    }
+}
+
+test(); <span class="hljs-comment">// Shows "That's false"</span>
+</code></pre><h2 id="snippet-3-">Snippet 3:</h2>
+<pre><code><span class="hljs-keyword">var</span> test;
+
+<span class="hljs-keyword">if</span> ( <span class="hljs-literal">true</span> ) {
+    test = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+        console.log( <span class="hljs-string">"That's true"</span> );
+    };
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> {</span>
+        console.log( <span class="hljs-string">"That's false"</span> );
+    }
+}
+
+test(); <span class="hljs-comment">// Shows "That's true"</span>
+</code></pre>
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_22">
+                    
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
+
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <p>What&#39;s the reason of this behaviour?</p>
+
+</div>
+<div class="editor" style="height: 40px">
+</div>
+
+<pre class="hidden code-solution">
+</pre>
+<pre class="hidden code-validation">assert(true);</pre>
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+</div>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../objects2/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../delete/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="..\gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="..\gitbook/app.js"></script>
+        
+    </body>
+</html>

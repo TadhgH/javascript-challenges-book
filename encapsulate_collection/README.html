@@ -1,0 +1,379 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Encapsulate collection | Javascript Challenges</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="tcorral">
+        <meta name="description" content="Challenge your self to learn and understand the most obscure and tricky parts of Javascript.">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../even_odd/README.html" />
+        
+        
+        <link rel="prev" href="../utf8/README.html" />
+        
+
+        <meta property="og:title" content="Encapsulate collection | Javascript Challenges">
+        <meta property="og:site_name" content="Javascript Challenges">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/tcorral">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="..\gitbook/images/favicon.ico" type="image/x-icon">
+
+        
+        <link rel="stylesheet" href="..\gitbook/style.css">
+        
+        
+    </head>
+    <body>
+        
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="10" data-basepath=".." data-revision="1397204974624">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://github.com/tcorral/javascript-challenges-book/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+
+
+    <!-- Title -->
+    <h1><a href="../" >Javascript Challenges</a></h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        <li>
+            <a href="https://github.com/tcorral" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/tcorral/javascript-challenges-book/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/encapsulate_collection/README.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="autoexecute/README.html">
+                
+                <a href="../autoexecute/README.html">
+                    <i class="fa fa-check"></i> <b>1)</b> Self Invoking Functions
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="banking/README.html">
+                
+                <a href="../banking/README.html">
+                    <i class="fa fa-check"></i> <b>2)</b> Floats Operations Imprecision
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="hoisting1/README.html">
+                
+                <a href="../hoisting1/README.html">
+                    <i class="fa fa-check"></i> <b>3)</b> Hoisting and Conditionals
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="objects1/README.html">
+                
+                <a href="../objects1/README.html">
+                    <i class="fa fa-check"></i> <b>4)</b> Checking Properties
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="objects2/README.html">
+                
+                <a href="../objects2/README.html">
+                    <i class="fa fa-check"></i> <b>5)</b> Closure and Objects
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="6" data-path="conditionals_functions/README.html">
+                
+                <a href="../conditionals_functions/README.html">
+                    <i class="fa fa-check"></i> <b>6)</b> Conditionals and Functions
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="7" data-path="delete/README.html">
+                
+                <a href="../delete/README.html">
+                    <i class="fa fa-check"></i> <b>7)</b> Delete
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="8" data-path="detectIE/README.html">
+                
+                <a href="../detectIE/README.html">
+                    <i class="fa fa-check"></i> <b>8)</b> Detect Internet Explorer
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="9" data-path="utf8/README.html">
+                
+                <a href="../utf8/README.html">
+                    <i class="fa fa-check"></i> <b>9)</b> Don&#39;t judge a book by its cover
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="10" data-path="encapsulate_collection/README.html">
+                
+                <a href="../encapsulate_collection/README.html">
+                    <i class="fa fa-check"></i> <b>10)</b> Encapsulate collection
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="11" data-path="even_odd/README.html">
+                
+                <a href="../even_odd/README.html">
+                    <i class="fa fa-check"></i> <b>11)</b> Even or Odd
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="12" data-path="nested_loop/README.html">
+                
+                <a href="../nested_loop/README.html">
+                    <i class="fa fa-check"></i> <b>12)</b> Exit nested loop
+                </a>
+                
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body" tabindex="-1">
+        <div class="body-inner">
+            <div class="page-wrapper">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 16.666666666666668%;min-width: 8.333333333333334%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../autoexecute/README.html" title="Self Invoking Functions" class="chapter done new-chapter" data-progress="1" style="left: 8.333333333333334%;"></a>
+    
+        <a href="../encapsulate_collection/README.html" title="Encapsulate collection" class="chapter done " data-progress="10" style="left: 16.666666666666668%;"></a>
+    
+        <a href="../even_odd/README.html" title="Even or Odd" class="chapter  " data-progress="11" style="left: 25%;"></a>
+    
+        <a href="../nested_loop/README.html" title="Exit nested loop" class="chapter  " data-progress="12" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../banking/README.html" title="Floats Operations Imprecision" class="chapter  new-chapter" data-progress="2" style="left: 41.666666666666664%;"></a>
+    
+        <a href="../hoisting1/README.html" title="Hoisting and Conditionals" class="chapter  new-chapter" data-progress="3" style="left: 50%;"></a>
+    
+        <a href="../objects1/README.html" title="Checking Properties" class="chapter  new-chapter" data-progress="4" style="left: 58.333333333333336%;"></a>
+    
+        <a href="../objects2/README.html" title="Closure and Objects" class="chapter  new-chapter" data-progress="5" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../conditionals_functions/README.html" title="Conditionals and Functions" class="chapter  new-chapter" data-progress="6" style="left: 75%;"></a>
+    
+        <a href="../delete/README.html" title="Delete" class="chapter  new-chapter" data-progress="7" style="left: 83.33333333333333%;"></a>
+    
+        <a href="../detectIE/README.html" title="Detect Internet Explorer" class="chapter  new-chapter" data-progress="8" style="left: 91.66666666666667%;"></a>
+    
+        <a href="../utf8/README.html" title="Don&#39;t judge a book by its cover" class="chapter  new-chapter" data-progress="9" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_1">
+                    
+                        <h1 id="encapsulate-collection">Encapsulate collection</h1>
+<p>We have the following code:</p>
+<pre><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Order</span><span class="hljs-params">()</span> {</span>
+         <span class="hljs-keyword">this</span>.orderLines = [];
+         <span class="hljs-keyword">this</span>.orderTotal = <span class="hljs-number">0</span>;
+}
+Order.prototype.getOrderLines = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+         <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.orderLines;
+};
+Order.prototype.addOrderLine = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(orderLine)</span> {</span>
+         <span class="hljs-keyword">this</span>.orderTotal += orderLine.total;
+         <span class="hljs-keyword">this</span>.orderLines.push(orderLine);
+};
+Order.prototype.removeOrderLine = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(orderLineItem)</span> {</span>
+         <span class="hljs-keyword">var</span> orderTotal, orderLine;
+         orderLine = <span class="hljs-keyword">this</span>.orderLines.map(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(order)</span> {</span>
+                  <span class="hljs-keyword">return</span> order === orderLineItem;
+         })[<span class="hljs-number">0</span>];
+
+         <span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> orderLine === <span class="hljs-string">'undefined'</span> || orderLine === <span class="hljs-literal">null</span>) {
+                  <span class="hljs-keyword">return</span>;
+         }
+         <span class="hljs-keyword">this</span>.orderTotal -= orderLine.total;
+         <span class="hljs-keyword">this</span>.orderLines.splice(<span class="hljs-keyword">this</span>.orderTotal, <span class="hljs-number">1</span>);
+};
+</code></pre><pre><code><span class="hljs-built_in">var</span> <span class="hljs-keyword">order</span> <span class="hljs-subst">=</span> <span class="hljs-literal">new</span> <span class="hljs-keyword">Order</span>();
+<span class="hljs-keyword">order</span><span class="hljs-built_in">.</span>addOrderLine( { total: <span class="hljs-number">10</span> } );
+console<span class="hljs-built_in">.</span><span class="hljs-keyword">log</span>(<span class="hljs-keyword">order</span><span class="hljs-built_in">.</span>getOrderLines());  <span class="hljs-comment">// [ { total: 10 } ]</span>
+console<span class="hljs-built_in">.</span><span class="hljs-keyword">log</span>(<span class="hljs-keyword">order</span><span class="hljs-built_in">.</span>orderTotal);   <span class="hljs-comment">// 10</span>
+</code></pre><p>The problem with this code is that anyone could get access to orderLines and add or modify values without increasing or decreasing orderTotal.</p>
+<pre><code><span class="hljs-keyword">order</span>.orderLines[<span class="hljs-number">0</span>] = { total: <span class="hljs-number">20</span> };
+console.log(<span class="hljs-keyword">order</span>.getOrderLines()); <span class="hljs-comment">// [ { total: 20 } ]</span>
+console.log(<span class="hljs-keyword">order</span>.orderTotal);  <span class="hljs-comment">// 10;</span>
+</code></pre>
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_2">
+                    
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
+
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <p>Modify the code to encapsulate the collection to avoid this issue.</p>
+
+</div>
+<div class="editor" style="height: 680px">function Order() {
+         this.orderLines = [];
+         this.orderTotal = 0;
+}
+Order.prototype.getOrderLines = function() {
+         return this.orderLines;
+};
+Order.prototype.addOrderLine = function(orderLine) {
+         this.orderTotal += orderLine.total;
+         this.orderLines.push(orderLine);
+};
+Order.prototype.removeOrderLine = function(orderLineItem) {
+         var orderTotal, orderLine;
+         orderLine = this.orderLines.map(function(order) {
+                  return order === orderLineItem;
+         })[0];
+
+         if(typeof orderLine === &#39;undefined&#39; || orderLine === null) {
+                  return;
+         }
+         this.orderTotal -= orderLine.total;
+         this.orderLines.splice(this.orderTotal, 1);
+};</div>
+
+<pre class="hidden code-solution">function Order() {
+         var orderLines, orderTotal;
+         orderLines = [];
+         orderTotal = 0;
+         this.getOrderLines = function () {
+            return orderLines;
+         };
+         this.getOrderTotal = function () {
+            return orderTotal;
+         };
+         this.setOrderTotal = function (total) {
+            orderTotal += total;
+         };
+}
+Order.prototype.addOrderLine = function (orderLine) {
+    var orderLines;
+    orderLines = this.getOrderLines();
+    this.setOrderTotal(orderLine.total);
+    orderLines.push(orderLine);
+};
+Order.prototype.removeOrderLine = function(orderLineItem) {
+         var orderTotal, orderLine, orderLines;
+         orderLines = this.getOrderLines();
+         orderLine = this.orderLines.map(function(order) {
+                  return order === orderLineItem;
+         })[0];
+
+         if(typeof orderLine === &#39;undefined&#39; || orderLine === null) {
+                  return;
+         }
+
+         this.setOrderTotal( (-1 * orderLine.total) );
+         orderLines.splice( this.getOrderTotal(), 1);
+};</pre>
+<pre class="hidden code-validation">var order = new Order();
+assert(typeof order.orderLines === &#39;undefined&#39;);</pre>
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
+</div>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../utf8/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../even_odd/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="..\gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="..\gitbook/app.js"></script>
+        
+    </body>
+</html>
