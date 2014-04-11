@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="24" data-basepath=".." data-revision="1397231706909">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="24" data-basepath=".." data-revision="1397238004013">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -457,7 +457,7 @@
 <div class="editor" style="height: 20px">
 </div>
 
-<pre class="hidden code-solution">undefined</pre>
+<pre class="hidden code-solution">&#39;function test() { test = 123; console.log( test );}()&#39;</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 
@@ -487,11 +487,10 @@
     <p>Why?</p>
 
 </div>
-<div class="editor" style="height: 40px">
+<div class="editor" style="height: 20px">
 </div>
 
-<pre class="hidden code-solution">
-</pre>
+<pre class="hidden code-solution">When the code tries to modify test value inside the function it doesn&#39;t works because the precedence of the declaration of the function that test reference remains unchanged, then the code that is executed is console.log logs the function body in the console.</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 

@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="14" data-basepath=".." data-revision="1397231706909">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="14" data-basepath=".." data-revision="1397238004013">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -445,7 +445,7 @@
     }</span>
     <span class="hljs-keyword">return</span> !!nResult;
 };
-</code></pre><p>But when we execute the following statement it returns false.</p>
+</code></pre><p>But when we execute the following statement it returns false when we expected to return true because {} should return true.</p>
 <pre><code><span class="hljs-function"><span class="hljs-title">hasTruthyStuff</span><span class="hljs-params">([<span class="hljs-tuple">{}</span>,[], <span class="hljs-number">0</span>])</span></span>
 </code></pre>
                     
@@ -468,11 +468,10 @@
     <p>Why does calling the previous statement returns false?</p>
 
 </div>
-<div class="editor" style="height: 40px">
+<div class="editor" style="height: 20px">
 </div>
 
-<pre class="hidden code-solution">
-</pre>
+<pre class="hidden code-solution">You have to be careful when using |= because when it&#39;s used to perform a test besides an object it will not modify the original value, then it remains to be zero.</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 

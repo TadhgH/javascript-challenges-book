@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="17" data-basepath=".." data-revision="1397231706909">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="17" data-basepath=".." data-revision="1397238004013">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -459,11 +459,14 @@
     <p>Why?</p>
 
 </div>
-<div class="editor" style="height: 40px">
+<div class="editor" style="height: 100px">
 </div>
 
-<pre class="hidden code-solution">
-</pre>
+<pre class="hidden code-solution">Because the precedence of operators, the execution workflow is:
+44+22 -&gt; returns 66
+66 + [ ]  -&gt; returns [66]
+[66].valueOf() -&gt; returns [66]
+[66].length -&gt; returns 1</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 
@@ -502,11 +505,14 @@
     <p>Why?</p>
 
 </div>
-<div class="editor" style="height: 40px">
+<div class="editor" style="height: 100px">
 </div>
 
-<pre class="hidden code-solution">
-</pre>
+<pre class="hidden code-solution">Because the precedence of operators and how native methods behaviours, the execution workflow is:
+44+22 -&gt; returns 66
+66 + [ ]  -&gt; returns [66]
+[66].valueOf -&gt; returns function valueOf() { [native code] }
+(function valueOf() { [native code] }).length -&gt; returns 0</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 

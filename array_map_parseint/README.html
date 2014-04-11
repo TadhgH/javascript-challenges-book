@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="29" data-basepath=".." data-revision="1397231706909">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="29" data-basepath=".." data-revision="1397238004013">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -428,7 +428,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_1">
+                    <section class="normal" id="section-gitbook_4">
                     
                         <h1 id="using-array-prototype-map-and-parseint">Using Array.prototype.map and parseInt</h1>
 <h2 id="snippet-1">Snippet 1</h2>
@@ -439,7 +439,7 @@
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_2">
+                    <section class="exercise" id="section-gitbook_5">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -471,7 +471,7 @@
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_4">
+                    <section class="exercise" id="section-gitbook_7">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -488,11 +488,24 @@
     <p>Why?</p>
 
 </div>
-<div class="editor" style="height: 40px">
+<div class="editor" style="height: 300px">
 </div>
 
-<pre class="hidden code-solution">
-</pre>
+<pre class="hidden code-solution">Array.prototype.map has three arguments that pass to the callback we set as argument:
+* value
+* index
+* arr
+When we check the specifications of parseInt we can see that parseInt could receive two arguments.
+The former is the string to be parsed and the latter is the ratio to convert the value.
+
+When we execute the previous code, this is that it&#39;s executed when we run the Snippet 1 code:
+ * parseInt(1, 0)           =&gt; 1
+ * parseInt(10, 1)          =&gt; NaN
+ * parseInt(100, 2)         =&gt; 4
+ * parseInt(1000, 3)        =&gt; 27
+ * parseInt(10000, 4)       =&gt; 256
+ * parseInt(100000, 5)      =&gt; 3125
+ * parseInt(1000000, 6)     =&gt; 46656</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 
@@ -505,7 +518,7 @@
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_6">
+                    <section class="exercise" id="section-gitbook_9">
                     
                         <div class="header">
     <h2>Exercise</h2>

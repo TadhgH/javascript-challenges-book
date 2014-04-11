@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="22" data-basepath=".." data-revision="1397231706909">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="22" data-basepath=".." data-revision="1397238004013">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -454,15 +454,36 @@
     <p>Implement Point and assume that:</p>
 <ul>
 <li>Must be generic and be able to handle x and y values from 0..999</li>
-<li>The requirements to do it are to implement valueOf and toString methods.</li>
+<li>The requirements to do it are to implement valueOf and/or toString methods.</li>
 </ul>
 
 </div>
-<div class="editor" style="height: 40px">
+<div class="editor" style="height: 460px">
 </div>
 
-<pre class="hidden code-solution">
-</pre>
+<pre class="hidden code-solution">var Point = function (x, y) {
+    if(typeof x === &#39;string&#39;) {
+        this.convertStringToCoordinates(x);
+    }else{
+        this.x = x;
+        this.y = y;
+    }
+};
+Point.prototype.convertStringToCoordinates = function ( value ) {
+    var arr, index, len, item;
+    this.x = 0;
+    this.y = 0;
+    arr = JSON.parse(&#39;[&#39; + value.replace(/{/g,&#39;[&#39;).replace(/}/g,&#39;]&#39;).replace( new RegExp(&#39;\\]\\[&#39;, &#39;g&#39;), &#39;],[&#39;) + &#39;]&#39;);
+    len = arr.length;
+    for(index = 0; index &lt; len; index++) {
+        item = arr[index];
+        this.x += item[0];
+        this.y += item[1];
+    }
+};
+Point.prototype.toString = function () {
+    return &#39;{&#39; + this.x + &#39;,&#39; + this.y + &#39;}&#39;;
+};</pre>
 <pre class="hidden code-validation">assert(new Point( new Point(10, 20) + new Point(30, 50) ).toString() === &#39;{40,70}&#39;);</pre>
 
 
