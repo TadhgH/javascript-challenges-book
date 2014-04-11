@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>Hoisting and Conditionals | Javascript Challenges</title>
+        <title>Variable Scope | Javascript Challenges</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,11 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../objects1/README.html" />
         
-        
-        <link rel="prev" href="../banking/README.html" />
+        <link rel="prev" href="../array_map_parseint/README.html" />
         
 
-        <meta property="og:title" content="Hoisting and Conditionals | Javascript Challenges">
+        <meta property="og:title" content="Variable Scope | Javascript Challenges">
         <meta property="og:site_name" content="Javascript Challenges">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -40,7 +38,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="3" data-basepath=".." data-revision="1397228540218">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="30" data-basepath=".." data-revision="1397228540218">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -72,7 +70,7 @@
             <a href="https://github.com/tcorral/javascript-challenges-book/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/hoisting1/README.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/variable_scope/README.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         <li data-level="0" data-path="index.html">
@@ -357,7 +355,7 @@
             <div class="page-wrapper">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 76.66666666666667%;min-width: 73.33333333333333%;"></div>
+        <div class="inner" style="width: 80%;min-width: 76.66666666666667%;"></div>
     </div>
     <div class="chapters">
     
@@ -409,7 +407,7 @@
     
         <a href="../hoisting1/README.html" title="Hoisting and Conditionals" class="chapter done new-chapter" data-progress="3" style="left: 76.66666666666667%;"></a>
     
-        <a href="../variable_scope/README.html" title="Variable Scope" class="chapter  " data-progress="30" style="left: 80%;"></a>
+        <a href="../variable_scope/README.html" title="Variable Scope" class="chapter done " data-progress="30" style="left: 80%;"></a>
     
         <a href="../objects1/README.html" title="Checking Properties" class="chapter  new-chapter" data-progress="4" style="left: 83.33333333333333%;"></a>
     
@@ -428,25 +426,30 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_81">
+                    <section class="normal" id="section-gitbook_153">
                     
-                        <h1 id="hoisting-and-conditionals-statements">Hoisting and Conditionals Statements</h1>
-<p>I&#39;m Ernie and my friend is Bert and we wrote this code to tell other people which typeo of birds we like.</p>
-<pre><code><span class="hljs-keyword">var</span> bird = <span class="hljs-string">'Pidgeons'</span>;
-( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
-    <span class="hljs-keyword">if</span> ( <span class="hljs-keyword">typeof</span> bird === <span class="hljs-string">'undefined'</span> ){
-        <span class="hljs-keyword">var</span> bird = <span class="hljs-string">'Rubber Duck'</span>;
-        console.log(<span class="hljs-string">'Ernie loves his '</span> + bird );
-    } <span class="hljs-keyword">else</span> {
-        console.log(<span class="hljs-string">'Bert loves his '</span> + bird );
-    }
-}() );
-</code></pre><p>There should be a problem with our code because for some reason I only see &#39;Ernie loves his Rubber Duck&#39; when I expected to see &#39;Bert loves his Pidgeons&#39;, could you help me?</p>
+                        <h1 id="variable-scope">Variable Scope</h1>
+<p>We have the following code:</p>
+<pre><code><span class="hljs-keyword">var</span> name = <span class="hljs-string">'John'</span>,
+    obj = {
+        name: <span class="hljs-string">'Mary'</span>,
+        whoIam: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+            <span class="hljs-keyword">var</span> name = <span class="hljs-string">'James'</span>;
 
+            console.log( <span class="hljs-keyword">this</span>.name );
+
+            setTimeout( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+                console.log( <span class="hljs-keyword">this</span>.name );
+            }, <span class="hljs-number">100</span> );
+        }
+    };
+
+obj.whoIam();
+</code></pre>
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_82">
+                    <section class="exercise" id="section-gitbook_154">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -460,13 +463,15 @@
 </div>
 
 <div class="message">
-    <p>Why this is happening?</p>
+    <p>What does it prints?</p>
 
 </div>
-<div class="editor" style="height: 20px">
+<div class="editor" style="height: 60px">
 </div>
 
-<pre class="hidden code-solution">This is happening because the hoisting problem. Remember that in Javascript there are no block variables.</pre>
+<pre class="hidden code-solution">Mary
+undefined
+John</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 
@@ -479,7 +484,7 @@
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_84">
+                    <section class="exercise" id="section-gitbook_156">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -493,28 +498,14 @@
 </div>
 
 <div class="message">
-    <p>Please help me and fix this code to get &#39;Bert loves his Pidgeons&#39;.</p>
+    <p>Why?</p>
 
 </div>
-<div class="editor" style="height: 180px">var bird = &#39;Pidgeons&#39;;
-( function () {
-    if ( typeof bird === &#39;undefined&#39; ){
-        var bird = &#39;Rubber Duck&#39;;
-        console.log(&#39;Ernie loves his &#39; + bird );
-    } else {
-        console.log(&#39;Bert loves his &#39; + bird );
-    }
-}() );</div>
+<div class="editor" style="height: 40px">
+</div>
 
-<pre class="hidden code-solution">var bird = &#39;Pidgeons&#39;;
-( function () {
-    if ( typeof bird === &#39;undefined&#39; ){
-        bird = &#39;Rubber Duck&#39;;
-        console.log(&#39;Ernie loves his &#39; + bird );
-    } else {
-        console.log(&#39;Bert loves his &#39; + bird );
-    }
-}() );</pre>
+<pre class="hidden code-solution">It logs Mary because the context of execution is obj.
+It logs John because setTimeout is executed in the global context.</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 
@@ -532,10 +523,8 @@
         </div>
 
         
-        <a href="../banking/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../array_map_parseint/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../objects1/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

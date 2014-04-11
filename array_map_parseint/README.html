@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>Hoisting and Conditionals | Javascript Challenges</title>
+        <title>Array Map and ParseInt | Javascript Challenges</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../objects1/README.html" />
+        <link rel="next" href="../variable_scope/README.html" />
         
         
-        <link rel="prev" href="../banking/README.html" />
+        <link rel="prev" href="../undefined_values_in_array/README.html" />
         
 
-        <meta property="og:title" content="Hoisting and Conditionals | Javascript Challenges">
+        <meta property="og:title" content="Array Map and ParseInt | Javascript Challenges">
         <meta property="og:site_name" content="Javascript Challenges">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="3" data-basepath=".." data-revision="1397228540218">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="29" data-basepath=".." data-revision="1397228540218">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -72,7 +72,7 @@
             <a href="https://github.com/tcorral/javascript-challenges-book/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/hoisting1/README.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/array_map_parseint/README.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         <li data-level="0" data-path="index.html">
@@ -357,7 +357,7 @@
             <div class="page-wrapper">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 76.66666666666667%;min-width: 73.33333333333333%;"></div>
+        <div class="inner" style="width: 73.33333333333333%;min-width: 70%;"></div>
     </div>
     <div class="chapters">
     
@@ -407,7 +407,7 @@
     
         <a href="../array_map_parseint/README.html" title="Array Map and ParseInt" class="chapter done " data-progress="29" style="left: 73.33333333333333%;"></a>
     
-        <a href="../hoisting1/README.html" title="Hoisting and Conditionals" class="chapter done new-chapter" data-progress="3" style="left: 76.66666666666667%;"></a>
+        <a href="../hoisting1/README.html" title="Hoisting and Conditionals" class="chapter  new-chapter" data-progress="3" style="left: 76.66666666666667%;"></a>
     
         <a href="../variable_scope/README.html" title="Variable Scope" class="chapter  " data-progress="30" style="left: 80%;"></a>
     
@@ -428,25 +428,18 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_81">
+                    <section class="normal" id="section-gitbook_4">
                     
-                        <h1 id="hoisting-and-conditionals-statements">Hoisting and Conditionals Statements</h1>
-<p>I&#39;m Ernie and my friend is Bert and we wrote this code to tell other people which typeo of birds we like.</p>
-<pre><code><span class="hljs-keyword">var</span> bird = <span class="hljs-string">'Pidgeons'</span>;
-( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
-    <span class="hljs-keyword">if</span> ( <span class="hljs-keyword">typeof</span> bird === <span class="hljs-string">'undefined'</span> ){
-        <span class="hljs-keyword">var</span> bird = <span class="hljs-string">'Rubber Duck'</span>;
-        console.log(<span class="hljs-string">'Ernie loves his '</span> + bird );
-    } <span class="hljs-keyword">else</span> {
-        console.log(<span class="hljs-string">'Bert loves his '</span> + bird );
-    }
-}() );
-</code></pre><p>There should be a problem with our code because for some reason I only see &#39;Ernie loves his Rubber Duck&#39; when I expected to see &#39;Bert loves his Pidgeons&#39;, could you help me?</p>
-
+                        <h1 id="using-array-prototype-map-and-parseint">Using Array.prototype.map and parseInt</h1>
+<h2 id="snippet-1">Snippet 1</h2>
+<pre><code><span class="hljs-keyword">var</span> result = [<span class="hljs-string">'1'</span>,<span class="hljs-string">'10'</span>,<span class="hljs-string">'100'</span>,<span class="hljs-string">'1000'</span>,<span class="hljs-string">'10000'</span>, <span class="hljs-string">'100000'</span>, <span class="hljs-string">'1000000'</span>].map(<span class="hljs-built_in">parseInt</span>)
+</code></pre><h2 id="expected">Expected</h2>
+<pre><code><span class="hljs-keyword">var</span> <span class="hljs-keyword">result</span> = [<span class="hljs-number">1</span>, <span class="hljs-number">10</span>, <span class="hljs-number">100</span>, <span class="hljs-number">1000</span>, <span class="hljs-number">10000</span>, <span class="hljs-number">100000</span>, <span class="hljs-number">100000</span>];
+</code></pre>
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_82">
+                    <section class="exercise" id="section-gitbook_5">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -460,13 +453,46 @@
 </div>
 
 <div class="message">
-    <p>Why this is happening?</p>
+    <p>What&#39;s the result of executing Snippet 1 code?</p>
 
 </div>
-<div class="editor" style="height: 20px">
+<div class="editor" style="height: 20px">var result = ;</div>
+
+<pre class="hidden code-solution">var result = [1, NaN, 4, 27, 256, 3125, 46656];</pre>
+<pre class="hidden code-validation">assert(result[0] === 1 &amp;&amp; isNaN(result[1]) &amp;&amp; result[2] === 4 &amp;&amp; result[3] === 27 &amp;&amp; result[4] === 256 &amp;&amp;&amp; result[5] === 3125 &amp;&amp; result[6] === 46656);</pre>
+
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default action-submit">Submit</a>
+    <a href="#" class="btn btn-default action-solution">Solution</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
 </div>
 
-<pre class="hidden code-solution">This is happening because the hoisting problem. Remember that in Javascript there are no block variables.</pre>
+                    
+                    </section>
+                
+                    <section class="exercise" id="section-gitbook_7">
+                    
+                        <div class="header">
+    <h2>Exercise</h2>
+</div>
+<div class="alert alert-success">
+    <b>Correct!</b>
+</div>
+
+<div class="alert alert-danger error-message">
+    <b>False!</b>
+</div>
+
+<div class="message">
+    <p>Why?</p>
+
+</div>
+<div class="editor" style="height: 40px">
+</div>
+
+<pre class="hidden code-solution">
+</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 
@@ -479,7 +505,7 @@
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_84">
+                    <section class="exercise" id="section-gitbook_9">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -493,29 +519,13 @@
 </div>
 
 <div class="message">
-    <p>Please help me and fix this code to get &#39;Bert loves his Pidgeons&#39;.</p>
+    <p>We need to get the same array as in Expected 1, please fix the code:</p>
 
 </div>
-<div class="editor" style="height: 180px">var bird = &#39;Pidgeons&#39;;
-( function () {
-    if ( typeof bird === &#39;undefined&#39; ){
-        var bird = &#39;Rubber Duck&#39;;
-        console.log(&#39;Ernie loves his &#39; + bird );
-    } else {
-        console.log(&#39;Bert loves his &#39; + bird );
-    }
-}() );</div>
+<div class="editor" style="height: 20px">var result = [&#39;1&#39;,&#39;10&#39;,&#39;100&#39;,&#39;1000&#39;,&#39;10000&#39;, &#39;100000&#39;, &#39;1000000&#39;].map(parseInt)</div>
 
-<pre class="hidden code-solution">var bird = &#39;Pidgeons&#39;;
-( function () {
-    if ( typeof bird === &#39;undefined&#39; ){
-        bird = &#39;Rubber Duck&#39;;
-        console.log(&#39;Ernie loves his &#39; + bird );
-    } else {
-        console.log(&#39;Bert loves his &#39; + bird );
-    }
-}() );</pre>
-<pre class="hidden code-validation">assert(true);</pre>
+<pre class="hidden code-solution">var result = [&#39;1&#39;,&#39;10&#39;,&#39;100&#39;,&#39;1000&#39;,&#39;10000&#39;, &#39;100000&#39;, &#39;1000000&#39;].map(Number)</pre>
+<pre class="hidden code-validation">assert(result[0] === 1 &amp;&amp; result[1] === 10 &amp;&amp; result[2] === 100 &amp;&amp; result[3] === 1000 &amp;&amp; result[4] === 10000 &amp;&amp; result[5] === 100000 &amp;&amp; result[6] === 1000000 );</pre>
 
 
 <div class="btn-group btn-group-justified">
@@ -532,10 +542,10 @@
         </div>
 
         
-        <a href="../banking/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../undefined_values_in_array/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../objects1/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../variable_scope/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
