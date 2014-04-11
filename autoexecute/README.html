@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="1" data-basepath=".." data-revision="1397228540218">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="1" data-basepath=".." data-revision="1397229715555">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -432,8 +432,8 @@
                     
                         <h1 id="self-invoking-functions">Self Invoking Functions</h1>
 <p>I want to set variable &#39;a&#39; to 3 using a Self Invoking Function, can you help me?</p>
-<pre><code><span class="hljs-keyword">var</span> a;
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> <span class="hljs-comment">{ a = 3; }</span><span class="hljs-params">()</span>;</span>
+<pre><code><span class="hljs-keyword">var</span> testValue;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> <span class="hljs-comment">{ testValue = 3; }</span><span class="hljs-params">()</span>;</span>
 </code></pre>
                     
                     </section>
@@ -485,7 +485,7 @@
 </div>
 
 <div class="message">
-    <p>What is the value of variable &#39;a&#39;?</p>
+    <p>What is the value of variable &#39;testValue&#39;?</p>
 
 </div>
 <div class="editor" style="height: 20px">
@@ -521,11 +521,10 @@
     <p>Why?</p>
 
 </div>
-<div class="editor" style="height: 40px">
+<div class="editor" style="height: 20px">
 </div>
 
-<pre class="hidden code-solution">
-</pre>
+<pre class="hidden code-solution">The value of testValue is undefined because the function has not been autoexecuted.</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 
@@ -555,12 +554,12 @@
     <p>Write the code to execute this function adding only one more character to the sentence.</p>
 
 </div>
-<div class="editor" style="height: 40px">var a;
-function test() { a = 3; }();</div>
+<div class="editor" style="height: 40px">var testValue;
+function test() { testValue = 3; }();</div>
 
-<pre class="hidden code-solution">var a;
-!function test() { a = 3; }();</pre>
-<pre class="hidden code-validation">assert(a == 3);</pre>
+<pre class="hidden code-solution">var testValue;
+!function test() { testValue = 3; }();</pre>
+<pre class="hidden code-validation">assert(testValue == 3);</pre>
 
 
 <div class="btn-group btn-group-justified">
