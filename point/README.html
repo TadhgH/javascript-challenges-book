@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>Delete | Javascript Challenges</title>
+        <title>Point | Javascript Challenges</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,11 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../detectIE/README.html" />
         
-        
-        <link rel="prev" href="../conditionals_functions/README.html" />
+        <link rel="prev" href="../frozen/README.html" />
         
 
-        <meta property="og:title" content="Delete | Javascript Challenges">
+        <meta property="og:title" content="Point | Javascript Challenges">
         <meta property="og:site_name" content="Javascript Challenges">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -40,7 +38,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="7" data-basepath=".." data-revision="1397219673696">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="22" data-basepath=".." data-revision="1397219673696">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -72,7 +70,7 @@
             <a href="https://github.com/tcorral/javascript-challenges-book/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/delete/README.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/point/README.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         <li data-level="0" data-path="index.html">
@@ -285,7 +283,7 @@
             <div class="page-wrapper">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 90.9090909090909%;min-width: 86.36363636363636%;"></div>
+        <div class="inner" style="width: 68.18181818181819%;min-width: 63.63636363636363%;"></div>
     </div>
     <div class="chapters">
     
@@ -321,15 +319,15 @@
     
         <a href="../point/README.html" title="Point" class="chapter done " data-progress="22" style="left: 68.18181818181819%;"></a>
     
-        <a href="../hoisting1/README.html" title="Hoisting and Conditionals" class="chapter done new-chapter" data-progress="3" style="left: 72.72727272727273%;"></a>
+        <a href="../hoisting1/README.html" title="Hoisting and Conditionals" class="chapter  new-chapter" data-progress="3" style="left: 72.72727272727273%;"></a>
     
-        <a href="../objects1/README.html" title="Checking Properties" class="chapter done new-chapter" data-progress="4" style="left: 77.27272727272727%;"></a>
+        <a href="../objects1/README.html" title="Checking Properties" class="chapter  new-chapter" data-progress="4" style="left: 77.27272727272727%;"></a>
     
-        <a href="../objects2/README.html" title="Closure and Objects" class="chapter done new-chapter" data-progress="5" style="left: 81.81818181818181%;"></a>
+        <a href="../objects2/README.html" title="Closure and Objects" class="chapter  new-chapter" data-progress="5" style="left: 81.81818181818181%;"></a>
     
-        <a href="../conditionals_functions/README.html" title="Conditionals and Functions" class="chapter done new-chapter" data-progress="6" style="left: 86.36363636363636%;"></a>
+        <a href="../conditionals_functions/README.html" title="Conditionals and Functions" class="chapter  new-chapter" data-progress="6" style="left: 86.36363636363636%;"></a>
     
-        <a href="../delete/README.html" title="Delete" class="chapter done new-chapter" data-progress="7" style="left: 90.9090909090909%;"></a>
+        <a href="../delete/README.html" title="Delete" class="chapter  new-chapter" data-progress="7" style="left: 90.9090909090909%;"></a>
     
         <a href="../detectIE/README.html" title="Detect Internet Explorer" class="chapter  new-chapter" data-progress="8" style="left: 95.45454545454545%;"></a>
     
@@ -340,47 +338,16 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_25">
+                    <section class="normal" id="section-gitbook_109">
                     
-                        <h1 id="delete">Delete</h1>
-<p>Execute this code:</p>
-<pre><code><span class="hljs-reserved">var</span> name = <span class="hljs-string">'John'</span>,
-    obj = {
-        <span class="hljs-attribute">name</span>: <span class="hljs-string">'James'</span>
-    },
-    Animal,
-    mammal;
-
-Animal = <span class="hljs-reserved">function</span>(){};
-Animal.prototype.name = <span class="hljs-string">'animal'</span>;
-
-mammal = <span class="hljs-keyword">new</span> Animal();
-
-<span class="hljs-keyword">delete</span> name;
-
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'#1: '</span> + name);
-
-<span class="hljs-keyword">delete</span> obj.name;
-
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'#2: '</span> + obj.name);
-
-<span class="hljs-keyword">delete</span> obj.toString;
-
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'#3: '</span> + obj.toString);
-
-<span class="hljs-keyword">delete</span> mammal.name;
-
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'#4: '</span> + mammal.name);
-</code></pre><p>The execution of this code logs:</p>
-<pre><code><span class="hljs-preprocessor">#1: John</span>
-</code></pre><pre><code><span class="hljs-preprocessor">#2: undefined</span>
-</code></pre><pre><code>#<span class="hljs-number">3</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">toString</span><span class="hljs-params">()</span> {</span> [<span class="hljs-keyword">native</span> code] }
-</code></pre><pre><code><span class="hljs-preprocessor">#4: animal</span>
+                        <h1 id="point">Point</h1>
+<p>This challenge needs you to implement a Point class so that the following code returns true.</p>
+<pre><code><span class="hljs-keyword">new</span> Point( <span class="hljs-keyword">new</span> Point(<span class="hljs-number">10</span>, <span class="hljs-number">20</span>) + <span class="hljs-keyword">new</span> Point(<span class="hljs-number">30</span>, <span class="hljs-number">50</span>) ).toString() === <span class="hljs-string">'{40,70}'</span>;
 </code></pre>
                     
                     </section>
                 
-                    <section class="exercise" id="section-gitbook_26">
+                    <section class="exercise" id="section-gitbook_110">
                     
                         <div class="header">
     <h2>Exercise</h2>
@@ -394,7 +361,11 @@ mammal = <span class="hljs-keyword">new</span> Animal();
 </div>
 
 <div class="message">
-    <p>Why <strong>#1: John</strong> is logged?</p>
+    <p>Implement Point and assume that:</p>
+<ul>
+<li>Must be generic and be able to handle x and y values from 0..999</li>
+<li>The requirements to do it are to implement valueOf and toString methods.</li>
+</ul>
 
 </div>
 <div class="editor" style="height: 40px">
@@ -402,109 +373,7 @@ mammal = <span class="hljs-keyword">new</span> Animal();
 
 <pre class="hidden code-solution">
 </pre>
-<pre class="hidden code-validation">assert(true);</pre>
-
-
-<div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-default action-submit">Submit</a>
-    <a href="#" class="btn btn-default action-solution">Solution</a>
-    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
-</div>
-
-                    
-                    </section>
-                
-                    <section class="exercise" id="section-gitbook_28">
-                    
-                        <div class="header">
-    <h2>Exercise</h2>
-</div>
-<div class="alert alert-success">
-    <b>Correct!</b>
-</div>
-
-<div class="alert alert-danger error-message">
-    <b>False!</b>
-</div>
-
-<div class="message">
-    <p>Why <strong>#2: undefined</strong> is logged?</p>
-
-</div>
-<div class="editor" style="height: 40px">
-</div>
-
-<pre class="hidden code-solution">
-</pre>
-<pre class="hidden code-validation">assert(true);</pre>
-
-
-<div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-default action-submit">Submit</a>
-    <a href="#" class="btn btn-default action-solution">Solution</a>
-    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
-</div>
-
-                    
-                    </section>
-                
-                    <section class="exercise" id="section-gitbook_30">
-                    
-                        <div class="header">
-    <h2>Exercise</h2>
-</div>
-<div class="alert alert-success">
-    <b>Correct!</b>
-</div>
-
-<div class="alert alert-danger error-message">
-    <b>False!</b>
-</div>
-
-<div class="message">
-    <p>Why <strong>#3: function toString() { [native code] }</strong> is logged?</p>
-
-</div>
-<div class="editor" style="height: 40px">
-</div>
-
-<pre class="hidden code-solution">
-</pre>
-<pre class="hidden code-validation">assert(true);</pre>
-
-
-<div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-default action-submit">Submit</a>
-    <a href="#" class="btn btn-default action-solution">Solution</a>
-    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
-</div>
-
-                    
-                    </section>
-                
-                    <section class="exercise" id="section-gitbook_32">
-                    
-                        <div class="header">
-    <h2>Exercise</h2>
-</div>
-<div class="alert alert-success">
-    <b>Correct!</b>
-</div>
-
-<div class="alert alert-danger error-message">
-    <b>False!</b>
-</div>
-
-<div class="message">
-    <p>Why <strong>#4: animal</strong> is logged?</p>
-
-</div>
-<div class="editor" style="height: 40px">
-</div>
-
-<pre class="hidden code-solution">
-</pre>
-<pre class="hidden code-validation">assert(true);</pre>
+<pre class="hidden code-validation">assert(new Point( new Point(10, 20) + new Point(30, 50) ).toString() === &#39;{40,70}&#39;);</pre>
 
 
 <div class="btn-group btn-group-justified">
@@ -521,10 +390,8 @@ mammal = <span class="hljs-keyword">new</span> Animal();
         </div>
 
         
-        <a href="../conditionals_functions/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../frozen/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../detectIE/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
