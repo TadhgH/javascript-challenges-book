@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="14" data-basepath=".." data-revision="1397238823786">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="14" data-basepath=".." data-revision="1397293535878">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -471,7 +471,7 @@
 <div class="editor" style="height: 20px">
 </div>
 
-<pre class="hidden code-solution">You have to be careful when using |= because when it&#39;s used to perform a test besides an object it will not modify the original value, then it remains to be zero.</pre>
+<pre class="hidden code-solution">You have to be careful when using |= because is a Bitwise-Or assignment operator and the bitwise representation of {} or [] doesn&#39;t evaluate to 1. To fix the problem we should use &#39;nResult |= !!aSymbols[i];&#39;</pre>
 <pre class="hidden code-validation">assert(true);</pre>
 
 
@@ -484,16 +484,17 @@
                     
                     </section>
                 
+
+                    
+                    <a href="../fooling_around_boolean/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+                    
+                    
+                    <a href="../ghost_array/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+                    
                 </div>
             </div>
         </div>
 
-        
-        <a href="../fooling_around_boolean/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
-        
-        
-        <a href="../ghost_array/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
-        
     </div>
 </div>
 
