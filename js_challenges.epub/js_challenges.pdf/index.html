@@ -1,0 +1,2991 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Javascript Challenges</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="tcorral">
+        <meta name="description" content="Challenge your self to learn and understand the most obscure and tricky parts of Javascript.">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        
+
+        <meta property="og:title" content="Javascript Challenges">
+        <meta property="og:site_name" content="Javascript Challenges">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/tcorral">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+        
+
+        <link rel="stylesheet" href="gitbook/style.css">
+        
+<link rel="stylesheet" href="gitbook/print.css">
+
+        
+    </head>
+    <body>
+        
+    
+    <section id="cover">
+        <h1>Javascript Challenges</h1>
+        
+        <h2>By <a href="https://github.com/tcorral">@tcorral</a></h2>
+        
+    </section>
+
+    
+    <section id="summary">
+        <h1>Summary</h1>
+
+        <ul class="summary">
+            <li>
+                <a href="#README.md">Introduction</a>
+            </li>
+            
+                <li>
+                    <a href="#README.md">1) Intro</a>
+                    
+                    <ul>
+                        
+                            <li>
+                                <a href="#autoexecute/README.md">1.1) Self Invoking Functions</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#banking/README.md">1.2) Floats Operations Imprecision</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#hoisting1/README.md">1.3) Hoisting and Conditionals</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#objects1/README.md">1.4) Checking Properties</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#objects2/README.md">1.5) Closure and Objects</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#conditionals_functions/README.md">1.6) Conditionals and Functions</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#delete/README.md">1.7) Delete</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#detectIE/README.md">1.8) Detect Internet Explorer</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#utf8/README.md">1.9) Don&#39;t judge a book by its cover</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#encapsulate_collection/README.md">1.10) Encapsulate collection</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#even_odd/README.md">1.11) Even or Odd</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#nested_loop/README.md">1.12) Exit nested loop</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#fooling_around_boolean/README.md">1.13) #1 Fooling around boolean</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#fooling_around_boolean_2/README.md">1.14) #2 Fooling around boolean</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#ghost_array/README.md">1.15) Ghost Array</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#input_search/README.md">1.16) Input Search</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#invaluable/README.md">1.17) Invaluable</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#json/README.md">1.18) JSON</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#nested_scopes/README.md">1.19) Nested Scopes</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#now_you_see_me/README.md">1.20) Now you see me...</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#frozen/README.md">1.21) Frozen</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#point/README.md">1.22) Point</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#running_man/README.md">1.23) Running Man</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#scope/README.md">1.24) Scope</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#spartacus/README.md">1.25) Spartacus</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#terminator/README.md">1.26) Terminator</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#timers/README.md">1.27) Timers</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#undefined_values_in_array/README.md">1.28) Undefined Values in Arrays</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#array_map_parseint/README.md">1.29) Array Map and ParseInt</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#variable_scope/README.md">1.30) Variable Scope</a>
+                            </li>
+                        
+                    </ul>
+                    
+                </li>
+            
+        </ul>
+    </section>
+
+    
+    <section>
+        <article id="README.md">
+        
+            
+                <h1 id="javascript-challenges">Javascript Challenges</h1>
+<p>This book will challenge you to learn and understand the most obscure and tricky parts of Javascript.</p>
+<p>In order to perform the best that you can I recommend you not to cheat taking a look at solutions before you suggest one.</p>
+<p>This book can be used as a learning resource for Javascript training if you want, but please send a tweet recommending us to other people.</p>
+<p>I hope you enjoy this book because this is the purpose of this book.</p>
+<p>Feedback is welcome.</p>
+<p>Thanks a lot to <a href="http://www.gitbook.io/" target="_blank">GITBOOK team</a> for it&#39;s amazing project to write your own books using Github repos.</p>
+
+            
+        
+        </article>
+    </section>
+    
+        
+        <section>
+            <article id="README.md" class="new-chapter">
+                <h1>Intro</h1>
+            </article>
+
+            
+                
+                    <article id="autoexecute/README.md">
+                    
+                            
+                                <h1 id="self-invoking-functions">Self Invoking Functions</h1>
+<p>I want to set variable &#39;testValue&#39; to 3 using a Self Invoking Function, can you help me?</p>
+<pre><code><span class="hljs-keyword">var</span> testValue;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> <span class="hljs-comment">{ testValue = 3; }</span><span class="hljs-params">()</span>;</span>
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #1</div>
+                                    <p>What is the result of executing the previous code?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #2</div>
+                                    <p>What is the value of variable &#39;testValue&#39;?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #3</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #4</div>
+                                    <p>Write the code to execute this function adding only one more character to the sentence.</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> testValue;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> <span class="hljs-comment">{ testValue = 3; }</span><span class="hljs-params">()</span>;</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="banking/README.md">
+                    
+                            
+                                <h1 id="floats-operations-imprecision">Floats Operations Imprecision</h1>
+<p>Welcome to Bank Ruptcy, and we want to hire you to fix our algorithm to exchange the stock options, because we have some weird behaviour.</p>
+<p>This is our algorithm to exchange the stock options:</p>
+<pre><code><span class="hljs-keyword">var</span> stockOptionsCost = <span class="hljs-number">10.70</span>, paid = <span class="hljs-number">20.80</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateChange</span><span class="hljs-params">()</span> {</span>
+
+    <span class="hljs-keyword">return</span> paid - stockOptionsCost;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateAmountOfStockOptions</span> <span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">return</span> paid / stockOptionsCost;
+}
+
+<span class="hljs-keyword">var</span> amountStockOptions = calculateAmountOfStockOptions();
+<span class="hljs-keyword">var</span> yourChange = calculateChange();
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #5</div>
+                                    <p>What returns calculateAmountOfStockOptions ?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #6</div>
+                                    <p>What is the value of calculateChange ? Input the number value.</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #7</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #8</div>
+                                    <p>Please fix this code to return the correct change.</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> stockOptionsCost = <span class="hljs-number">10.70</span>, paid = <span class="hljs-number">20.80</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateChange</span><span class="hljs-params">()</span> {</span>
+
+    <span class="hljs-keyword">return</span> paid - stockOptionsCost;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateAmountOfStockOptions</span> <span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">return</span> paid / stockOptionsCost;
+}
+
+<span class="hljs-keyword">var</span> amountStockOptions = calculateAmountOfStockOptions();
+<span class="hljs-keyword">var</span> yourChange = calculateChange();</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="hoisting1/README.md">
+                    
+                            
+                                <h1 id="hoisting-and-conditionals-statements">Hoisting and Conditionals Statements</h1>
+<p>I&#39;m Ernie and my friend is Bert and we wrote this code to tell other people which type of birds we like.</p>
+<pre><code><span class="hljs-keyword">var</span> bird = <span class="hljs-string">'Pidgeons'</span>;
+( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">if</span> ( <span class="hljs-keyword">typeof</span> bird === <span class="hljs-string">'undefined'</span> ){
+        <span class="hljs-keyword">var</span> bird = <span class="hljs-string">'Rubber Duck'</span>;
+        console.log(<span class="hljs-string">'Ernie loves his '</span> + bird );
+    } <span class="hljs-keyword">else</span> {
+        console.log(<span class="hljs-string">'Bert loves his '</span> + bird );
+    }
+}() );
+</code></pre><p>There should be a problem with our code because for some reason I only see &#39;Ernie loves his Rubber Duck&#39; when I expected to see &#39;Bert loves his Pidgeons&#39;, could you help me?</p>
+
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #9</div>
+                                    <p>Why this is happening?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #10</div>
+                                    <p>Please help me and fix this code to get &#39;Bert loves his Pidgeons&#39;.</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> bird = <span class="hljs-string">'Pidgeons'</span>;
+( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">if</span> ( <span class="hljs-keyword">typeof</span> bird === <span class="hljs-string">'undefined'</span> ){
+        <span class="hljs-keyword">var</span> bird = <span class="hljs-string">'Rubber Duck'</span>;
+        console.log(<span class="hljs-string">'Ernie loves his '</span> + bird );
+    } <span class="hljs-keyword">else</span> {
+        console.log(<span class="hljs-string">'Bert loves his '</span> + bird );
+    }
+}() );</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="objects1/README.md">
+                    
+                            
+                                <h1 id="check-properties">Check properties</h1>
+<p>We have the following code...</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> key,
+    obj = {
+        name: <span class="hljs-string">'john'</span>,
+        surname: <span class="hljs-string">'doe'</span>
+    };
+
+
+<span class="hljs-keyword">for</span> ( key <span class="hljs-keyword">in</span> obj ) {
+    <span class="hljs-keyword">if</span> ( obj.hasOwnProperty( key ) ) {
+       console.log( key + <span class="hljs-string">' exists in obj'</span> );
+       console.log( key + <span class="hljs-string">': '</span> + obj[key] );
+       <span class="hljs-keyword">continue</span>;
+    }
+    console.log( key + <span class="hljs-string">" doesn't exist in obj"</span> );
+}
+</code></pre>
+<p>... and the result of executing it is...</p>
+<pre><code>name exists <span class="hljs-keyword">in</span> obj
+<span class="hljs-label">name:</span> john
+surname exists <span class="hljs-keyword">in</span> obj
+<span class="hljs-label">surname:</span> doe
+</code></pre><p>... but we want to get the following result, can you help us?</p>
+<pre><code>name doesn<span class="hljs-attribute">'t</span> exist <span class="hljs-keyword">in</span> obj
+surname exists <span class="hljs-keyword">in</span> obj
+surname: doe
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #11</div>
+                                    <p>Write the code to get the expected result.</p>
+
+                                    <pre><code><span class="hljs-reserved">var</span> key,
+    obj = {
+        <span class="hljs-attribute">name</span>: <span class="hljs-string">'john'</span>,
+        <span class="hljs-attribute">surname</span>: <span class="hljs-string">'doe'</span>
+    };
+
+
+<span class="hljs-keyword">for</span> ( key <span class="hljs-keyword">in</span> obj ) {
+    <span class="hljs-keyword">if</span> ( obj.hasOwnProperty( key ) ) {
+       <span class="hljs-built_in">console</span>.log( key + <span class="hljs-string">' exists in obj'</span> );
+       <span class="hljs-built_in">console</span>.log( key + <span class="hljs-string">': '</span> + obj[key] );
+       <span class="hljs-keyword">continue</span>;
+    }
+    <span class="hljs-built_in">console</span>.log( key + <span class="hljs-string">" doesn't exist in obj"</span> );
+}</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="objects2/README.md">
+                    
+                            
+                                <h1 id="closures-and-objects">Closures and Objects</h1>
+<p>As you know Javascript has two different ways to treat the data it receives as arguments of a function:</p>
+<ul>
+<li>Primitives are passed by copy.</li>
+<li>Objects are passed by reference.</li>
+</ul>
+<p>See the following code:</p>
+<pre><code><span class="hljs-reserved">var</span> oPerson = { <span class="hljs-attribute">name</span>: <span class="hljs-string">'john'</span> };
+
+(<span class="hljs-reserved">function</span>(oTeacher) {
+   <span class="hljs-built_in">window</span>.getTeacher= <span class="hljs-reserved">function</span>() {
+      <span class="hljs-built_in">console</span>.log(oTeacher);
+   };
+}(oPerson));
+
+<span class="hljs-built_in">window</span>.getTeacher();
+
+oPerson.surname = <span class="hljs-string">'doe'</span>;
+
+<span class="hljs-built_in">window</span>.getTeacher();
+
+oPerson = { <span class="hljs-attribute">name</span>: <span class="hljs-string">'mary'</span>, <span class="hljs-attribute">surname</span>: <span class="hljs-string">'sullivan'</span> };
+
+<span class="hljs-built_in">window</span>.getTeacher();
+</code></pre><p>The first execution of window.getTeacher returns:</p>
+<pre><code><span class="hljs-tag">Object</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">name</span>:<span class="hljs-value"> <span class="hljs-string">"john"</span> </span></span></span>}
+</code></pre><p>The second execution of window.getTeacher returns:</p>
+<pre><code><span class="hljs-tag">Object</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">name</span>:<span class="hljs-value"> <span class="hljs-string">"john"</span>, surname: <span class="hljs-string">"doe"</span> </span></span></span>}
+</code></pre><p>The third execution of window.getTeacher returns:</p>
+<pre><code><span class="hljs-tag">Object</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">name</span>:<span class="hljs-value"> <span class="hljs-string">"john"</span>, surname: <span class="hljs-string">"doe"</span> </span></span></span>}
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #12</div>
+                                    <p>Explain why this is happening:</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #13</div>
+                                    <p>Fix the code to make the third execution return <code>Object { name: &quot;mary&quot;, surname: &quot;sullivan&quot; }</code></p>
+
+                                    <pre><code><span class="hljs-reserved">var</span> oPerson = { <span class="hljs-attribute">name</span>: <span class="hljs-string">'john'</span>};
+
+(<span class="hljs-reserved">function</span>(oTeacher) {
+   <span class="hljs-built_in">window</span>.getTeacher= <span class="hljs-reserved">function</span>() {
+      <span class="hljs-built_in">console</span>.log(oTeacher);
+   };
+}(oPerson));
+
+<span class="hljs-built_in">window</span>.getTeacher();
+
+oPerson.surname = <span class="hljs-string">'doe'</span>;
+
+<span class="hljs-built_in">window</span>.getTeacher();
+
+oPerson = { <span class="hljs-attribute">name</span>: <span class="hljs-string">'mary'</span>, <span class="hljs-attribute">surname</span>: <span class="hljs-string">'sullivan'</span> };
+
+<span class="hljs-built_in">window</span>.getTeacher();</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="conditionals_functions/README.md">
+                    
+                            
+                                <h1 id="conditionals-and-functions">Conditionals and functions</h1>
+<p>Read and execute the following snippets of code:</p>
+<h2 id="snippet-1-">Snippet 1:</h2>
+<pre><code><span class="hljs-keyword">var</span> test;
+
+<span class="hljs-keyword">if</span> ( <span class="hljs-literal">true</span> ) {
+    test = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+        console.log( <span class="hljs-string">"That's true"</span> );
+    };
+} <span class="hljs-keyword">else</span> {
+    test = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+        console.log( <span class="hljs-string">"That's false"</span> );
+    };
+}
+
+test(); <span class="hljs-comment">// Shows "That's true"</span>
+</code></pre><h2 id="snippet-2-">Snippet 2:</h2>
+<pre><code><span class="hljs-keyword">if</span> ( <span class="hljs-literal">true</span> ) {
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> {</span>
+        console.log( <span class="hljs-string">"That's true"</span> );
+    }
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> {</span>
+        console.log( <span class="hljs-string">"That's false"</span> );
+    }
+}
+
+test(); <span class="hljs-comment">// Shows "That's false"</span>
+</code></pre><h2 id="snippet-3-">Snippet 3:</h2>
+<pre><code><span class="hljs-keyword">var</span> test;
+
+<span class="hljs-keyword">if</span> ( <span class="hljs-literal">true</span> ) {
+    test = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+        console.log( <span class="hljs-string">"That's true"</span> );
+    };
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> {</span>
+        console.log( <span class="hljs-string">"That's false"</span> );
+    }
+}
+
+test(); <span class="hljs-comment">// Shows "That's true"</span>
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #14</div>
+                                    <p>What&#39;s the reason of this behaviour?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="delete/README.md">
+                    
+                            
+                                <h1 id="delete">Delete</h1>
+<p>Execute this code:</p>
+<pre><code><span class="hljs-reserved">var</span> name = <span class="hljs-string">'John'</span>,
+    obj = {
+        <span class="hljs-attribute">name</span>: <span class="hljs-string">'James'</span>
+    },
+    Animal,
+    mammal;
+
+Animal = <span class="hljs-reserved">function</span>(){};
+Animal.prototype.name = <span class="hljs-string">'animal'</span>;
+
+mammal = <span class="hljs-keyword">new</span> Animal();
+mammal.name = <span class="hljs-string">'mammal'</span>;
+
+<span class="hljs-keyword">delete</span> name;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'#1: '</span> + name);
+
+<span class="hljs-keyword">delete</span> obj.name;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'#2: '</span> + obj.name);
+
+<span class="hljs-keyword">delete</span> obj.toString;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'#3: '</span> + obj.toString);
+
+<span class="hljs-keyword">delete</span> mammal.name;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'#4: '</span> + mammal.name);
+</code></pre><p>The execution of this code logs:</p>
+<pre><code><span class="hljs-preprocessor">#1: John</span>
+</code></pre><pre><code><span class="hljs-preprocessor">#2: undefined</span>
+</code></pre><pre><code>#<span class="hljs-number">3</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">toString</span><span class="hljs-params">()</span> {</span> [<span class="hljs-keyword">native</span> code] }
+</code></pre><pre><code><span class="hljs-preprocessor">#4: animal</span>
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #15</div>
+                                    <p>Why <strong>#1: John</strong> is logged?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #16</div>
+                                    <p>Why <strong>#2: undefined</strong> is logged?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #17</div>
+                                    <p>Why <strong>#3: function toString() { [native code] }</strong> is logged?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #18</div>
+                                    <p>Why <strong>#4: animal</strong> is logged?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="detectIE/README.md">
+                    
+                            
+                                <h1 id="detect-internet-explorer">Detect Internet Explorer</h1>
+
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #19</div>
+                                    <p>To accomplish a task you need to detect Internet Explorer browsers without using browser sniffing.</p>
+<p>The function to detect the browser can be executed in...</p>
+<ul>
+<li>Opera</li>
+<li>Chrome</li>
+<li>Firefox</li>
+<li>Phantom</li>
+<li>Internet Explorer</li>
+</ul>
+<p>... and it should return <em>true</em> only if the browser is Internet Explorer.</p>
+<p>The function should detect only that browser is Internet Explorer, versions are not relevant but you must perform the action with a single code.</p>
+<p>Write the code:</p>
+
+                                    <pre><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isIE</span><span class="hljs-params">()</span> {</span>
+
+}</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="utf8/README.md">
+                    
+                            
+                                <h1 id="don-t-judge-a-book-by-its-cover">Don&#39;t judge a book by its cover</h1>
+<p>Copy and run, individually, the following lines of code in your console:</p>
+<pre><code>console.<span class="hljs-keyword">log</span>( <span class="hljs-string">'#1:'</span>, <span class="hljs-string">'mañana'</span> === <span class="hljs-string">'mañana'</span> );
+</code></pre><pre><code>console.<span class="hljs-keyword">log</span>( <span class="hljs-string">'#2:'</span>, <span class="hljs-string">'mañana'</span> === <span class="hljs-string">'mañana'</span> );
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #20</div>
+                                    <p>Why the first execution of console.log logs <strong>#1: true</strong>?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #21</div>
+                                    <p>Why the second execution of console.log logs <strong>#2: false</strong>?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="encapsulate_collection/README.md">
+                    
+                            
+                                <h1 id="encapsulate-collection">Encapsulate collection</h1>
+<p>We have the following code:</p>
+<pre><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Order</span><span class="hljs-params">()</span> {</span>
+         <span class="hljs-keyword">this</span>.orderLines = [];
+         <span class="hljs-keyword">this</span>.orderTotal = <span class="hljs-number">0</span>;
+}
+Order.prototype.getOrderLines = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+         <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.orderLines;
+};
+Order.prototype.addOrderLine = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(orderLine)</span> {</span>
+         <span class="hljs-keyword">this</span>.orderTotal += orderLine.total;
+         <span class="hljs-keyword">this</span>.orderLines.push(orderLine);
+};
+Order.prototype.removeOrderLine = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(orderLineItem)</span> {</span>
+         <span class="hljs-keyword">var</span> orderTotal, orderLine;
+         orderLine = <span class="hljs-keyword">this</span>.orderLines.map(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(order)</span> {</span>
+                  <span class="hljs-keyword">return</span> order === orderLineItem;
+         })[<span class="hljs-number">0</span>];
+
+         <span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> orderLine === <span class="hljs-string">'undefined'</span> || orderLine === <span class="hljs-literal">null</span>) {
+                  <span class="hljs-keyword">return</span>;
+         }
+         <span class="hljs-keyword">this</span>.orderTotal -= orderLine.total;
+         <span class="hljs-keyword">this</span>.orderLines.splice(<span class="hljs-keyword">this</span>.orderTotal, <span class="hljs-number">1</span>);
+};
+</code></pre><pre><code><span class="hljs-built_in">var</span> <span class="hljs-keyword">order</span> <span class="hljs-subst">=</span> <span class="hljs-literal">new</span> <span class="hljs-keyword">Order</span>();
+<span class="hljs-keyword">order</span><span class="hljs-built_in">.</span>addOrderLine( { total: <span class="hljs-number">10</span> } );
+console<span class="hljs-built_in">.</span><span class="hljs-keyword">log</span>(<span class="hljs-keyword">order</span><span class="hljs-built_in">.</span>getOrderLines());  <span class="hljs-comment">// [ { total: 10 } ]</span>
+console<span class="hljs-built_in">.</span><span class="hljs-keyword">log</span>(<span class="hljs-keyword">order</span><span class="hljs-built_in">.</span>orderTotal);   <span class="hljs-comment">// 10</span>
+</code></pre><p>The problem with this code is that anyone could get access to orderLines and add or modify values without increasing or decreasing orderTotal.</p>
+<pre><code><span class="hljs-keyword">order</span>.orderLines[<span class="hljs-number">0</span>] = { total: <span class="hljs-number">20</span> };
+console.log(<span class="hljs-keyword">order</span>.getOrderLines()); <span class="hljs-comment">// [ { total: 20 } ]</span>
+console.log(<span class="hljs-keyword">order</span>.orderTotal);  <span class="hljs-comment">// 10;</span>
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #22</div>
+                                    <p>Modify the code to encapsulate the collection to avoid this issue.</p>
+
+                                    <pre><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Order</span><span class="hljs-params">()</span> {</span>
+         <span class="hljs-keyword">this</span>.orderLines = [];
+         <span class="hljs-keyword">this</span>.orderTotal = <span class="hljs-number">0</span>;
+}
+Order.prototype.getOrderLines = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+         <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.orderLines;
+};
+Order.prototype.addOrderLine = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(orderLine)</span> {</span>
+         <span class="hljs-keyword">this</span>.orderTotal += orderLine.total;
+         <span class="hljs-keyword">this</span>.orderLines.push(orderLine);
+};
+Order.prototype.removeOrderLine = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(orderLineItem)</span> {</span>
+         <span class="hljs-keyword">var</span> orderTotal, orderLine;
+         orderLine = <span class="hljs-keyword">this</span>.orderLines.map(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(order)</span> {</span>
+                  <span class="hljs-keyword">return</span> order === orderLineItem;
+         })[<span class="hljs-number">0</span>];
+
+         <span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> orderLine === <span class="hljs-string">'undefined'</span> || orderLine === <span class="hljs-literal">null</span>) {
+                  <span class="hljs-keyword">return</span>;
+         }
+         <span class="hljs-keyword">this</span>.orderTotal -= orderLine.total;
+         <span class="hljs-keyword">this</span>.orderLines.splice(<span class="hljs-keyword">this</span>.orderTotal, <span class="hljs-number">1</span>);
+};</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="even_odd/README.md">
+                    
+                            
+                                <h1 id="even-or-odd">Even or Odd</h1>
+<p>We have the following code that should return only the odd numbers in reverse order that are in values...</p>
+<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">var</span> values = [<span class="hljs-number">3</span>, <span class="hljs-number">8</span>, <span class="hljs-string">'15'</span>, <span class="hljs-built_in">Number</span>.MAX_VALUE, <span class="hljs-literal">Infinity</span>, -<span class="hljs-number">23</span>],
+        oddValues = [],
+        index,
+        lenValues = values.length,
+        isOdd = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( value )</span> {</span>
+            <span class="hljs-keyword">return</span> (value % <span class="hljs-number">2</span>) !== <span class="hljs-number">0</span>;
+        };
+
+    <span class="hljs-keyword">while</span>(lenValues--) {
+        <span class="hljs-keyword">if</span> ( isOdd( values[lenValues] ) ) {
+            oddValues.push( values[lenValues] );
+        }
+    }
+    console.log( oddValues );
+}());
+</code></pre>
+<p>...but when this code is executed we get <code>[-23, Infinity, &quot;15&quot;, 3]</code>.</p>
+<p>Ah! Maybe Number.MAX_VALUE is a even number then why not substract 1 and check it again?</p>
+<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">var</span> values = [<span class="hljs-number">3</span>, <span class="hljs-number">8</span>, <span class="hljs-string">'15'</span>, (<span class="hljs-built_in">Number</span>.MAX_VALUE -<span class="hljs-number">1</span>), <span class="hljs-literal">Infinity</span>, -<span class="hljs-number">23</span>],
+        oddValues = [],
+        index,
+        lenValues = values.length,
+        isOdd = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( value )</span> {</span>
+            <span class="hljs-keyword">return</span> (value % <span class="hljs-number">2</span>) !== <span class="hljs-number">0</span>;
+        };
+
+    <span class="hljs-keyword">while</span>(lenValues--) {
+        <span class="hljs-keyword">if</span> ( isOdd( values[lenValues] ) ) {
+            oddValues.push( values[lenValues] );
+        }
+    }
+    console.log( oddValues );
+}());
+</code></pre>
+<p>...but when this code is executed we get <code>[-23, Infinity, &quot;15&quot;, 3]</code> again.</p>
+
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #23</div>
+                                    <p>Please explain why Number.MAX_VALUE has not been added:</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #24</div>
+                                    <p>Write the code to avoid Infinity to be added.</p>
+
+                                    <pre><code><span class="hljs-list">(<span class="hljs-title">function</span><span class="hljs-list">()</span> <span class="hljs-collection">{
+    var values = <span class="hljs-collection">[3,<span class="hljs-number"> 8</span>, '15', Number.MAX_VALUE, Infinity, -23]</span>,
+        oddValues = <span class="hljs-collection">[]</span>,
+        index,
+        lenValues = values.length,
+        isOdd = function <span class="hljs-list">( value )</span> <span class="hljs-collection">{
+            return <span class="hljs-list">(<span class="hljs-title">value</span> %<span class="hljs-number"> 2</span>)</span> !==<span class="hljs-number"> 0</span><span class="hljs-comment">;</span>
+        }</span><span class="hljs-comment">;</span>
+
+    while<span class="hljs-list">(<span class="hljs-title">lenValues--</span>)</span> <span class="hljs-collection">{
+        if <span class="hljs-list">( isOdd<span class="hljs-list">( values<span class="hljs-collection">[lenValues]</span> )</span> )</span> <span class="hljs-collection">{
+            oddValues.push<span class="hljs-list">( values<span class="hljs-collection">[lenValues]</span> )</span><span class="hljs-comment">;</span>
+        }</span>
+    }</span>
+    console.log<span class="hljs-list">( oddValues )</span><span class="hljs-comment">;</span>
+}</span><span class="hljs-list">()</span>)</span><span class="hljs-comment">;</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="nested_loop/README.md">
+                    
+                            
+                                <h1 id="exit-nested-loop">Exit nested loop</h1>
+<p>How to exit of a nested loop.</p>
+
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #25</div>
+                                    <p>Make the modifications to the following code so that  when it&#39;s executed it should exit the first time indexInnerLoop has a value of 10 and indexOuterLoop has a value of 0.</p>
+
+                                    <pre><code>var indexOuterLoop, iterationsOuterLoop = <span class="hljs-number">1000</span>, indexInnerLoop, iterationsInnerLoop = <span class="hljs-number">100</span>;
+
+<span class="hljs-keyword">for</span> (indexOuterLoop = <span class="hljs-number">0</span>; indexOuterLoop &lt; <span class="hljs-number">1000</span>; indexOuterLoop++)
+{
+     <span class="hljs-keyword">for</span> (indexInnerLoop = <span class="hljs-number">0</span>; indexInnerLoop &lt; iterationsInnerLoop; indexInnerLoop++)
+     {
+        <span class="hljs-keyword">if</span> (indexInnerLoop === <span class="hljs-number">10</span>)
+        {
+            console.<span class="hljs-keyword">log</span>( <span class="hljs-string">'indexInnerLoop is equals to 10'</span> );
+            <span class="hljs-keyword">break</span>;
+        }
+     }
+}
+
+console.<span class="hljs-keyword">log</span>( indexOuterLoop );  <span class="hljs-comment">// Should log 0.</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="fooling_around_boolean/README.md">
+                    
+                            
+                                <h1 id="-1-fooling-around-boolean">#1 Fooling around boolean</h1>
+<p>Look at the following &quot;implementation&quot; of a xor method on the prototype of the Boolean type.</p>
+<pre><code><span class="hljs-built_in">Boolean</span>.prototype.xor = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( value )</span> {</span> <span class="hljs-keyword">return</span> !!<span class="hljs-keyword">this</span> !== !!value; };
+</code></pre><p>When we execute the following statement we get an unexpected result.</p>
+<pre><code><span class="hljs-literal">false</span>.<span class="hljs-keyword">xor</span>(<span class="hljs-literal">false</span>);   // =&gt; <span class="hljs-literal">true</span>
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #26</div>
+                                    <p>Why does xor resolves in an unexpected manner?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #27</div>
+                                    <p>Write the code to fix the implementation of xor method:</p>
+
+                                    <pre><code><span class="hljs-built_in">Boolean</span>.prototype.xor = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( value )</span> {</span> <span class="hljs-keyword">return</span> !!<span class="hljs-keyword">this</span> !== !!value; };</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="fooling_around_boolean_2/README.md">
+                    
+                            
+                                <h1 id="-2-fooling-around-boolean">#2 Fooling around boolean</h1>
+<p>All the following statements are true</p>
+<pre><code><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span>{} == <span class="hljs-function_or_atom">true</span>;
+</code></pre><pre><code>[] == <span class="hljs-literal">false</span>;
+</code></pre><p>We have the following code:</p>
+<pre><code>var hasTruthyStuff = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(aSymbols)</span> {</span>
+    var nResult = <span class="hljs-number">0</span>,
+        <span class="hljs-built_in">i</span> = <span class="hljs-number">0</span>,
+        nLen = <span class="hljs-transposed_variable">aSymbols.</span><span class="hljs-built_in">length</span>;
+
+    <span class="hljs-keyword">for</span> (; <span class="hljs-built_in">i</span> &lt; nLen; <span class="hljs-built_in">i</span>++) <span class="hljs-cell">{
+        nResult |= aSymbols[i];
+    }</span>
+    <span class="hljs-keyword">return</span> !!nResult;
+};
+</code></pre><p>But when we execute the following statement it returns false when we expected to return true because {} should return true.</p>
+<pre><code><span class="hljs-function"><span class="hljs-title">hasTruthyStuff</span><span class="hljs-params">([<span class="hljs-tuple">{}</span>,[], <span class="hljs-number">0</span>])</span></span>
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #28</div>
+                                    <p>Why does calling the previous statement returns false?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="ghost_array/README.md">
+                    
+                            
+                                <h1 id="ghost-array">Ghost Array</h1>
+<p>Take a look at this code:</p>
+<h2 id="snippet-1">Snippet 1</h2>
+<pre><code>var arr = [];
+arr[<span class="hljs-number">999</span>] = <span class="hljs-string">'john'</span>;
+console.<span class="hljs-built_in">log</span>(arr.<span class="hljs-built_in">length</span>);
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #29</div>
+                                    <p>What is the result of execute &quot;Snippet 1&quot; code?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <h2 id="snippet-2">Snippet 2</h2>
+<pre><code>var arr = [];
+arr[<span class="hljs-number">4294967295</span>] = <span class="hljs-string">'james'</span>;
+console.<span class="hljs-built_in">log</span>(arr.<span class="hljs-built_in">length</span>);
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #30</div>
+                                    <p>What is the result of execute &quot;Snippet 2&quot; code?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #31</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <h2 id="snippet-3">Snippet 3</h2>
+<pre><code><span class="hljs-reserved">var</span> arr = [];
+arr[<span class="hljs-number">4294967295</span>] = <span class="hljs-string">'james'</span>;
+<span class="hljs-built_in">console</span>.log(arr[<span class="hljs-number">4294967295</span>]);
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #32</div>
+                                    <p>What is the result of execute &quot;Snippet 3&quot; code?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #33</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <h2 id="snippet-4">Snippet 4</h2>
+<pre><code><span class="hljs-keyword">var</span> arr = [];
+arr[<span class="hljs-built_in">Number</span>.MIN_VALUE] =  <span class="hljs-string">'mary'</span>;
+console.log(arr.length);
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #34</div>
+                                    <p>What is the result of execute &quot;Snippet 4&quot; code?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #35</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <h2 id="snippet-5">Snippet 5</h2>
+<pre><code><span class="hljs-keyword">var</span> arr = [];
+arr[<span class="hljs-built_in">Number</span>.MIN_VALUE] =  <span class="hljs-string">'mary'</span>;
+console.log(arr[<span class="hljs-built_in">Number</span>.MIN_VALUE]);
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #36</div>
+                                    <p>What is the result of execute &quot;Snippet 5&quot; code?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #37</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="input_search/README.md">
+                    
+                            
+                                <h1 id="input-search">Input Search</h1>
+<p>Reviewing the code of your colleague you have found this snipped of code:</p>
+<pre><code>$( document ).ready( <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+  $( <span class="hljs-string">'#inputSearch'</span> ).keypress( <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+      $.ajax( {
+        url: <span class="hljs-string">'http://www.domain.com/search'</span>,
+        data: <span class="hljs-keyword">this</span>.value,
+        success: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( data )</span>
+        {</span>
+            <span class="hljs-keyword">var</span> results = data.results;
+            $( <span class="hljs-string">'#list'</span> ).empty();
+            $.each( data, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( item )</span> {</span>
+                $( <span class="hljs-string">'#list'</span> ).append( <span class="hljs-string">'&lt;li&gt;'</span> + item + <span class="hljs-string">'&lt;/li&gt;'</span> );
+            } );
+
+        },
+        error: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( xhr, status, error )</span> {</span>
+            console.log( <span class="hljs-string">'Something goes wrong!'</span>, status, error.message );
+        }
+      } );
+  } );
+} );
+</code></pre><p>In this code there is a performance issue that should be fixed, could you help us?</p>
+
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #38</div>
+                                    <p>Fix the performance issue:</p>
+
+                                    <pre><code>$( document ).ready( <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+  $( <span class="hljs-string">'#inputSearch'</span> ).keypress( <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+      $.ajax( {
+        url: <span class="hljs-string">'http://www.domain.com/search'</span>,
+        data: <span class="hljs-keyword">this</span>.value,
+        success: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( data )</span>
+        {</span>
+            <span class="hljs-keyword">var</span> results = data.results;
+            $( <span class="hljs-string">'#list'</span> ).empty();
+            $.each( data, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( item )</span> {</span>
+                $( <span class="hljs-string">'#list'</span> ).append( <span class="hljs-string">'&lt;li&gt;'</span> + item + <span class="hljs-string">'&lt;/li&gt;'</span> );
+            } );
+
+        },
+        error: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( xhr, status, error )</span> {</span>
+            console.log( <span class="hljs-string">'Something goes wrong!'</span>, status, error.message );
+        }
+      } );
+  } );
+} );</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="invaluable/README.md">
+                    
+                            
+                                <h1 id="invaluable">Invaluable</h1>
+<p>We have the following code:</p>
+<pre><code><span class="hljs-keyword">var</span> strMethod = <span class="hljs-string">'valueOf'</span>,
+    strProperty = <span class="hljs-string">'length'</span>,
+    <span class="hljs-keyword">result</span>;
+</code></pre><h2 id="snippet-1">Snippet 1</h2>
+<p>When we execute the Snippet 1, result has a value of 1.</p>
+<pre><code>result = [<span class="hljs-link_label">44 + 22</span>][<span class="hljs-link_reference">strMethod</span>]()[strProperty];
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #39</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <h2 id="snippet-2">Snippet 2</h2>
+<p>When we execute the Snippet 2, result has a value of 0.</p>
+<pre><code>value = [<span class="hljs-link_label">44 + 22</span>][<span class="hljs-link_reference">strMethod</span>][<span class="hljs-link_label">strProperty</span>];
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #40</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="json/README.md">
+                    
+                            
+                                <h1 id="json">JSON</h1>
+<p>This challenge will help you to understand how JSON object works.
+Take a look to the following code:</p>
+<pre><code><span class="hljs-keyword">var</span> <span class="hljs-keyword">parent</span> = {
+    name: <span class="hljs-string">'peter'</span>,
+    surname: <span class="hljs-string">'doe'</span>
+};
+<span class="hljs-keyword">var</span> parentStringified = JSON.stringify( <span class="hljs-keyword">parent</span> );
+</code></pre><p>After execute the previous code we execute the following statement and the result is true.</p>
+<pre><code>console.<span class="hljs-command">log</span>( parentStringified === '{ <span class="hljs-string">"name"</span>: <span class="hljs-string">"peter"</span>, <span class="hljs-string">"surname"</span>: <span class="hljs-string">"doe"</span> }');
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #41</div>
+                                    <p>Write the code needed to get the expected result without changing the values of <code>obj.name</code> and <code>obj.surname</code> values:</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> obj = {
+    name: <span class="hljs-string">'john'</span>,
+    surname: <span class="hljs-string">'doe'</span>
+};
+
+<span class="hljs-comment">// Write the code to get '{ "name": "james", "surname": "sullivan" }'</span>
+<span class="hljs-comment">// when the next statement is executed.</span>
+
+<span class="hljs-keyword">var</span> result = <span class="hljs-built_in">JSON</span>.stringify( obj );</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="nested_scopes/README.md">
+                    
+                            
+                                <h1 id="nested-scopes">Nested Scopes</h1>
+<p>Take a look at the following code but don&#39;t execute it in the console.</p>
+<pre><code>{<span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;{<span class="hljs-keyword">var</span> b = <span class="hljs-number">2</span>;{( <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span><span class="hljs-keyword">var</span> c = a + b;} )()}}c;}
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #42</div>
+                                    <p>What&#39;s the result of executing the previous code?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #43</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="now_you_see_me/README.md">
+                    
+                            
+                                <h1 id="now-you-see-me-">Now you see me ...</h1>
+<h2 id="snippet-1">Snippet 1</h2>
+<pre><code><span class="hljs-keyword">var</span> f = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">g</span><span class="hljs-params">()</span> {</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-number">23</span>;
+    };
+<span class="hljs-keyword">typeof</span> g();
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #44</div>
+                                    <p>What is the result of executing Snippet 1 code?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #45</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="frozen/README.md">
+                    
+                            
+                                <h1 id="frozen">Frozen</h1>
+<p>This challenge will need a bit of knowledge of one of the new features in Javascript 1.8.5, this feature is Object.freeze to get the correct result.</p>
+
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #46</div>
+                                    <p>Note:</p>
+<ul>
+<li>You can use anything of ECMASCRIPT 5 but not DOM or BOM, just Javascript</li>
+<li>There is more than one answer but only the most simple will win.</li>
+</ul>
+<p>Here you have the code to be fixed:</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> dog = {
+    sound: <span class="hljs-string">'Bark!'</span>
+};
+
+<span class="hljs-built_in">Object</span>.freeze(dog);
+
+<span class="hljs-comment">/* Put your code here */</span>
+
+<span class="hljs-comment">//This method should return 'Bark!'</span>
+<span class="hljs-keyword">var</span> result = dog.talk();</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="point/README.md">
+                    
+                            
+                                <h1 id="point">Point</h1>
+<p>This challenge needs you to implement a Point class so that the following code returns true.</p>
+<pre><code><span class="hljs-keyword">new</span> Point( <span class="hljs-keyword">new</span> Point(<span class="hljs-number">10</span>, <span class="hljs-number">20</span>) + <span class="hljs-keyword">new</span> Point(<span class="hljs-number">30</span>, <span class="hljs-number">50</span>) ).toString() === <span class="hljs-string">'{40,70}'</span>;
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #47</div>
+                                    <p>Implement Point and assume that:</p>
+<ul>
+<li>Must be generic and be able to handle x and y values from 0..999</li>
+<li>The requirements to do it are to implement valueOf and/or toString methods.</li>
+</ul>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="running_man/README.md">
+                    
+                            
+                                <h1 id="running-man">Running man</h1>
+<p>We are playing in &#39;The Running Man&#39; show and we have 9007199254740992 unit times to survive but all the gamers in previous game have been killed even when they have been playing bravely, could you help us?</p>
+<p><em>The following code could make crash your browser!! Be careful!!</em></p>
+<pre><code>var endTheGame = <span class="hljs-number">9007199254740992</span>,
+    startTheGame = endTheGame - <span class="hljs-number">100</span>,
+    <span class="hljs-keyword">count</span> = <span class="hljs-number">0</span>,
+    <span class="hljs-keyword">index</span>,
+    result;
+
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">index</span> = startTheGame; <span class="hljs-keyword">index</span> &lt;= endTheGame; <span class="hljs-keyword">index</span>++ ) {
+    <span class="hljs-keyword">count</span>++;
+}
+
+result = <span class="hljs-keyword">count</span>;
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #48</div>
+                                    <p>Fix the code to allow us to survive:</p>
+
+                                    <pre><code>var endTheGame = <span class="hljs-number">9007199254740992</span>,
+    startTheGame = endTheGame - <span class="hljs-number">100</span>,
+    <span class="hljs-keyword">count</span> = <span class="hljs-number">0</span>,
+    <span class="hljs-keyword">index</span>,
+    result;
+
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">index</span> = startTheGame; <span class="hljs-keyword">index</span> &lt;= endTheGame; <span class="hljs-keyword">index</span>++ ) {
+    <span class="hljs-keyword">count</span>++;
+}
+
+result = <span class="hljs-keyword">count</span>;</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #49</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="scope/README.md">
+                    
+                            
+                                <h1 id="scope-">Scope;</h1>
+<h2 id="snippet-1">Snippet 1</h2>
+<pre><code>(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> { <span class="hljs-title">test</span> = 123; <span class="hljs-title">console</span>.<span class="hljs-title">log</span><span class="hljs-params">( test )</span>;}<span class="hljs-params">()</span>)</span>
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #50</div>
+                                    <p>What it&#39;s logged when Snippet 1 is executed?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #51</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="spartacus/README.md">
+                    
+                            
+                                <h1 id="spartacus">Spartacus</h1>
+<p>I like the TV series Spartacus so much, that I have written the following code to get the name of the different seasons but something goes wrong...</p>
+<pre><code><span class="hljs-keyword">var</span> season = <span class="hljs-string">'first'</span>;
+
+<span class="hljs-keyword">var</span> <span class="hljs-keyword">result</span> = (<span class="hljs-string">'Spartacus: '</span> + season === <span class="hljs-string">'first'</span> ? <span class="hljs-string">'Blood and Sand'</span> : <span class="hljs-string">'Gods of the Arena'</span>);
+</code></pre><p>I expected to get <strong>Spartacus: Blood and Sand</strong> but I got <strong>Gods of the Arena</strong>, could you help me?</p>
+
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #52</div>
+                                    <p>Fix the code to get &#39;Spartacus: Blood and Sand&#39;:</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> season = <span class="hljs-string">'first'</span>;
+<span class="hljs-keyword">var</span> <span class="hljs-keyword">result</span> = (<span class="hljs-string">'Spartacus: '</span> + season === <span class="hljs-string">'first'</span> ? <span class="hljs-string">'Blood and Sand'</span> : <span class="hljs-string">'Gods of the Arena'</span>);</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="terminator/README.md">
+                    
+                            
+                                <h1 id="terminator">Terminator</h1>
+<p>Here you have the prototype code of the next Terminator fan page:</p>
+<pre><code><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Terminator Fan Page<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"/"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"name"</span>/&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Send"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre><p>One of my colleagues has written the next code that will log the name we send using the form in the previous page.</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayonara</span><span class="hljs-params">( name )</span> {</span>
+        console.log( <span class="hljs-string">'Sayonara '</span> + name + <span class="hljs-string">'!'</span> );
+    }
+
+    sayonara( greetings );
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre><p>But then someone sends the next message as a name and the behaviour of the page changes...</p>
+<pre><code>'<span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">console.log(<span class="hljs-string">"I will come back!"</span>)</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript"><span class="hljs-string">'</span></span>
+</code></pre><p>Here is an example of executing the page with the bug:</p>
+<pre><code><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+            <span class="hljs-keyword">var</span> result = <span class="hljs-string">''</span>;
+            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayonara</span><span class="hljs-params">( name )</span> {</span>
+                result = <span class="hljs-string">'Sayonara '</span> + name + <span class="hljs-string">'!'</span>;
+            }
+
+            sayonara( <span class="hljs-string">'</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">console.log(<span class="hljs-string">"I will come back!"</span>)</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript"><span class="hljs-string">' );
+        </span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #53</div>
+                                    <p>Fix the code:</p>
+
+                                    <pre><code>var <span class="hljs-constant">result</span> = '';
+function sayonara( <span class="hljs-property">name</span> ) {
+    <span class="hljs-constant">result</span> = 'Sayonara ' + <span class="hljs-property">name</span> + '!';
+}
+
+sayonara( '&lt;/<span class="hljs-keyword">script</span>&gt;&lt;<span class="hljs-keyword">script</span>&gt;console.<span class="hljs-command">log</span>(<span class="hljs-string">"I will come back!"</span>)&lt;/<span class="hljs-keyword">script</span>&gt;&lt;<span class="hljs-keyword">script</span>&gt;' );</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="timers/README.md">
+                    
+                            
+                                <h1 id="timers">Timers</h1>
+<p>We have the following code to show a log in the console after 1000 ms / 1 sec.</p>
+<pre><code><span class="hljs-keyword">var</span> check = <span class="hljs-literal">false</span>;
+<span class="hljs-keyword">var</span> timeStart = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getTime();
+
+setTimeout( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+    check = <span class="hljs-literal">true</span>;
+}, <span class="hljs-number">1000</span> );
+
+<span class="hljs-keyword">while</span>( !check ){
+}
+
+console.log( <span class="hljs-string">'Loop has finished'</span>, <span class="hljs-string">'Elapsed time:'</span> + (<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getTime() - timeStart) );
+</code></pre><p>But for some weird reason it doesn&#39;t works as expected and blocks the browser, could you help us?</p>
+
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #54</div>
+                                    <p>Why this is happening?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #55</div>
+                                    <p>Fix the code:</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> check = <span class="hljs-literal">false</span>;
+<span class="hljs-keyword">var</span> timeStart = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getTime();
+
+setTimeout( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+    check = <span class="hljs-literal">true</span>;
+}, <span class="hljs-number">1000</span> );
+
+<span class="hljs-keyword">while</span>( !check ){
+}
+
+console.log( <span class="hljs-string">'Loop has finished'</span>, <span class="hljs-string">'Elapsed time:'</span> + (<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getTime() - timeStart) );</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="undefined_values_in_array/README.md">
+                    
+                            
+                                <h1 id="undefined-values-in-array">Undefined values in Array</h1>
+<p>See the next snippet of code:</p>
+<pre><code><span class="hljs-reserved">var</span> arr = [];
+arr.length = <span class="hljs-number">10</span>;
+<span class="hljs-regexp">//</span> The next statement shows [] <span class="hljs-keyword">in</span> the <span class="hljs-built_in">console</span>.
+<span class="hljs-built_in">console</span>.log(arr);
+<span class="hljs-regexp">//</span> The next statement shows [<span class="hljs-literal">undefined</span> × <span class="hljs-number">10</span>] <span class="hljs-keyword">in</span> the <span class="hljs-built_in">console</span>.
+arr;
+<span class="hljs-regexp">//</span> The next statement shows <span class="hljs-literal">undefined</span> <span class="hljs-keyword">in</span> the <span class="hljs-built_in">console</span>.
+<span class="hljs-built_in">console</span>.log(JSON.stringify(arr[<span class="hljs-number">0</span>]));
+</code></pre><h2 id="snippet-1">Snippet 1</h2>
+<pre><code>console<span class="hljs-preprocessor">.log</span>(JSON<span class="hljs-preprocessor">.stringify</span>(arr))<span class="hljs-comment">;</span>
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #56</div>
+                                    <p>What will be shown in the console if we execute Snippet 1?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #57</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <h2 id="snippet-2">Snippet 2</h2>
+<pre><code>console<span class="hljs-preprocessor">.log</span>(arr<span class="hljs-preprocessor">.toString</span>())<span class="hljs-comment">;</span>
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #58</div>
+                                    <p>What will be shown in the console if we execute Snippet 2?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #59</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="array_map_parseint/README.md">
+                    
+                            
+                                <h1 id="using-array-prototype-map-and-parseint">Using Array.prototype.map and parseInt</h1>
+<h2 id="snippet-1">Snippet 1</h2>
+<pre><code><span class="hljs-keyword">var</span> result = [<span class="hljs-string">'1'</span>,<span class="hljs-string">'10'</span>,<span class="hljs-string">'100'</span>,<span class="hljs-string">'1000'</span>,<span class="hljs-string">'10000'</span>, <span class="hljs-string">'100000'</span>, <span class="hljs-string">'1000000'</span>].map(<span class="hljs-built_in">parseInt</span>)
+</code></pre><h2 id="expected">Expected</h2>
+<pre><code><span class="hljs-keyword">var</span> <span class="hljs-keyword">result</span> = [<span class="hljs-number">1</span>, <span class="hljs-number">10</span>, <span class="hljs-number">100</span>, <span class="hljs-number">1000</span>, <span class="hljs-number">10000</span>, <span class="hljs-number">100000</span>, <span class="hljs-number">100000</span>];
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #60</div>
+                                    <p>What&#39;s the result of executing Snippet 1 code?</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> <span class="hljs-keyword">result</span> = ;</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #61</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #62</div>
+                                    <p>We need to get the same array as in Expected 1, please fix the code:</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> result = [<span class="hljs-string">'1'</span>,<span class="hljs-string">'10'</span>,<span class="hljs-string">'100'</span>,<span class="hljs-string">'1000'</span>,<span class="hljs-string">'10000'</span>, <span class="hljs-string">'100000'</span>, <span class="hljs-string">'1000000'</span>].map(<span class="hljs-built_in">parseInt</span>)</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+                
+                    <article id="variable_scope/README.md">
+                    
+                            
+                                <h1 id="variable-scope">Variable Scope</h1>
+<p>We have the following code:</p>
+<pre><code><span class="hljs-keyword">var</span> name = <span class="hljs-string">'John'</span>,
+    obj = {
+        name: <span class="hljs-string">'Mary'</span>,
+        whoIam: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+            <span class="hljs-keyword">var</span> name = <span class="hljs-string">'James'</span>;
+
+            console.log( <span class="hljs-keyword">this</span>.name );
+
+            setTimeout( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+                console.log( <span class="hljs-keyword">this</span>.name );
+            }, <span class="hljs-number">100</span> );
+        }
+    };
+
+obj.whoIam();
+</code></pre>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #63</div>
+                                    <p>What does it prints?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #64</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>
+</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    </article>
+                
+            
+        </section>
+        
+    
+
+
+    
+    
+        
+        <section>
+            <article class="new-chapter">
+                <h1>Exercise Solutions</h1>
+            </article>
+            <article>
+            
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #1</div>
+                                    <p>What is the result of executing the previous code?</p>
+
+                                    <pre><code><span class="hljs-attribute">SyntaxError</span>: <span class="hljs-string">Unexpected token )</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #2</div>
+                                    <p>What is the value of variable &#39;testValue&#39;?</p>
+
+                                    <pre><code><span class="hljs-literal">undefined</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #3</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>The <span class="hljs-built_in">value</span> <span class="hljs-operator">of</span> testValue is undefined because <span class="hljs-operator">the</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">has</span> <span class="hljs-title">not</span> <span class="hljs-title">been</span> <span class="hljs-title">autoexecuted</span>.</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #4</div>
+                                    <p>Write the code to execute this function adding only one more character to the sentence.</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> testValue;
+!<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> <span class="hljs-comment">{ testValue = 3; }</span><span class="hljs-params">()</span>;</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #5</div>
+                                    <p>What returns calculateAmountOfStockOptions ?</p>
+
+                                    <pre><code>1.94392523364486</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #6</div>
+                                    <p>What is the value of calculateChange ? Input the number value.</p>
+
+                                    <pre><code>10.100000000000001</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #7</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>Javascript has several problems operating <span class="hljs-keyword">with</span> floating point, this <span class="hljs-keyword">is</span> one <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> causes <span class="hljs-keyword">that</span> <span class="hljs-keyword">it</span> should <span class="hljs-keyword">not</span> be <span class="hljs-keyword">to</span> operate <span class="hljs-keyword">with</span> floats.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #8</div>
+                                    <p>Please fix this code to return the correct change.</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> stockOptionsCost = <span class="hljs-number">10.70</span>, paid = <span class="hljs-number">20.80</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateChange</span><span class="hljs-params">()</span> {</span>
+
+    <span class="hljs-keyword">return</span> (paid - stockOptionsCost).toFixed(<span class="hljs-number">2</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateAmountOfStockOptions</span> <span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">return</span> paid / stockOptionsCost;
+}
+
+<span class="hljs-keyword">var</span> amountStockOptions = calculateAmountOfStockOptions();
+<span class="hljs-keyword">var</span> yourChange = calculateChange();</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #9</div>
+                                    <p>Why this is happening?</p>
+
+                                    <pre><code>This <span class="hljs-keyword">is</span> happening because <span class="hljs-keyword">the</span> hoisting problem. Remember <span class="hljs-keyword">that</span> <span class="hljs-keyword">in</span> Javascript there are no block variables.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #10</div>
+                                    <p>Please help me and fix this code to get &#39;Bert loves his Pidgeons&#39;.</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> bird = <span class="hljs-string">'Pidgeons'</span>;
+( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">if</span> ( <span class="hljs-keyword">typeof</span> bird === <span class="hljs-string">'undefined'</span> ){
+        bird = <span class="hljs-string">'Rubber Duck'</span>;
+        console.log(<span class="hljs-string">'Ernie loves his '</span> + bird );
+    } <span class="hljs-keyword">else</span> {
+        console.log(<span class="hljs-string">'Bert loves his '</span> + bird );
+    }
+}() );</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #11</div>
+                                    <p>Write the code to get the expected result.</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> key,
+    obj = {
+        name: <span class="hljs-string">'john'</span>,
+        surname: <span class="hljs-string">'doe'</span>
+    };
+
+<span class="hljs-built_in">Object</span>.prototype.hasOwnProperty = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(key)</span> {</span>
+    <span class="hljs-keyword">if</span>(key == <span class="hljs-string">'name'</span>){
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+};
+
+<span class="hljs-keyword">for</span> ( key <span class="hljs-keyword">in</span> obj ) {
+    <span class="hljs-keyword">if</span> ( obj.hasOwnProperty( key ) ) {
+       console.log( key + <span class="hljs-string">' exists in obj'</span> );
+       console.log( key + <span class="hljs-string">': '</span> + obj[key] );
+       <span class="hljs-keyword">continue</span>;
+    }
+    console.log( key + <span class="hljs-string">" doesn't exist in obj"</span> );
+}</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #12</div>
+                                    <p>Explain why this is happening:</p>
+
+                                    <pre><code>This <span class="hljs-keyword">is</span> happening because when <span class="hljs-keyword">the</span> closure has been executed <span class="hljs-keyword">it</span> has saved <span class="hljs-keyword">the</span> <span class="hljs-keyword">reference</span> <span class="hljs-keyword">in</span> memory <span class="hljs-keyword">for</span> oPerson <span class="hljs-keyword">as</span> oTeacher <span class="hljs-keyword">and</span> even when oPerson has changed <span class="hljs-keyword">the</span> assigned value <span class="hljs-keyword">to</span> a different object <span class="hljs-keyword">it</span> continues being referenced inside <span class="hljs-keyword">the</span> closure. It <span class="hljs-keyword">is</span> important <span class="hljs-keyword">to</span> check this problems because <span class="hljs-keyword">if</span> you make <span class="hljs-keyword">the</span> same <span class="hljs-keyword">with</span> DOM elements <span class="hljs-keyword">and</span> <span class="hljs-keyword">the</span> element <span class="hljs-keyword">is</span> removed <span class="hljs-keyword">from</span> <span class="hljs-keyword">the</span> DOM tree you will <span class="hljs-keyword">get</span> memory leaks issues</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #13</div>
+                                    <p>Fix the code to make the third execution return <code>Object { name: &quot;mary&quot;, surname: &quot;sullivan&quot; }</code></p>
+
+                                    <pre><code><span class="hljs-reserved">var</span> oPerson = { <span class="hljs-attribute">name</span>: <span class="hljs-string">'john'</span>};
+
+<span class="hljs-built_in">window</span>.getTeacher= <span class="hljs-reserved">function</span>() {
+  <span class="hljs-built_in">console</span>.log(oPerson);
+};
+
+<span class="hljs-built_in">window</span>.getTeacher();
+
+oPerson.surname = <span class="hljs-string">'doe'</span>;
+
+<span class="hljs-built_in">window</span>.getTeacher();
+
+oPerson = { <span class="hljs-attribute">name</span>: <span class="hljs-string">'mary'</span>, <span class="hljs-attribute">surname</span>: <span class="hljs-string">'sullivan'</span> };
+
+<span class="hljs-built_in">window</span>.getTeacher();</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #14</div>
+                                    <p>What&#39;s the reason of this behaviour?</p>
+
+                                    <pre><code>The execution <span class="hljs-keyword">of</span> Snippet <span class="hljs-number">1</span> shows <span class="hljs-string">"That's true"</span> because function expressions are evaluated <span class="hljs-keyword">in</span> execution <span class="hljs-property">time</span>.
+The execution <span class="hljs-keyword">of</span> Snippet <span class="hljs-number">2</span> shows <span class="hljs-string">"That's false"</span> because function declarations are evaluated <span class="hljs-keyword">in</span> evaluation <span class="hljs-property">time</span>, <span class="hljs-keyword">and</span> <span class="hljs-keyword">the</span> <span class="hljs-keyword">second</span> one overwrittes <span class="hljs-keyword">the</span> <span class="hljs-keyword">first</span> one.
+The execution <span class="hljs-keyword">of</span> Snippet <span class="hljs-number">3</span> shows <span class="hljs-string">"That's true"</span> because when <span class="hljs-keyword">the</span> code has been evaluated <span class="hljs-keyword">it</span> has changed <span class="hljs-keyword">to</span> <span class="hljs-keyword">the</span> function <span class="hljs-keyword">that</span> could <span class="hljs-constant">return</span> <span class="hljs-string">"That's false"</span> <span class="hljs-keyword">but</span> when <span class="hljs-keyword">the</span> code has been executed <span class="hljs-keyword">it</span> has been overwritten again <span class="hljs-keyword">with</span> <span class="hljs-keyword">the</span> function expression.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #15</div>
+                                    <p>Why <strong>#1: John</strong> is logged?</p>
+
+                                    <pre><code>John <span class="hljs-keyword">is</span> logged because name <span class="hljs-keyword">is</span> a <span class="hljs-keyword">global</span> variable <span class="hljs-keyword">and</span> <span class="hljs-keyword">global</span> variables can<span class="hljs-comment">'t be deleted.</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #16</div>
+                                    <p>Why <strong>#2: undefined</strong> is logged?</p>
+
+                                    <pre><code>undefined <span class="hljs-keyword">is</span> logged because we have deleted <span class="hljs-keyword">the</span> <span class="hljs-property">name</span> <span class="hljs-keyword">property</span> <span class="hljs-keyword">of</span> obj, properties <span class="hljs-keyword">or</span> members <span class="hljs-keyword">of</span> objects can be deleted excluding <span class="hljs-keyword">the</span> properties <span class="hljs-keyword">or</span> members <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> <span class="hljs-keyword">global</span> object.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #17</div>
+                                    <p>Why <strong>#3: function toString() { [native code] }</strong> is logged?</p>
+
+                                    <pre><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">toString</span><span class="hljs-params">()</span> {</span> [<span class="hljs-keyword">native</span> code] } <span class="hljs-keyword">is</span> logged because toString <span class="hljs-keyword">is</span> an inherited method from Object and inherited methods or members can<span class="hljs-string">'t be deleted.</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #18</div>
+                                    <p>Why <strong>#4: animal</strong> is logged?</p>
+
+                                    <pre><code>animal <span class="hljs-keyword">is</span> logged because we have deleted <span class="hljs-keyword">the</span> own mammal.<span class="hljs-property">name</span> <span class="hljs-keyword">property</span> <span class="hljs-keyword">but</span> <span class="hljs-keyword">the</span> inherited <span class="hljs-keyword">property</span> <span class="hljs-keyword">is</span> shown.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #19</div>
+                                    <p>To accomplish a task you need to detect Internet Explorer browsers without using browser sniffing.</p>
+<p>The function to detect the browser can be executed in...</p>
+<ul>
+<li>Opera</li>
+<li>Chrome</li>
+<li>Firefox</li>
+<li>Phantom</li>
+<li>Internet Explorer</li>
+</ul>
+<p>... and it should return <em>true</em> only if the browser is Internet Explorer.</p>
+<p>The function should detect only that browser is Internet Explorer, versions are not relevant but you must perform the action with a single code.</p>
+<p>Write the code:</p>
+
+                                    <pre><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isIE</span><span class="hljs-params">()</span> {</span>
+    window.external = <span class="hljs-string">''</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">typeof</span> window.external === <span class="hljs-string">'object'</span>;
+}</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #20</div>
+                                    <p>Why the first execution of console.log logs <strong>#1: true</strong>?</p>
+
+                                    <pre><code>It logs <span class="hljs-constant">true</span> because <span class="hljs-operator">the</span> <span class="hljs-constant">two</span> <span class="hljs-keyword">words</span> are <span class="hljs-operator">the</span> same <span class="hljs-keyword">characters</span>.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #21</div>
+                                    <p>Why the second execution of console.log logs <strong>#2: false</strong>?</p>
+
+                                    <pre><code>It logs <span class="hljs-constant">false</span> because <span class="hljs-keyword">the</span> encoding <span class="hljs-keyword">of</span> <span class="hljs-property">characters</span> <span class="hljs-keyword">and</span> <span class="hljs-keyword">the</span> <span class="hljs-property">character</span> ñ <span class="hljs-keyword">contains</span>( n <span class="hljs-keyword">and</span> ̃ ) <span class="hljs-keyword">it</span>'s an issue <span class="hljs-keyword">with</span> UTF8 encoding.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #22</div>
+                                    <p>Modify the code to encapsulate the collection to avoid this issue.</p>
+
+                                    <pre><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Order</span><span class="hljs-params">()</span> {</span>
+         <span class="hljs-keyword">var</span> orderLines, orderTotal;
+         orderLines = [];
+         orderTotal = <span class="hljs-number">0</span>;
+         <span class="hljs-keyword">this</span>.getOrderLines = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+            <span class="hljs-keyword">return</span> orderLines;
+         };
+         <span class="hljs-keyword">this</span>.getOrderTotal = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+            <span class="hljs-keyword">return</span> orderTotal;
+         };
+         <span class="hljs-keyword">this</span>.setOrderTotal = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(total)</span> {</span>
+            orderTotal += total;
+         };
+}
+Order.prototype.addOrderLine = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(orderLine)</span> {</span>
+    <span class="hljs-keyword">var</span> orderLines;
+    orderLines = <span class="hljs-keyword">this</span>.getOrderLines();
+    <span class="hljs-keyword">this</span>.setOrderTotal(orderLine.total);
+    orderLines.push(orderLine);
+};
+Order.prototype.removeOrderLine = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(orderLineItem)</span> {</span>
+         <span class="hljs-keyword">var</span> orderTotal, orderLine, orderLines;
+         orderLines = <span class="hljs-keyword">this</span>.getOrderLines();
+         orderLine = <span class="hljs-keyword">this</span>.orderLines.map(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(order)</span> {</span>
+                  <span class="hljs-keyword">return</span> order === orderLineItem;
+         })[<span class="hljs-number">0</span>];
+
+         <span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> orderLine === <span class="hljs-string">'undefined'</span> || orderLine === <span class="hljs-literal">null</span>) {
+                  <span class="hljs-keyword">return</span>;
+         }
+
+         <span class="hljs-keyword">this</span>.setOrderTotal( (-<span class="hljs-number">1</span> * orderLine.total) );
+         orderLines.splice( <span class="hljs-keyword">this</span>.getOrderTotal(), <span class="hljs-number">1</span>);
+};</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #23</div>
+                                    <p>Please explain why Number.MAX_VALUE has not been added:</p>
+
+                                    <pre><code>Number.MAX_VALUE can't be handled properly <span class="hljs-keyword">by</span> Javascript <span class="hljs-keyword">to</span> work <span class="hljs-keyword">with</span> <span class="hljs-keyword">it</span> <span class="hljs-keyword">in</span> operations because <span class="hljs-keyword">the</span> overflow issue.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #24</div>
+                                    <p>Write the code to avoid Infinity to be added.</p>
+
+                                    <pre><code><span class="hljs-list">(<span class="hljs-title">function</span><span class="hljs-list">()</span> <span class="hljs-collection">{
+    var values = <span class="hljs-collection">[3,<span class="hljs-number"> 8</span>, '15', Number.MAX_VALUE, Infinity, -23]</span>,
+        oddValues = <span class="hljs-collection">[]</span>,
+        index,
+        lenValues = values.length,
+        isOdd = function <span class="hljs-list">( value )</span> <span class="hljs-collection">{
+            return <span class="hljs-list">(<span class="hljs-title">value</span> %<span class="hljs-number"> 2</span>)</span><span class="hljs-comment">;</span>
+        }</span><span class="hljs-comment">;</span>
+
+    while<span class="hljs-list">(<span class="hljs-title">lenValues--</span>)</span> <span class="hljs-collection">{
+        if <span class="hljs-list">( isOdd<span class="hljs-list">( values<span class="hljs-collection">[lenValues]</span> )</span> )</span> <span class="hljs-collection">{
+            oddValues.push<span class="hljs-list">( values<span class="hljs-collection">[lenValues]</span> )</span><span class="hljs-comment">;</span>
+        }</span>
+    }</span>
+    console.log<span class="hljs-list">( oddValues )</span><span class="hljs-comment">;</span>
+}</span><span class="hljs-list">()</span>)</span><span class="hljs-comment">;</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #25</div>
+                                    <p>Make the modifications to the following code so that  when it&#39;s executed it should exit the first time indexInnerLoop has a value of 10 and indexOuterLoop has a value of 0.</p>
+
+                                    <pre><code>var indexOuterLoop, iterationsOuterLoop = <span class="hljs-number">1000</span>, indexInnerLoop, iterationsInnerLoop = <span class="hljs-number">100</span>;
+
+outer:
+<span class="hljs-keyword">for</span> (indexOuterLoop = <span class="hljs-number">0</span>; indexOuterLoop &lt; <span class="hljs-number">1000</span>; indexOuterLoop++)
+{
+     inner:
+     <span class="hljs-keyword">for</span> (indexInnerLoop = <span class="hljs-number">0</span>; indexInnerLoop &lt; iterationsInnerLoop; indexInnerLoop++)
+     {
+        <span class="hljs-keyword">if</span> (indexInnerLoop === <span class="hljs-number">10</span>)
+        {
+            console.<span class="hljs-keyword">log</span>( <span class="hljs-string">'indexInnerLoop is equals to 10'</span> );
+            <span class="hljs-keyword">break</span> outer;
+        }
+     }
+}
+
+console.<span class="hljs-keyword">log</span>( indexOuterLoop );  <span class="hljs-comment">// Should log 0.</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #26</div>
+                                    <p>Why does xor resolves in an unexpected manner?</p>
+
+                                    <pre><code>Because this <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-constant">false</span>, this inside <span class="hljs-keyword">the</span> function <span class="hljs-keyword">is</span> <span class="hljs-keyword">the</span> complete object <span class="hljs-keyword">and</span> <span class="hljs-keyword">it</span> evaluates <span class="hljs-keyword">to</span> <span class="hljs-constant">true</span> when <span class="hljs-keyword">it</span>'s converted <span class="hljs-keyword">to</span> <span class="hljs-constant">true</span> <span class="hljs-keyword">the</span> same way <span class="hljs-keyword">that</span> !!{} <span class="hljs-keyword">is</span> <span class="hljs-constant">true</span>.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #27</div>
+                                    <p>Write the code to fix the implementation of xor method:</p>
+
+                                    <pre><code><span class="hljs-built_in">Boolean</span>.prototype.xor = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( value )</span> {</span> <span class="hljs-keyword">return</span> !!<span class="hljs-keyword">this</span>.valueOf() !== !!value; };</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #28</div>
+                                    <p>Why does calling the previous statement returns false?</p>
+
+                                    <pre><code>You have <span class="hljs-keyword">to</span> be careful when using |= because when <span class="hljs-keyword">it</span>'s used <span class="hljs-keyword">to</span> perform a test besides an object <span class="hljs-keyword">it</span> will <span class="hljs-keyword">not</span> modify <span class="hljs-keyword">the</span> original value, <span class="hljs-keyword">then</span> <span class="hljs-keyword">it</span> remains <span class="hljs-keyword">to</span> be zero.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #29</div>
+                                    <p>What is the result of execute &quot;Snippet 1&quot; code?</p>
+
+                                    <pre><code>1000</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #30</div>
+                                    <p>What is the result of execute &quot;Snippet 2&quot; code?</p>
+
+                                    <pre><code>0</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #31</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>Because <span class="hljs-number">4294967295</span> overflows <span class="hljs-operator">the</span> <span class="hljs-built_in">max</span> <span class="hljs-built_in">number</span> <span class="hljs-operator">of</span> elements that could be handled <span class="hljs-keyword">by</span> Javascript <span class="hljs-operator">in</span> Arrays.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #32</div>
+                                    <p>What is the result of execute &quot;Snippet 3&quot; code?</p>
+
+                                    <pre><code><span class="hljs-string">"james"</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #33</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>Javascript arrays can work <span class="hljs-keyword">as</span> objects, dictionaries, when you are <span class="hljs-keyword">using</span> <span class="hljs-keyword">as</span> key <span class="hljs-keyword">any</span> <span class="hljs-built_in">value</span> that can <span class="hljs-operator">not</span> be handled <span class="hljs-keyword">by</span> Array objects.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #34</div>
+                                    <p>What is the result of execute &quot;Snippet 4&quot; code?</p>
+
+                                    <pre><code>0</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #35</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>Javascript arrays can work <span class="hljs-keyword">as</span> objects, dictionaries, when you are <span class="hljs-keyword">using</span> <span class="hljs-keyword">as</span> key <span class="hljs-keyword">any</span> <span class="hljs-built_in">value</span> that can <span class="hljs-operator">not</span> be handled <span class="hljs-keyword">by</span> Array objects.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #36</div>
+                                    <p>What is the result of execute &quot;Snippet 5&quot; code?</p>
+
+                                    <pre><code><span class="hljs-string">"mary"</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #37</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>Javascript arrays can work <span class="hljs-keyword">as</span> objects, dictionaries, when you are <span class="hljs-keyword">using</span> <span class="hljs-keyword">as</span> key <span class="hljs-keyword">any</span> <span class="hljs-built_in">value</span> that can <span class="hljs-operator">not</span> be handled <span class="hljs-keyword">by</span> Array objects.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #38</div>
+                                    <p>Fix the performance issue:</p>
+
+                                    <pre><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">delayTimer</span><span class="hljs-params">(delay)</span>{</span>
+  <span class="hljs-keyword">var</span> timer;
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(fn)</span>{</span>
+      timer = clearTimeout(timer);
+      <span class="hljs-keyword">if</span>(fn)
+        timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+           fn();
+        },delay);
+
+      <span class="hljs-keyword">return</span> timer;
+  };
+}
+<span class="hljs-keyword">var</span> delayer = delayTimer(<span class="hljs-number">500</span>);
+
+$( document ).ready( <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+  $( <span class="hljs-string">'#inputSearch'</span> ).keyup( <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+      delayer(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+        <span class="hljs-keyword">var</span> $list = $( <span class="hljs-string">'#list'</span> );
+        $.ajax( {
+          url: <span class="hljs-string">'http://www.domain.com/search'</span>,
+          data: <span class="hljs-keyword">this</span>.value,
+          success: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( data )</span>
+          {</span>
+              <span class="hljs-keyword">var</span> results = data.results;
+              $list.empty();
+              $.each( data, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( item )</span> {</span>
+                  $list.append( <span class="hljs-string">'&lt;li&gt;'</span> + item + <span class="hljs-string">'&lt;/li&gt;'</span> );
+              } );
+
+          },
+          error: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( xhr, status, error )</span> {</span>
+              console.log( <span class="hljs-string">'Something goes wrong!'</span>, status, error.message );
+          }
+        } );
+      } );
+  } );
+} );</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #39</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>Because the precedence <span class="hljs-keyword">of</span> operators, the execution workflow <span class="hljs-attribute">is</span>:
+<span class="hljs-number">44</span>+<span class="hljs-number">22</span><span class="hljs-function"> -&gt;</span> returns <span class="hljs-number">66</span>
+<span class="hljs-number">66</span> + [ ]<span class="hljs-function">  -&gt;</span> returns [<span class="hljs-number">66</span>]
+[<span class="hljs-number">66</span>].valueOf<span class="hljs-function"><span class="hljs-params">()</span> -&gt;</span> returns [<span class="hljs-number">66</span>]
+[<span class="hljs-number">66</span>].length<span class="hljs-function"> -&gt;</span> returns <span class="hljs-number">1</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #40</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>Because the precedence <span class="hljs-keyword">of</span> operators <span class="hljs-keyword">and</span> how <span class="hljs-reserved">native</span> methods behaviours, the execution workflow <span class="hljs-attribute">is</span>:
+<span class="hljs-number">44</span>+<span class="hljs-number">22</span><span class="hljs-function"> -&gt;</span> returns <span class="hljs-number">66</span>
+<span class="hljs-number">66</span> + [ ]<span class="hljs-function">  -&gt;</span> returns [<span class="hljs-number">66</span>]
+[<span class="hljs-number">66</span>].valueOf<span class="hljs-function"> -&gt;</span> returns <span class="hljs-reserved">function</span> valueOf() { [<span class="hljs-reserved">native</span> code] }
+(<span class="hljs-reserved">function</span> valueOf() { [<span class="hljs-reserved">native</span> code] }).length<span class="hljs-function"> -&gt;</span> returns <span class="hljs-number">0</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #41</div>
+                                    <p>Write the code needed to get the expected result without changing the values of <code>obj.name</code> and <code>obj.surname</code> values:</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> obj = {
+    name: <span class="hljs-string">'john'</span>,
+    surname: <span class="hljs-string">'doe'</span>
+};
+obj.toJSON = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">return</span> { name: <span class="hljs-string">'james'</span>, surname: <span class="hljs-string">'sullivan'</span> };
+};
+<span class="hljs-keyword">var</span> result = <span class="hljs-built_in">JSON</span>.stringify( obj );</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #42</div>
+                                    <p>What&#39;s the result of executing the previous code?</p>
+
+                                    <pre><code><span class="hljs-constant">ReferenceError</span><span class="hljs-symbol">:</span> c is <span class="hljs-keyword">not</span> <span class="hljs-keyword">defined</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #43</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>The cause <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> <span class="hljs-keyword">error</span> <span class="hljs-keyword">is</span> because Javascript only has <span class="hljs-keyword">not</span> block scopes <span class="hljs-keyword">as</span> <span class="hljs-keyword">in</span> other languages, <span class="hljs-keyword">then</span> 'c' only exist inside <span class="hljs-keyword">the</span> function block <span class="hljs-keyword">and</span> <span class="hljs-keyword">it</span> throws an <span class="hljs-keyword">error</span> when we are trying <span class="hljs-keyword">to</span> call <span class="hljs-keyword">it</span> <span class="hljs-keyword">from</span> <span class="hljs-keyword">the</span> current scope.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #44</div>
+                                    <p>What is the result of executing Snippet 1 code?</p>
+
+                                    <pre><code><span class="hljs-constant">ReferenceError</span><span class="hljs-symbol">:</span> g is <span class="hljs-keyword">not</span> <span class="hljs-keyword">defined</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #45</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>When a function expression has a named function <span class="hljs-keyword">it</span> can only be accessed using this <span class="hljs-property">name</span> <span class="hljs-keyword">from</span> inside <span class="hljs-keyword">the</span> function itself, <span class="hljs-keyword">but</span> <span class="hljs-keyword">from</span> outside <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> function <span class="hljs-keyword">it</span> doesn't exist this <span class="hljs-keyword">is</span> <span class="hljs-keyword">the</span> reason <span class="hljs-keyword">that</span> 'g' trows a Reference Error when <span class="hljs-keyword">is</span> called.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #46</div>
+                                    <p>Note:</p>
+<ul>
+<li>You can use anything of ECMASCRIPT 5 but not DOM or BOM, just Javascript</li>
+<li>There is more than one answer but only the most simple will win.</li>
+</ul>
+<p>Here you have the code to be fixed:</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> dog = {
+    sound: <span class="hljs-string">'Bark!'</span>
+};
+
+<span class="hljs-built_in">Object</span>.freeze(dog);
+
+<span class="hljs-built_in">Object</span>.prototype.talk = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.sound;
+};
+
+<span class="hljs-comment">//This method should return 'Bark!'</span>
+<span class="hljs-keyword">var</span> result = dog.talk();</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #47</div>
+                                    <p>Implement Point and assume that:</p>
+<ul>
+<li>Must be generic and be able to handle x and y values from 0..999</li>
+<li>The requirements to do it are to implement valueOf and/or toString methods.</li>
+</ul>
+
+                                    <pre><code><span class="hljs-keyword">var</span> Point = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(x, y)</span> {</span>
+    <span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> x === <span class="hljs-string">'string'</span>) {
+        <span class="hljs-keyword">this</span>.convertStringToCoordinates(x);
+    }<span class="hljs-keyword">else</span>{
+        <span class="hljs-keyword">this</span>.x = x;
+        <span class="hljs-keyword">this</span>.y = y;
+    }
+};
+Point.prototype.convertStringToCoordinates = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( value )</span> {</span>
+    <span class="hljs-keyword">var</span> arr, index, len, item;
+    <span class="hljs-keyword">this</span>.x = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">this</span>.y = <span class="hljs-number">0</span>;
+    arr = <span class="hljs-built_in">JSON</span>.parse(<span class="hljs-string">'['</span> + value.replace(<span class="hljs-regexp">/{/g</span>,<span class="hljs-string">'['</span>).replace(<span class="hljs-regexp">/}/g</span>,<span class="hljs-string">']'</span>).replace( <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">'\\]\\['</span>, <span class="hljs-string">'g'</span>), <span class="hljs-string">'],['</span>) + <span class="hljs-string">']'</span>);
+    len = arr.length;
+    <span class="hljs-keyword">for</span>(index = <span class="hljs-number">0</span>; index &lt; len; index++) {
+        item = arr[index];
+        <span class="hljs-keyword">this</span>.x += item[<span class="hljs-number">0</span>];
+        <span class="hljs-keyword">this</span>.y += item[<span class="hljs-number">1</span>];
+    }
+};
+Point.prototype.toString = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'{'</span> + <span class="hljs-keyword">this</span>.x + <span class="hljs-string">','</span> + <span class="hljs-keyword">this</span>.y + <span class="hljs-string">'}'</span>;
+};</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #48</div>
+                                    <p>Fix the code to allow us to survive:</p>
+
+                                    <pre><code>var endTheGame = <span class="hljs-number">9007199254740991</span>,
+    startTheGame = endTheGame - <span class="hljs-number">100</span>,
+    <span class="hljs-keyword">count</span> = <span class="hljs-number">0</span>,
+    result,
+    <span class="hljs-keyword">index</span>;
+
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">index</span> = startTheGame; <span class="hljs-keyword">index</span> &lt;= endTheGame; <span class="hljs-keyword">index</span>++ ) {
+    <span class="hljs-keyword">count</span>++;
+}
+
+result = <span class="hljs-keyword">count</span>;</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #49</div>
+                                    <p>Why?</p>
+
+                                    <pre><code><span class="hljs-number">9007199254740992</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">the</span> maximum <span class="hljs-type">number</span> <span class="hljs-keyword">that</span> Javascript can handle <span class="hljs-keyword">then</span> <span class="hljs-keyword">it</span> <span class="hljs-keyword">is</span> unable <span class="hljs-keyword">to</span> manage due <span class="hljs-keyword">to</span> <span class="hljs-keyword">the</span> overflow issue, <span class="hljs-keyword">then</span> <span class="hljs-keyword">the</span> most easy way <span class="hljs-keyword">to</span> do <span class="hljs-keyword">it</span> <span class="hljs-keyword">is</span> decrement <span class="hljs-keyword">the</span> <span class="hljs-type">number</span> <span class="hljs-keyword">in</span> one <span class="hljs-keyword">to</span> allow Javascript <span class="hljs-keyword">to</span> work <span class="hljs-keyword">with</span> <span class="hljs-keyword">it</span>.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #50</div>
+                                    <p>What it&#39;s logged when Snippet 1 is executed?</p>
+
+                                    <pre><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> { <span class="hljs-title">test</span> = 123; <span class="hljs-title">console</span>.<span class="hljs-title">log</span><span class="hljs-params">( test )</span>;}<span class="hljs-params">()</span></span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #51</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>When <span class="hljs-keyword">the</span> code tries <span class="hljs-keyword">to</span> modify test value inside <span class="hljs-keyword">the</span> function <span class="hljs-keyword">it</span> doesn't works because <span class="hljs-keyword">the</span> precedence <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> declaration <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> function <span class="hljs-keyword">that</span> test <span class="hljs-keyword">reference</span> remains unchanged, <span class="hljs-keyword">then</span> <span class="hljs-keyword">the</span> code <span class="hljs-keyword">that</span> <span class="hljs-keyword">is</span> executed <span class="hljs-keyword">is</span> console.<span class="hljs-command">log</span> logs <span class="hljs-keyword">the</span> function body <span class="hljs-keyword">in</span> <span class="hljs-keyword">the</span> console.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #52</div>
+                                    <p>Fix the code to get &#39;Spartacus: Blood and Sand&#39;:</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> season = <span class="hljs-string">'first'</span>;
+<span class="hljs-keyword">var</span> <span class="hljs-keyword">result</span> = <span class="hljs-string">'Spartacus: '</span> + (season === <span class="hljs-string">'first'</span> ? <span class="hljs-string">'Blood and Sand'</span> : <span class="hljs-string">'Gods of the Arena'</span>);</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #53</div>
+                                    <p>Fix the code:</p>
+
+                                    <pre><code>var <span class="hljs-constant">result</span> = '';
+function sayonara( <span class="hljs-property">name</span> ) {
+    <span class="hljs-constant">result</span> = 'Sayonara ' + <span class="hljs-property">name</span> + '!';
+}
+
+sayonara( '&lt;\/<span class="hljs-keyword">script</span>&gt;&lt;<span class="hljs-keyword">script</span>&gt;console.<span class="hljs-command">log</span>(<span class="hljs-string">"I will come back!"</span>)&lt;\/<span class="hljs-keyword">script</span>&gt;&lt;<span class="hljs-keyword">script</span>&gt;' );</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #54</div>
+                                    <p>Why this is happening?</p>
+
+                                    <pre><code>As you should know Javascript <span class="hljs-keyword">is</span> single threaded <span class="hljs-keyword">then</span> when we <span class="hljs-command">launch</span> this code <span class="hljs-keyword">the</span> <span class="hljs-keyword">while</span> statement doesn't free <span class="hljs-keyword">the</span> thread because <span class="hljs-keyword">the</span> continuos execution blocking any other statement <span class="hljs-keyword">to</span> be executed <span class="hljs-keyword">and</span> blocks <span class="hljs-keyword">the</span> change <span class="hljs-keyword">of</span> 'check' <span class="hljs-keyword">to</span> <span class="hljs-constant">true</span> blocking <span class="hljs-keyword">the</span> environment <span class="hljs-keyword">where</span> <span class="hljs-keyword">it</span>'s executed.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #55</div>
+                                    <p>Fix the code:</p>
+
+                                    <pre><code><span class="hljs-built_in">var</span> timeStart <span class="hljs-subst">=</span> <span class="hljs-literal">new</span> <span class="hljs-built_in">Date</span>()<span class="hljs-built_in">.</span>getTime();
+<span class="hljs-built_in">var</span> endTime <span class="hljs-subst">=</span> timeStart <span class="hljs-subst">+</span> <span class="hljs-number">1000</span>;
+
+<span class="hljs-keyword">while</span>( <span class="hljs-literal">new</span> <span class="hljs-built_in">Date</span>()<span class="hljs-built_in">.</span>getTime() <span class="hljs-subst">&lt;</span> endTime ){
+}
+
+console<span class="hljs-built_in">.</span><span class="hljs-keyword">log</span>( <span class="hljs-string">'Loop has finished'</span>, <span class="hljs-string">'Elapsed time:'</span> <span class="hljs-subst">+</span> (<span class="hljs-literal">new</span> <span class="hljs-built_in">Date</span>()<span class="hljs-built_in">.</span>getTime() <span class="hljs-subst">-</span> timeStart) );</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #56</div>
+                                    <p>What will be shown in the console if we execute Snippet 1?</p>
+
+                                    <pre><code>[<span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>]</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #57</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>When JSON.stringify <span class="hljs-keyword">is</span> called <span class="hljs-keyword">it</span> call toJSON method <span class="hljs-keyword">of</span> object <span class="hljs-keyword">but</span> undefined <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> an object itself <span class="hljs-keyword">then</span> <span class="hljs-keyword">it</span> calls <span class="hljs-keyword">the</span> object <span class="hljs-keyword">that</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">in</span> <span class="hljs-keyword">the</span> backend <span class="hljs-keyword">of</span> undefined, <span class="hljs-keyword">returning</span> 'null' <span class="hljs-keyword">as</span> value, this <span class="hljs-keyword">is</span> <span class="hljs-keyword">the</span> reason <span class="hljs-keyword">of</span> undefined == null <span class="hljs-keyword">is</span> <span class="hljs-constant">true</span>.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #58</div>
+                                    <p>What will be shown in the console if we execute Snippet 2?</p>
+
+                                    <pre><code><span class="hljs-string">",,,,,,,,,"</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #59</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>When <span class="hljs-operator">the</span> toString <span class="hljs-operator">of</span> arr is called <span class="hljs-keyword">it</span> returns <span class="hljs-operator">an</span> <span class="hljs-constant">empty</span> <span class="hljs-keyword">string</span> <span class="hljs-keyword">for</span> <span class="hljs-keyword">each</span> undefined <span class="hljs-built_in">value</span> <span class="hljs-operator">in</span> <span class="hljs-operator">the</span> array.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #60</div>
+                                    <p>What&#39;s the result of executing Snippet 1 code?</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> result = [<span class="hljs-number">1</span>, <span class="hljs-literal">NaN</span>, <span class="hljs-number">4</span>, <span class="hljs-number">27</span>, <span class="hljs-number">256</span>, <span class="hljs-number">3125</span>, <span class="hljs-number">46656</span>];</code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #61</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>Array.prototype.map has three arguments <span class="hljs-keyword">that</span> pass <span class="hljs-keyword">to</span> <span class="hljs-keyword">the</span> callback we <span class="hljs-keyword">set</span> <span class="hljs-keyword">as</span> argument:
+* value
+* index
+* arr
+When we check <span class="hljs-keyword">the</span> specifications <span class="hljs-keyword">of</span> parseInt we can see <span class="hljs-keyword">that</span> parseInt could receive two arguments.
+The former <span class="hljs-keyword">is</span> <span class="hljs-keyword">the</span> <span class="hljs-type">string</span> <span class="hljs-keyword">to</span> be parsed <span class="hljs-keyword">and</span> <span class="hljs-keyword">the</span> latter <span class="hljs-keyword">is</span> <span class="hljs-keyword">the</span> ratio <span class="hljs-keyword">to</span> convert <span class="hljs-keyword">the</span> value.
+
+When we execute <span class="hljs-keyword">the</span> previous code, this <span class="hljs-keyword">is</span> <span class="hljs-keyword">that</span> <span class="hljs-keyword">it</span>'s executed when we <span class="hljs-command">run</span> <span class="hljs-keyword">the</span> Snippet <span class="hljs-number">1</span> code:
+ * parseInt(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>)           =&gt; <span class="hljs-number">1</span>
+ * parseInt(<span class="hljs-number">10</span>, <span class="hljs-number">1</span>)          =&gt; NaN
+ * parseInt(<span class="hljs-number">100</span>, <span class="hljs-number">2</span>)         =&gt; <span class="hljs-number">4</span>
+ * parseInt(<span class="hljs-number">1000</span>, <span class="hljs-number">3</span>)        =&gt; <span class="hljs-number">27</span>
+ * parseInt(<span class="hljs-number">10000</span>, <span class="hljs-number">4</span>)       =&gt; <span class="hljs-number">256</span>
+ * parseInt(<span class="hljs-number">100000</span>, <span class="hljs-number">5</span>)      =&gt; <span class="hljs-number">3125</span>
+ * parseInt(<span class="hljs-number">1000000</span>, <span class="hljs-number">6</span>)     =&gt; <span class="hljs-number">46656</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #62</div>
+                                    <p>We need to get the same array as in Expected 1, please fix the code:</p>
+
+                                    <pre><code><span class="hljs-keyword">var</span> result = [<span class="hljs-string">'1'</span>,<span class="hljs-string">'10'</span>,<span class="hljs-string">'100'</span>,<span class="hljs-string">'1000'</span>,<span class="hljs-string">'10000'</span>, <span class="hljs-string">'100000'</span>, <span class="hljs-string">'1000000'</span>].map(<span class="hljs-built_in">Number</span>)</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #63</div>
+                                    <p>What does it prints?</p>
+
+                                    <pre><code><span class="hljs-string">"Mary"</span>
+<span class="hljs-literal">undefined</span>
+<span class="hljs-string">"John"</span></code></pre>
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="exercise">
+                                    <div class="exercise-header">Exercise #64</div>
+                                    <p>Why?</p>
+
+                                    <pre><code>It logs Mary because <span class="hljs-keyword">the</span> context <span class="hljs-keyword">of</span> execution <span class="hljs-keyword">is</span> obj.
+It logs John because setTimeout <span class="hljs-keyword">is</span> executed <span class="hljs-keyword">in</span> <span class="hljs-keyword">the</span> <span class="hljs-keyword">global</span> context.</code></pre>
+                                    
+                                </div>
+                            
+                        
+                    
+                
+            
+            </article>
+        </section>
+    
+
+        
+    </body>
+</html>
