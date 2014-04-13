@@ -1,6 +1,6 @@
 # Summary
 
-* [Intro](intro/README.md)
+* [Intro](README.md)
     * [Self Invoking Functions](autoexecute/README.md)
     * [Floats Operations Imprecision](banking/README.md)
     * [Hoisting and Conditionals](hoisting1/README.md)
