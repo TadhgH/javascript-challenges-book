@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>#1 Fooling around boolean | Javascript Challenges</title>
+        <title>Intro | Javascript Challenges</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../fooling_around_boolean_2/README.html" />
+        <link rel="next" href="../autoexecute/README.html" />
         
         
-        <link rel="prev" href="../nested_loop/README.html" />
+        <link rel="prev" href="../index.html" />
         
 
-        <meta property="og:title" content="#1 Fooling around boolean | Javascript Challenges">
+        <meta property="og:title" content="Intro | Javascript Challenges">
         <meta property="og:site_name" content="Javascript Challenges">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -41,7 +41,7 @@
     <body>
         
 
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="1.13" data-basepath=".." data-revision="1397418506536">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="1" data-basepath=".." data-revision="1397418506536">
 
     <div class="book-header">
     <!-- Actions Left -->
@@ -78,7 +78,7 @@
             <a href="https://github.com/tcorral/javascript-challenges-book/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/fooling_around_boolean/README.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/intro/README.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
@@ -347,7 +347,7 @@
             <div class="page-wrapper">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 19.35483870967742%;min-width: 16.129032258064516%;"></div>
+        <div class="inner" style="width: 3.225806451612903%;min-width: 0%;"></div>
     </div>
     <div class="chapters">
     
@@ -355,15 +355,15 @@
     
         <a href="../intro/README.html" title="Intro" class="chapter done new-chapter" data-progress="1" style="left: 3.225806451612903%;"></a>
     
-        <a href="../autoexecute/README.html" title="Self Invoking Functions" class="chapter done " data-progress="1.1" style="left: 6.451612903225806%;"></a>
+        <a href="../autoexecute/README.html" title="Self Invoking Functions" class="chapter  " data-progress="1.1" style="left: 6.451612903225806%;"></a>
     
-        <a href="../encapsulate_collection/README.html" title="Encapsulate collection" class="chapter done " data-progress="1.10" style="left: 9.67741935483871%;"></a>
+        <a href="../encapsulate_collection/README.html" title="Encapsulate collection" class="chapter  " data-progress="1.10" style="left: 9.67741935483871%;"></a>
     
-        <a href="../even_odd/README.html" title="Even or Odd" class="chapter done " data-progress="1.11" style="left: 12.903225806451612%;"></a>
+        <a href="../even_odd/README.html" title="Even or Odd" class="chapter  " data-progress="1.11" style="left: 12.903225806451612%;"></a>
     
-        <a href="../nested_loop/README.html" title="Exit nested loop" class="chapter done " data-progress="1.12" style="left: 16.129032258064516%;"></a>
+        <a href="../nested_loop/README.html" title="Exit nested loop" class="chapter  " data-progress="1.12" style="left: 16.129032258064516%;"></a>
     
-        <a href="../fooling_around_boolean/README.html" title="#1 Fooling around boolean" class="chapter done " data-progress="1.13" style="left: 19.35483870967742%;"></a>
+        <a href="../fooling_around_boolean/README.html" title="#1 Fooling around boolean" class="chapter  " data-progress="1.13" style="left: 19.35483870967742%;"></a>
     
         <a href="../fooling_around_boolean_2/README.html" title="#2 Fooling around boolean" class="chapter  " data-progress="1.14" style="left: 22.580645161290324%;"></a>
     
@@ -420,82 +420,10 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_54">
+                    <section class="normal" id="section-gitbook_87">
                     
-                        <h1 id="-1-fooling-around-boolean">#1 Fooling around boolean</h1>
-<p>Look at the following &quot;implementation&quot; of a xor method on the prototype of the Boolean type.</p>
-<pre><code><span class="hljs-built_in">Boolean</span>.prototype.xor = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( value )</span> {</span> <span class="hljs-keyword">return</span> !!<span class="hljs-keyword">this</span> !== !!value; };
-</code></pre><p>When we execute the following statement we get an unexpected result.</p>
-<pre><code><span class="hljs-literal">false</span>.<span class="hljs-keyword">xor</span>(<span class="hljs-literal">false</span>);   // =&gt; <span class="hljs-literal">true</span>
-</code></pre>
-                    
-                    </section>
-                
-                    <section class="exercise" id="section-gitbook_55">
-                    
-                        <div class="header">
-    <h2>Exercise</h2>
-</div>
-<div class="alert alert-success">
-    <b>Correct!</b>
-</div>
-
-<div class="alert alert-danger error-message">
-    <b>False!</b>
-</div>
-
-<div class="message">
-    <p>Why does xor resolves in an unexpected manner?</p>
-
-</div>
-<div class="editor" style="height: 20px">
-</div>
-
-<pre class="hidden code-solution">Because this is not false, this inside the function is the complete object and it evaluates to true when it&#39;s converted to true the same way that !!{} is true.</pre>
-<pre class="hidden code-validation">__match_answer_and_solution__</pre>
-
-
-<div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-default action-submit">Submit</a>
-    <a href="#" class="btn btn-default action-solution">Solution</a>
-    
-    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
-    
-</div>
-
-                    
-                    </section>
-                
-                    <section class="exercise" id="section-gitbook_57">
-                    
-                        <div class="header">
-    <h2>Exercise</h2>
-</div>
-<div class="alert alert-success">
-    <b>Correct!</b>
-</div>
-
-<div class="alert alert-danger error-message">
-    <b>False!</b>
-</div>
-
-<div class="message">
-    <p>Write the code to fix the implementation of xor method:</p>
-
-</div>
-<div class="editor" style="height: 20px">Boolean.prototype.xor = function ( value ) { return !!this !== !!value; };</div>
-
-<pre class="hidden code-solution">Boolean.prototype.xor = function ( value ) { return !!this.valueOf() !== !!value; };</pre>
-<pre class="hidden code-validation">assert(false.xor(false) === false);</pre>
-
-
-<div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-default action-submit">Submit</a>
-    <a href="#" class="btn btn-default action-solution">Solution</a>
-    
-    <a href="https://github.com/tcorral/javascript-challenges-book/issues/new" target="_blank" class="btn btn-default">Have a Question?</a>
-    
-</div>
+                        <h1 id="introduction">Introduction</h1>
+<p>This book has different topics to learn review and enjoy them.</p>
 
                     
                     </section>
@@ -505,10 +433,10 @@
         </div>
 
         
-        <a href="../nested_loop/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../index.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../fooling_around_boolean_2/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../autoexecute/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
