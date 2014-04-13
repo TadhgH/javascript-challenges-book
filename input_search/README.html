@@ -41,7 +41,7 @@
     <body>
         
 
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="16" data-basepath=".." data-revision="1397354965597">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="16" data-basepath=".." data-revision="1397355404055">
 
     <div class="book-header">
     <!-- Actions Left -->
@@ -481,7 +481,7 @@
     <p>Fix the performance issue:</p>
 
 </div>
-<div class="editor" style="height: 400px">$( document ).ready( function() {
+<div class="editor" style="height: 740px">$( document ).ready( function() {
   $( &#39;#inputSearch&#39; ).keypress( function() {
       $.ajax( {
         url: &#39;http://www.domain.com/search&#39;,
@@ -502,29 +502,49 @@
   } );
 } );</div>
 
-<pre class="hidden code-solution">$( document ).ready( function() {
-  $( &#39;#inputSearch&#39; ).keyup( function() {
-      $.ajax( {
-        url: &#39;http://www.domain.com/search&#39;,
-        data: this.value,
-        success: function ( data )
-        {
-            var results = data.results;
-            $( &#39;#list&#39; ).empty();
-            $.each( data, function ( item ) {
-                $( &#39;#list&#39; ).append( &#39;&lt;li&gt;&#39; + item + &#39;&lt;/li&gt;&#39; );
-            } );
+<pre class="hidden code-solution">function delayTimer(delay){
+  var timer;
+    return function(fn){
+      timer = clearTimeout(timer);
+      if(fn)
+        timer = setTimeout(function() {
+           fn();
+        },delay);
 
-        },
-        error: function ( xhr, status, error ) {
-            console.log( &#39;Something goes wrong!&#39;, status, error.message );
-        }
+      return timer;
+  };
+}
+var delayer = delayTimer(500);
+
+$( document ).ready( function() {
+  $( &#39;#inputSearch&#39; ).keyup( function() {
+      delayer(function() {
+        var $list = $( &#39;#list&#39; );
+        $.ajax( {
+          url: &#39;http://www.domain.com/search&#39;,
+          data: this.value,
+          success: function ( data )
+          {
+              var results = data.results;
+              $list.empty();
+              $.each( data, function ( item ) {
+                  $list.append( &#39;&lt;li&gt;&#39; + item + &#39;&lt;/li&gt;&#39; );
+              } );
+
+          },
+          error: function ( xhr, status, error ) {
+              console.log( &#39;Something goes wrong!&#39;, status, error.message );
+          }
+        } );
       } );
   } );
 } );</pre>
 <pre class="hidden code-validation">assert(counter === 1);</pre>
 
-<pre class="hidden code-context">var document = &#39;&#39;;
+<pre class="hidden code-context">var setTimeout = function (callback) {
+    callback();
+};
+var document = &#39;&#39;;
 var counter = 0;
 var $ = function ( element ) {
     var jQuery = {
