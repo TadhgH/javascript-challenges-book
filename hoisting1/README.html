@@ -41,7 +41,7 @@
     <body>
         
 
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="1.3" data-basepath=".." data-revision="1397421291808">
+<div class="book" data-github="tcorral/javascript-challenges-book" data-level="1.3" data-basepath=".." data-revision="1397425789366">
 
     <div class="book-header">
     <!-- Actions Left -->
@@ -456,8 +456,8 @@
 <div class="editor" style="height: 20px">
 </div>
 
-<pre class="hidden code-solution">&#39;This is happening because the hoisting problem. Remember that in Javascript there are no block variables.&#39;</pre>
-<pre class="hidden code-validation">assert(true);</pre>
+<pre class="hidden code-solution">This is happening because the hoisting problem. Remember that in Javascript there are no block variables.</pre>
+<pre class="hidden code-validation">__match_answer_and_solution__</pre>
 
 
 <div class="btn-group btn-group-justified">
@@ -507,7 +507,17 @@
         console.log(&#39;Bert loves his &#39; + bird );
     }
 }() );</pre>
-<pre class="hidden code-validation">assert(true);</pre>
+<pre class="hidden code-validation">assert(inputs[0] === &#39;Bert loves his Pidgeons&#39;);</pre>
+
+<pre class="hidden code-context">var inputs = [];
+var backConsole = console;
+var console = {
+    log: function (str) {
+        inputs.push(str);
+        backConsole.log(str);
+        console = backConsole;
+    }
+};</pre>
 
 
 <div class="btn-group btn-group-justified">
