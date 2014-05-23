@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="en-US" manifest="../manifest.appcache">
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
@@ -32,37 +32,73 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
         <link rel="shortcut icon" href="..\gitbook/images/favicon.ico" type="image/x-icon">
-
-        
-        <link rel="stylesheet" href="..\gitbook/style.css">
-        
         
     </head>
     <body>
         
 
-<div class="book" data-github="tcorral/javascript-challenges-book" data-level="1.26" data-basepath=".." data-revision="1397428014558">
+        <link rel="stylesheet" href="..\gitbook/style.css">
+        
 
+
+        
+    <div class="book" data-github="tcorral/javascript-challenges-book" data-level="1.26" data-basepath=".." data-revision="1400850905191">
     <div class="book-header">
     <!-- Actions Left -->
     
-    <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    <a href="https://github.com/tcorral/javascript-challenges-book" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
     
-    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
 
     <!-- Actions Right -->
-    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
-    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
 
     
-    <a href="https://github.com/tcorral/javascript-challenges-book/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
-    <a href="https://github.com/tcorral/javascript-challenges-book/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/tcorral/javascript-challenges-book/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
     
 
     <!-- Title -->
-    <h1><a href="../" >Javascript Challenges</a></h1>
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >Javascript Challenges</a>
+    </h1>
 </div>
 
     <div class="book-summary">
@@ -72,24 +108,32 @@
     <ul class="summary">
         
         <li>
-            <a href="https://github.com/tcorral" target="blank">About the author</a>
+            <a href="https://github.com/tcorral" target="blank" class="author-link">About the author</a>
         </li>
-        <li>
-            <a href="https://github.com/tcorral/javascript-challenges-book/issues" target="blank">Questions and Issues</a>
-        </li>
-        <li>
-            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/terminator/README.md" target="blank">Edit and Contribute</a>
-        </li>
-        <li class="divider"></li>
         
+
+        
+        <li>
+            <a href="https://github.com/tcorral/javascript-challenges-book/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/tcorral/javascript-challenges-book/edit/master/terminator/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+
         <li data-level="0" data-path="index.html">
             <a href="../"><i class="fa fa-check"></i> Introduction</a>
         </li>
         
-            <li  data-level="1" data-path="index.html">
+            <li class="chapter " data-level="1" data-path="index.html">
                 
                 <a href="../index.html">
-                    <i class="fa fa-check"></i> <b>1)</b> Intro
+                    <i class="fa fa-check"></i> <b>1.</b> Intro
                 </a>
                 
                 
@@ -98,7 +142,7 @@
                         <li  data-level="1.1" data-path="autoexecute/README.html">
                             
                             <a href="../autoexecute/README.html">
-                                <i class="fa fa-check"></i> <b>1.1)</b> Self Invoking Functions
+                                <i class="fa fa-check"></i> <b>1.1.</b> Self Invoking Functions
                             </a>
                             
                         </li>
@@ -106,7 +150,7 @@
                         <li  data-level="1.2" data-path="banking/README.html">
                             
                             <a href="../banking/README.html">
-                                <i class="fa fa-check"></i> <b>1.2)</b> Floats Operations Imprecision
+                                <i class="fa fa-check"></i> <b>1.2.</b> Floats Operations Imprecision
                             </a>
                             
                         </li>
@@ -114,7 +158,7 @@
                         <li  data-level="1.3" data-path="hoisting1/README.html">
                             
                             <a href="../hoisting1/README.html">
-                                <i class="fa fa-check"></i> <b>1.3)</b> Hoisting and Conditionals
+                                <i class="fa fa-check"></i> <b>1.3.</b> Hoisting and Conditionals
                             </a>
                             
                         </li>
@@ -122,7 +166,7 @@
                         <li  data-level="1.4" data-path="objects1/README.html">
                             
                             <a href="../objects1/README.html">
-                                <i class="fa fa-check"></i> <b>1.4)</b> Checking Properties
+                                <i class="fa fa-check"></i> <b>1.4.</b> Checking Properties
                             </a>
                             
                         </li>
@@ -130,7 +174,7 @@
                         <li  data-level="1.5" data-path="objects2/README.html">
                             
                             <a href="../objects2/README.html">
-                                <i class="fa fa-check"></i> <b>1.5)</b> Closure and Objects
+                                <i class="fa fa-check"></i> <b>1.5.</b> Closure and Objects
                             </a>
                             
                         </li>
@@ -138,7 +182,7 @@
                         <li  data-level="1.6" data-path="conditionals_functions/README.html">
                             
                             <a href="../conditionals_functions/README.html">
-                                <i class="fa fa-check"></i> <b>1.6)</b> Conditionals and Functions
+                                <i class="fa fa-check"></i> <b>1.6.</b> Conditionals and Functions
                             </a>
                             
                         </li>
@@ -146,7 +190,7 @@
                         <li  data-level="1.7" data-path="delete/README.html">
                             
                             <a href="../delete/README.html">
-                                <i class="fa fa-check"></i> <b>1.7)</b> Delete
+                                <i class="fa fa-check"></i> <b>1.7.</b> Delete
                             </a>
                             
                         </li>
@@ -154,7 +198,7 @@
                         <li  data-level="1.8" data-path="detectIE/README.html">
                             
                             <a href="../detectIE/README.html">
-                                <i class="fa fa-check"></i> <b>1.8)</b> Detect Internet Explorer
+                                <i class="fa fa-check"></i> <b>1.8.</b> Detect Internet Explorer
                             </a>
                             
                         </li>
@@ -162,7 +206,7 @@
                         <li  data-level="1.9" data-path="utf8/README.html">
                             
                             <a href="../utf8/README.html">
-                                <i class="fa fa-check"></i> <b>1.9)</b> Don&#39;t judge a book by its cover
+                                <i class="fa fa-check"></i> <b>1.9.</b> Don&#39;t judge a book by its cover
                             </a>
                             
                         </li>
@@ -170,7 +214,7 @@
                         <li  data-level="1.10" data-path="encapsulate_collection/README.html">
                             
                             <a href="../encapsulate_collection/README.html">
-                                <i class="fa fa-check"></i> <b>1.10)</b> Encapsulate collection
+                                <i class="fa fa-check"></i> <b>1.10.</b> Encapsulate collection
                             </a>
                             
                         </li>
@@ -178,7 +222,7 @@
                         <li  data-level="1.11" data-path="even_odd/README.html">
                             
                             <a href="../even_odd/README.html">
-                                <i class="fa fa-check"></i> <b>1.11)</b> Even or Odd
+                                <i class="fa fa-check"></i> <b>1.11.</b> Even or Odd
                             </a>
                             
                         </li>
@@ -186,7 +230,7 @@
                         <li  data-level="1.12" data-path="nested_loop/README.html">
                             
                             <a href="../nested_loop/README.html">
-                                <i class="fa fa-check"></i> <b>1.12)</b> Exit nested loop
+                                <i class="fa fa-check"></i> <b>1.12.</b> Exit nested loop
                             </a>
                             
                         </li>
@@ -194,7 +238,7 @@
                         <li  data-level="1.13" data-path="fooling_around_boolean/README.html">
                             
                             <a href="../fooling_around_boolean/README.html">
-                                <i class="fa fa-check"></i> <b>1.13)</b> #1 Fooling around boolean
+                                <i class="fa fa-check"></i> <b>1.13.</b> #1 Fooling around boolean
                             </a>
                             
                         </li>
@@ -202,7 +246,7 @@
                         <li  data-level="1.14" data-path="fooling_around_boolean_2/README.html">
                             
                             <a href="../fooling_around_boolean_2/README.html">
-                                <i class="fa fa-check"></i> <b>1.14)</b> #2 Fooling around boolean
+                                <i class="fa fa-check"></i> <b>1.14.</b> #2 Fooling around boolean
                             </a>
                             
                         </li>
@@ -210,7 +254,7 @@
                         <li  data-level="1.15" data-path="ghost_array/README.html">
                             
                             <a href="../ghost_array/README.html">
-                                <i class="fa fa-check"></i> <b>1.15)</b> Ghost Array
+                                <i class="fa fa-check"></i> <b>1.15.</b> Ghost Array
                             </a>
                             
                         </li>
@@ -218,7 +262,7 @@
                         <li  data-level="1.16" data-path="input_search/README.html">
                             
                             <a href="../input_search/README.html">
-                                <i class="fa fa-check"></i> <b>1.16)</b> Input Search
+                                <i class="fa fa-check"></i> <b>1.16.</b> Input Search
                             </a>
                             
                         </li>
@@ -226,7 +270,7 @@
                         <li  data-level="1.17" data-path="invaluable/README.html">
                             
                             <a href="../invaluable/README.html">
-                                <i class="fa fa-check"></i> <b>1.17)</b> Invaluable
+                                <i class="fa fa-check"></i> <b>1.17.</b> Invaluable
                             </a>
                             
                         </li>
@@ -234,7 +278,7 @@
                         <li  data-level="1.18" data-path="json/README.html">
                             
                             <a href="../json/README.html">
-                                <i class="fa fa-check"></i> <b>1.18)</b> JSON
+                                <i class="fa fa-check"></i> <b>1.18.</b> JSON
                             </a>
                             
                         </li>
@@ -242,7 +286,7 @@
                         <li  data-level="1.19" data-path="nested_scopes/README.html">
                             
                             <a href="../nested_scopes/README.html">
-                                <i class="fa fa-check"></i> <b>1.19)</b> Nested Scopes
+                                <i class="fa fa-check"></i> <b>1.19.</b> Nested Scopes
                             </a>
                             
                         </li>
@@ -250,7 +294,7 @@
                         <li  data-level="1.20" data-path="now_you_see_me/README.html">
                             
                             <a href="../now_you_see_me/README.html">
-                                <i class="fa fa-check"></i> <b>1.20)</b> Now you see me...
+                                <i class="fa fa-check"></i> <b>1.20.</b> Now you see me...
                             </a>
                             
                         </li>
@@ -258,7 +302,7 @@
                         <li  data-level="1.21" data-path="frozen/README.html">
                             
                             <a href="../frozen/README.html">
-                                <i class="fa fa-check"></i> <b>1.21)</b> Frozen
+                                <i class="fa fa-check"></i> <b>1.21.</b> Frozen
                             </a>
                             
                         </li>
@@ -266,7 +310,7 @@
                         <li  data-level="1.22" data-path="point/README.html">
                             
                             <a href="../point/README.html">
-                                <i class="fa fa-check"></i> <b>1.22)</b> Point
+                                <i class="fa fa-check"></i> <b>1.22.</b> Point
                             </a>
                             
                         </li>
@@ -274,7 +318,7 @@
                         <li  data-level="1.23" data-path="running_man/README.html">
                             
                             <a href="../running_man/README.html">
-                                <i class="fa fa-check"></i> <b>1.23)</b> Running Man
+                                <i class="fa fa-check"></i> <b>1.23.</b> Running Man
                             </a>
                             
                         </li>
@@ -282,7 +326,7 @@
                         <li  data-level="1.24" data-path="scope/README.html">
                             
                             <a href="../scope/README.html">
-                                <i class="fa fa-check"></i> <b>1.24)</b> Scope
+                                <i class="fa fa-check"></i> <b>1.24.</b> Scope
                             </a>
                             
                         </li>
@@ -290,7 +334,7 @@
                         <li  data-level="1.25" data-path="spartacus/README.html">
                             
                             <a href="../spartacus/README.html">
-                                <i class="fa fa-check"></i> <b>1.25)</b> Spartacus
+                                <i class="fa fa-check"></i> <b>1.25.</b> Spartacus
                             </a>
                             
                         </li>
@@ -298,7 +342,7 @@
                         <li  data-level="1.26" data-path="terminator/README.html">
                             
                             <a href="../terminator/README.html">
-                                <i class="fa fa-check"></i> <b>1.26)</b> Terminator
+                                <i class="fa fa-check"></i> <b>1.26.</b> Terminator
                             </a>
                             
                         </li>
@@ -306,7 +350,7 @@
                         <li  data-level="1.27" data-path="timers/README.html">
                             
                             <a href="../timers/README.html">
-                                <i class="fa fa-check"></i> <b>1.27)</b> Timers
+                                <i class="fa fa-check"></i> <b>1.27.</b> Timers
                             </a>
                             
                         </li>
@@ -314,7 +358,7 @@
                         <li  data-level="1.28" data-path="undefined_values_in_array/README.html">
                             
                             <a href="../undefined_values_in_array/README.html">
-                                <i class="fa fa-check"></i> <b>1.28)</b> Undefined Values in Arrays
+                                <i class="fa fa-check"></i> <b>1.28.</b> Undefined Values in Arrays
                             </a>
                             
                         </li>
@@ -322,7 +366,7 @@
                         <li  data-level="1.29" data-path="array_map_parseint/README.html">
                             
                             <a href="../array_map_parseint/README.html">
-                                <i class="fa fa-check"></i> <b>1.29)</b> Array Map and ParseInt
+                                <i class="fa fa-check"></i> <b>1.29.</b> Array Map and ParseInt
                             </a>
                             
                         </li>
@@ -330,7 +374,7 @@
                         <li  data-level="1.30" data-path="variable_scope/README.html">
                             
                             <a href="../variable_scope/README.html">
-                                <i class="fa fa-check"></i> <b>1.30)</b> Variable Scope
+                                <i class="fa fa-check"></i> <b>1.30.</b> Variable Scope
                             </a>
                             
                         </li>
@@ -339,19 +383,26 @@
                 
             </li>
         
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
     </ul>
 </div>
 
-    <div class="book-body" tabindex="-1">
+    <div class="book-body">
         <div class="body-inner">
-            <div class="page-wrapper">
+            <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
         <div class="inner" style="width: 63.333333333333336%;min-width: 60%;"></div>
     </div>
     <div class="chapters">
     
-        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+        <a href="../index.html" title="Intro" class="chapter done new-chapter" data-progress="1" style="left: 0%;"></a>
     
         <a href="../autoexecute/README.html" title="Self Invoking Functions" class="chapter done " data-progress="1.1" style="left: 3.3333333333333335%;"></a>
     
@@ -422,43 +473,43 @@
                     
                         <h1 id="terminator">Terminator</h1>
 <p>Here you have the prototype code of the next Terminator fan page:</p>
-<pre><code><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Terminator Fan Page<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"/"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"name"</span>/&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Send"</span>/&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Terminator Fan Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;form action=&quot;/&quot;&gt;
+            &lt;input type=&quot;text&quot; name=&quot;name&quot;/&gt;
+            &lt;input type=&quot;submit&quot; value=&quot;Send&quot;/&gt;
+        &lt;/form&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
 </code></pre><p>One of my colleagues has written the next code that will log the name we send using the form in the previous page.</p>
-<pre><code><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayonara</span><span class="hljs-params">( name )</span> {</span>
-        console.log( <span class="hljs-string">'Sayonara '</span> + name + <span class="hljs-string">'!'</span> );
+<pre><code>&lt;script&gt;
+    function sayonara( name ) {
+        console.log( &#39;Sayonara &#39; + name + &#39;!&#39; );
     }
 
     sayonara( greetings );
-</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+&lt;/script&gt;
 </code></pre><p>But then someone sends the next message as a name and the behaviour of the page changes...</p>
-<pre><code>'<span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">console.log(<span class="hljs-string">"I will come back!"</span>)</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript"><span class="hljs-string">'</span></span>
+<pre><code>&#39;&lt;/script&gt;&lt;script&gt;console.log(&quot;I will come back!&quot;)&lt;/script&gt;&lt;script&gt;&#39;
 </code></pre><p>Here is an example of executing the page with the bug:</p>
-<pre><code><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
-            <span class="hljs-keyword">var</span> result = <span class="hljs-string">''</span>;
-            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayonara</span><span class="hljs-params">( name )</span> {</span>
-                result = <span class="hljs-string">'Sayonara '</span> + name + <span class="hljs-string">'!'</span>;
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;&lt;/head&gt;
+    &lt;body&gt;
+        &lt;script&gt;
+            var result = &#39;&#39;;
+            function sayonara( name ) {
+                result = &#39;Sayonara &#39; + name + &#39;!&#39;;
             }
 
-            sayonara( <span class="hljs-string">'</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">console.log(<span class="hljs-string">"I will come back!"</span>)</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript"><span class="hljs-string">' );
-        </span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+            sayonara( &#39;&lt;/script&gt;&lt;script&gt;console.log(&quot;I will come back!&quot;)&lt;/script&gt;&lt;script&gt;&#39; );
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
                     
                     </section>
@@ -512,19 +563,40 @@ sayonara( &#39;&lt;\/script&gt;&lt;script&gt;console.log(&quot;I will come back!
         </div>
 
         
-        <a href="../spartacus/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../spartacus/README.html" class="navigation navigation-prev " aria-label="Previous page: Spartacus"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../timers/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../timers/README.html" class="navigation navigation-next " aria-label="Next page: Timers"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
         <script src="..\gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
         <script src="..\gitbook/app.js"></script>
         
+
+    
+    <script src="..\gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="..\gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
     </body>
 </html>
